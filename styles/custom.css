@@ -1,0 +1,130 @@
+a:hover {
+  color: #b8a663 !important;
+}
+
+.col-center {
+  margin: 0 auto;
+  float: none;
+}
+
+/**
+=============HAMBURGERS==============
+*/
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: white;
+}
+
+/**
+=============HEADER==============
+*/
+.header .menuham-container {
+  float: right;
+  padding: 20px 10px;
+}
+
+.header span.etiqueta {
+  position: relative;
+  top: -6px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#productos {
+  background: url(../images/texturplast/productos-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 0;
+}
+
+#productos h3 {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+#productos .subtitle {
+  color: #aaaaaa;
+  margin-bottom: 40px;
+}
+
+#productos .tab-style-3 {
+  border-top: 2px solid white;
+}
+
+#productos .tab-style-3 .tab-content {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+#productos .tab-style-3 .tab-content ul {
+  position: relative;
+  display: inline-block;
+}
+
+#productos .tab-style-3 .tab-content ul:nth-child(2) {
+  left: 50px;
+}
+
+#productos .tab-style-3 .nav-tabs > li > a {
+  background: none;
+  border: 2px solid transparent;
+  color: #CCC;
+}
+
+#productos .tab-style-3 .nav-tabs > li.active > a, #productos .tab-style-3 .nav-tabs > li.active > a:focus, #productos .tab-style-3 .nav-tabs > li.active > a:hover {
+  border-bottom: 2px solid #b8a663;
+  color: #b8a663;
+}
+
+@media only screen and (max-width: 991px) {
+  #productos .tab-style-3 .nav-tabs li {
+    float: left;
+    width: 50%;
+  }
+  #productos .tab-style-3 .nav-tabs li a {
+    height: 50px;
+  }
+}
+
+#nosotros {
+  background: url(../images/texturplast/nosotros-bg.jpg);
+  background-size: cover;
+  background-position: center top;
+  min-height: 800px;
+}
+
+#nosotros .title-row {
+  padding-bottom: 300px;
+}
+
+#nosotros .title-row h3 {
+  font-size: 3em;
+  color: black;
+}
+
+#nosotros .description-row {
+  margin-bottom: 80px;
+}
+
+#nosotros .description-row .parrafo {
+  color: black;
+  font-size: 1.2em;
+}
+
+#contacto .social-container {
+  margin-bottom: 30px;
+}
+
+#contacto .social-container i.fa {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  margin-right: 30px;
+}
+/*# sourceMappingURL=custom.css.map */

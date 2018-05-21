@@ -1,0 +1,122 @@
+$dorado : #b8a663;
+a:hover{
+    color: $dorado!important;
+}
+.col-center{
+    margin: 0 auto;
+    float: none;
+}
+/**
+=============HAMBURGERS==============
+*/ 
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+    background-color: white;
+}
+/**
+=============HEADER==============
+*/
+.header{
+    .menuham-container{
+        float: right;
+        padding: 20px 10px;
+    }
+    span.etiqueta{
+        position: relative;
+        top: -6px;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+#productos{
+    background: url(../images/texturplast/productos-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0;
+    h3{
+        color: white;
+        font-size: 3em;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+    .subtitle{
+        color: #aaaaaa;
+        margin-bottom: 40px;
+    }
+    .tab-style-3{
+        border-top: 2px solid white;
+        .tab-content{
+            margin-top: 20px;
+            background: none;
+            border: none;
+            color: white;
+            ul{
+                position: relative;
+                display: inline-block;
+            }
+            ul:nth-child(2){
+                left: 50px;
+            }
+        }
+    }
+    .tab-style-3 .nav-tabs>li>a{
+        background: none;
+        border: 2px solid transparent;
+        color:#CCC;
+    }
+    .tab-style-3 .nav-tabs>li.active>a, .tab-style-3 .nav-tabs>li.active>a:focus, .tab-style-3 .nav-tabs>li.active>a:hover{
+        border-bottom: 2px solid $dorado;
+        color: $dorado;
+    }
+
+    @media only screen and (max-width:991px){
+        .tab-style-3 .nav-tabs li{
+            float: left;
+            width: 50%;
+            a{
+                height: 50px;
+            }
+        }
+    }
+
+}
+
+#nosotros{
+    background: url(../images/texturplast/nosotros-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    min-height: 800px;
+    .title-row{
+        padding-bottom: 300px;
+        h3{
+            font-size: 3em;
+            color: black;
+            
+        }
+    }
+    .description-row{
+        margin-bottom: 80px;
+        .parrafo{
+            color: black;
+            font-size: 1.2em;
+        }
+    }
+    .images-row{
+
+    }
+}
+
+#contacto{
+    .social-container{
+        margin-bottom: 30px;
+        i.fa{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: black;
+            color: white;
+            margin-right: 30px;
+        }
+    }
+}
