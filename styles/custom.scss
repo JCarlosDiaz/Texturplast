@@ -105,6 +105,12 @@ a:hover{
 
     }
 }
+.custom-cta{
+    .text-center .underline::after{
+        width: 20%;
+        transform: translateX(-40%);
+    }
+}
 
 #contacto{
     .social-container{
