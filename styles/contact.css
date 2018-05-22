@@ -89,6 +89,7 @@ section.content-section {
 #cont a.map {
   color: black;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 #cont a.map.underline:after {

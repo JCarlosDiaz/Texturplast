@@ -124,7 +124,7 @@ a:hover {
 
 #nosotros .description-row .parrafo {
   color: black;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .custom-cta {
@@ -153,6 +153,7 @@ a:hover {
 #contacto a.map {
   color: black;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 #contacto a.map.underline:after {

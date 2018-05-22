@@ -88,7 +88,8 @@ section.content-section{
     }
     a.map{
         color: black;
-        text-transform: uppercase
+        text-transform: uppercase;
+        display: inline-block;
     }
     a.map.underline:after{
         left: 50%;

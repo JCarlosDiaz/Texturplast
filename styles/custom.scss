@@ -111,7 +111,7 @@ a:hover{
         margin-bottom: 80px;
         .parrafo{
             color: black;
-            font-size: 1.2em;
+            font-size: 1.4em;
         }
     }
     .images-row{
@@ -139,7 +139,8 @@ a:hover{
     }
     a.map{
         color: black;
-        text-transform: uppercase
+        text-transform: uppercase;
+        display: inline-block;
     }
     a.map.underline:after{
         left: 50%;
