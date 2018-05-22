@@ -15,7 +15,7 @@ section.content-section {
 =============HAMBURGERS==============
 */
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  background-color: white;
+  background-color: black;
 }
 
 /**
@@ -34,7 +34,7 @@ section.content-section {
 .header span.etiqueta {
   position: relative;
   top: -6px;
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -69,21 +69,29 @@ section.content-section {
   height: 40px;
 }
 
-#contacto {
+#complete-contact .st-checkbox:checked + .st-checkbox-1-label:before, #complete-contact .st-radio:checked + .st-radio-1-label:before {
+  background: #b8a663;
+}
+
+#complete-contact .st-checkbox:checked + .st-checkbox-2-label:before, #complete-contact .st-radio:checked + .st-radio-2-label:before {
+  background: #b8a663;
+}
+
+#cont {
   color: black;
 }
 
-#contacto h4 a.mail {
+#cont h4 a.mail {
   text-transform: lowercase;
   color: #b8a663;
 }
 
-#contacto a.map {
+#cont a.map {
   color: black;
   text-transform: uppercase;
 }
 
-#contacto a.map.underline:after {
+#cont a.map.underline:after {
   left: 50%;
   transform: translateX(-50%);
   background: #b8a663;
@@ -91,11 +99,11 @@ section.content-section {
   height: 2px;
 }
 
-#contacto .social-container {
+#cont .social-container {
   margin-bottom: 30px;
 }
 
-#contacto .social-container i.fa {
+#cont .social-container i.fa {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -105,16 +113,16 @@ section.content-section {
   margin-right: 30px;
 }
 
-#contacto .form-control {
+#cont .form-control {
   background: white;
 }
 
-#contacto .st-btn.primary-btn {
+#cont .st-btn.primary-btn {
   background: black;
   border: 1px solid black;
 }
 
-#contacto .st-btn.primary-btn.hvr-back:active, #contacto .st-btn.primary-btn.hvr-back:focus, #contacto .st-btn.primary-btn.hvr-back:hover {
+#cont .st-btn.primary-btn.hvr-back:active, #cont .st-btn.primary-btn.hvr-back:focus, #cont .st-btn.primary-btn.hvr-back:hover {
   color: black !important;
 }
 /*# sourceMappingURL=contact.css.map */

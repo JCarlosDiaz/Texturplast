@@ -10,5 +10,8 @@ $(document).ready(function () {
             $('#especiales ul').css('left', left-150);
         });
     }
-        
+    
+    $('.hamburger').click(function () {
+        $(this).toggleClass('is-active');
+    });
 });

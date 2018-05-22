@@ -17,8 +17,12 @@ a:hover{
 */
 .secondNav{
     .header{
+        background: #2d2d2d;
         .menuham-container{
             padding: 2px;
+        }
+        .logo .logo-img{
+            max-height: 38px;
         }
     }
 }

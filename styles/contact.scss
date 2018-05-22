@@ -13,7 +13,7 @@ section.content-section{
 =============HAMBURGERS==============
 */ 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
-    background-color: white;
+    background-color: black;
 }
 /**
 =============HEADER==============
@@ -34,7 +34,7 @@ section.content-section{
     span.etiqueta{
         position: relative;
         top: -6px;
-        color: white;
+        color: black;
         text-transform: uppercase;
     }
     
@@ -67,16 +67,19 @@ section.content-section{
         select{
             width: 100%;
             height: 40px;
-            option{
-
-            }
         }
+    }
+    .st-checkbox:checked+.st-checkbox-1-label:before, .st-radio:checked+.st-radio-1-label:before{
+        background: $dorado;
+    }
+    .st-checkbox:checked+.st-checkbox-2-label:before, .st-radio:checked+.st-radio-2-label:before{
+        background: $dorado;
     }
 }
 
 
 
-#contacto{
+#cont{
     color: black;
     h4 a.mail{
         text-transform: lowercase;
