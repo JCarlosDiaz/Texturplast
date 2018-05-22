@@ -17,9 +17,14 @@ a:hover {
 /**
 =============HEADER==============
 */
+.secondNav .header .menuham-container {
+  padding: 2px;
+}
+
 .header .menuham-container {
   float: right;
   padding: 20px 10px;
+  transition: all .4s;
 }
 
 .header span.etiqueta {
@@ -114,9 +119,40 @@ a:hover {
   font-size: 1.2em;
 }
 
+.custom-cta {
+  background: #2d2d2d;
+}
+
 .custom-cta .text-center .underline::after {
   width: 20%;
   transform: translateX(-40%);
+  background: #b8a663;
+}
+
+.custom-cta:hover {
+  background: #494949;
+}
+
+#contacto {
+  color: black;
+}
+
+#contacto h4 a.mail {
+  text-transform: lowercase;
+  color: #b8a663;
+}
+
+#contacto a.map {
+  color: black;
+  text-transform: uppercase;
+}
+
+#contacto a.map.underline:after {
+  left: 50%;
+  transform: translateX(-50%);
+  background: #b8a663;
+  width: 100%;
+  height: 2px;
 }
 
 #contacto .social-container {
@@ -131,5 +167,22 @@ a:hover {
   background-color: black;
   color: white;
   margin-right: 30px;
+}
+
+#contacto .form-control {
+  background: white;
+}
+
+#contacto .st-btn.primary-btn {
+  background: black;
+  border: 1px solid black;
+}
+
+#contacto .st-btn.primary-btn.hvr-back:active, #contacto .st-btn.primary-btn.hvr-back:focus, #contacto .st-btn.primary-btn.hvr-back:hover {
+  color: black !important;
+}
+
+.footer .footer-middle .fa {
+  font-size: 24px;
 }
 /*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,120 @@
+a:hover {
+  color: #b8a663 !important;
+}
+
+.col-center {
+  margin: 0 auto;
+  float: none;
+}
+
+section.content-section {
+  background-color: white !important;
+}
+
+/**
+=============HAMBURGERS==============
+*/
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: white;
+}
+
+/**
+=============HEADER==============
+*/
+.secondNav .header .menuham-container {
+  padding: 2px;
+}
+
+.header .menuham-container {
+  float: right;
+  padding: 20px 10px;
+  transition: all .4s;
+}
+
+.header span.etiqueta {
+  position: relative;
+  top: -6px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#complete-contact .tab-style-8 .nav-tabs > li.active > a, #complete-contact .tab-style-8 .nav-tabs > li.active > a:focus, #complete-contact .tab-style-8 .nav-tabs > li.active > a:hover {
+  color: #b8a663;
+  border-bottom: 3px solid #b8a663;
+}
+
+#complete-contact .tab-style-8 .nav-tabs > li > a {
+  margin: 0 25px;
+}
+
+#complete-contact .tab-style-8 .tab-content {
+  text-align: left;
+}
+
+#complete-contact .form-control {
+  background: white;
+}
+
+#complete-contact .st-btn.primary-btn {
+  background: black;
+  border: 1px solid black;
+}
+
+#complete-contact .st-btn.primary-btn.hvr-back:active, #complete-contact .st-btn.primary-btn.hvr-back:focus, #complete-contact .st-btn.primary-btn.hvr-back:hover {
+  color: black !important;
+}
+
+#complete-contact .form-problema select {
+  width: 100%;
+  height: 40px;
+}
+
+#contacto {
+  color: black;
+}
+
+#contacto h4 a.mail {
+  text-transform: lowercase;
+  color: #b8a663;
+}
+
+#contacto a.map {
+  color: black;
+  text-transform: uppercase;
+}
+
+#contacto a.map.underline:after {
+  left: 50%;
+  transform: translateX(-50%);
+  background: #b8a663;
+  width: 100%;
+  height: 2px;
+}
+
+#contacto .social-container {
+  margin-bottom: 30px;
+}
+
+#contacto .social-container i.fa {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  margin-right: 30px;
+}
+
+#contacto .form-control {
+  background: white;
+}
+
+#contacto .st-btn.primary-btn {
+  background: black;
+  border: 1px solid black;
+}
+
+#contacto .st-btn.primary-btn.hvr-back:active, #contacto .st-btn.primary-btn.hvr-back:focus, #contacto .st-btn.primary-btn.hvr-back:hover {
+  color: black !important;
+}
+/*# sourceMappingURL=contact.css.map */
