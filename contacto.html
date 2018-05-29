@@ -148,280 +148,286 @@ nav-hidden - Open nav on icon click
         <section id="complete-contact" class="content-section">
             <div class="container">
                 <div class="row">
-                        <div class="col-md-10 col-center">
-                                <div class="tab-style-8">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#home-8" aria-controls="home-8" role="tab" data-toggle="tab">Asesorías y dudas generales</a></li>
-                                        <li role="presentation"><a href="#profile-8" aria-controls="profile-8" role="tab" data-toggle="tab">Problema con un producto</a></li>
-                                    </ul>
-        
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="home-8">
-                                            <div class="col-md-12">
-                                                    <form class="form-problema" id="form" method="post" name="form" action="send-email-phpmailer.php">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="nombre">Nombre</label>
-                                                                    <input type="text" class="form-control input-style-2" id="nombre" name="nombre" placeholder=" " required="">
-                                                                </div>
+                    <div class="col-md-10 col-center">
+                        <div class="tab-style-8">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#home-8" aria-controls="home-8" role="tab" data-toggle="tab">Asesorías y dudas generales</a></li>
+                                <li role="presentation"><a href="#profile-8" aria-controls="profile-8" role="tab" data-toggle="tab">Problema con un producto</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="home-8">
+                                    <div class="col-md-12">
+                                            <form class="form-problema" id="form" method="post" name="form" action="send-email-asesoria.php">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="nombre">Nombre</label>
+                                                            <input type="text" class="form-control input-style-2" id="nombre" name="nombre" placeholder=" " required="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="apellido">Apellido</label>
+                                                            <input type="text" class="form-control input-style-2" id="apellido" name="apellido" placeholder="" required="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="correo">Correo</label>
+                                                            <input type="email" class="form-control input-style-2" id="correo" name="correo" placeholder="" required="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="telefono">Teléfono</label>
+                                                            <input type="text" class="form-control input-style-2" id="telefono" name="telefono" placeholder="" required="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Estado">Estado</label>
+                                                        <select name="estado" id="estado-asesoria">
+                                                            <option  selected="selected" value="Aguascalientes">Aguascalientes</option>
+                                                            <option value="BajaCalifornia">Baja California</option>
+                                                            <option value="BajaCaliforniaSur">Baja California Sur</option>
+                                                            <option value="Campeche">Campeche</option>
+                                                            <option value="Chiapas">Chiapas</option>
+                                                            <option value="Chihuahua">Chihuahua</option>
+                                                            <option value="CiudaddeMexico">Ciudad de México</option>
+                                                            <option value="Coahuila">Coahuila</option>
+                                                            <option value="Colima">Colima</option>
+                                                            <option value="Durango">Durango</option>
+                                                            <option value="Guanajuato">Guanajuato</option>
+                                                            <option value="Guerrero">Guerrero</option>
+                                                            <option value="Hidalgo">Hidalgo</option>
+                                                            <option value="Jalisco">Jalisco</option>
+                                                            <option value="EstadodeMexico">Estado de México</option>
+                                                            <option value="Michoacan">Michoacán</option>
+                                                            <option value="Morelos">Morelos</option>
+                                                            <option value="Nayarit">Nayarit</option>
+                                                            <option value="NuevoLeon">Nuevo León</option>
+                                                            <option value="Oaxaca">Oaxaca</option>
+                                                            <option value="Puebla">Puebla</option>
+                                                            <option value="Queretaro">Querétaro</option>
+                                                            <option value="QuintanaRoo">Quintana Roo</option>
+                                                            <option value="SanLuisPotosí">San Luis Potosí</option>
+                                                            <option value="Sinaloa">Sinaloa</option>
+                                                            <option value="Sonora">Sonora</option>
+                                                            <option value="Tabasco">Tabasco</option>
+                                                            <option value="Tamaulipas">Tamaulipas</option>
+                                                            <option value="Tlaxcala">Tlaxcala</option>
+                                                            <option value="Veracruz">Veracruz</option>
+                                                            <option value="Yucatan">Yucatán</option>
+                                                            <option value="Zacatecas">Zacatecas</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="codigo">Codigo Postal</label>
+                                                        <input type="number" class="form-control input-style-2" id="codigo" name="codigo" placeholder="" required="">
+                                                    </div>
+                                                </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <div class="col-md-6 zero-padding">
+                                                                <label for="pregunta">Pregunta</label>
+                                                                <p>Por favor dinos cómo podemos ayudarte con el mayor detalle posible</p>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="apellido">Apellido</label>
-                                                                    <input type="text" class="form-control input-style-2" id="apellido" name="apellido" placeholder="" required="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="correo">Correo</label>
-                                                                    <input type="email" class="form-control input-style-2" id="correo" name="correo" placeholder="" required="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="telefono">Teléfono</label>
-                                                                    <input type="text" class="form-control input-style-2" id="telefono" name="telefono" placeholder="" required="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Estado">Estado</label>
-                                                                <select name="estado" id="estado-asesoria">
-                                                                    <option  selected="selected" value="Aguascalientes">Aguascalientes</option>
-                                                                    <option value="BajaCalifornia">Baja California</option>
-                                                                    <option value="BajaCaliforniaSur">Baja California Sur</option>
-                                                                    <option value="Campeche">Campeche</option>
-                                                                    <option value="Chiapas">Chiapas</option>
-                                                                    <option value="Chihuahua">Chihuahua</option>
-                                                                    <option value="CiudaddeMexico">Ciudad de México</option>
-                                                                    <option value="Coahuila">Coahuila</option>
-                                                                    <option value="Colima">Colima</option>
-                                                                    <option value="Durango">Durango</option>
-                                                                    <option value="Guanajuato">Guanajuato</option>
-                                                                    <option value="Guerrero">Guerrero</option>
-                                                                    <option value="Hidalgo">Hidalgo</option>
-                                                                    <option value="Jalisco">Jalisco</option>
-                                                                    <option value="EstadodeMexico">Estado de México</option>
-                                                                    <option value="Michoacan">Michoacán</option>
-                                                                    <option value="Morelos">Morelos</option>
-                                                                    <option value="Nayarit">Nayarit</option>
-                                                                    <option value="NuevoLeon">Nuevo León</option>
-                                                                    <option value="Oaxaca">Oaxaca</option>
-                                                                    <option value="Puebla">Puebla</option>
-                                                                    <option value="Queretaro">Querétaro</option>
-                                                                    <option value="QuintanaRoo">Quintana Roo</option>
-                                                                    <option value="SanLuisPotosí">San Luis Potosí</option>
-                                                                    <option value="Sinaloa">Sinaloa</option>
-                                                                    <option value="Sonora">Sonora</option>
-                                                                    <option value="Tabasco">Tabasco</option>
-                                                                    <option value="Tamaulipas">Tamaulipas</option>
-                                                                    <option value="Tlaxcala">Tlaxcala</option>
-                                                                    <option value="Veracruz">Veracruz</option>
-                                                                    <option value="Yucatan">Yucatán</option>
-                                                                    <option value="Zacatecas">Zacatecas</option>
-                                                                </select>
+                                                            <div class="col-md-6" style="padding: 0 0 0 15px">
+                                                                    <textarea class="form-control input-style-2" id="pregunta" name="pregunta" placeholder="" required="" rows="3"></textarea>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="codigo">Codigo Postal</label>
-                                                                <input type="number" class="form-control input-style-2" id="codigo" name="codigo" placeholder="" required="">
-                                                            </div>
-                                                        </div>
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    <div class="col-md-6 zero-padding">
-                                                                        <label for="pregunta">Pregunta</label>
-                                                                        <p>Por favor dinos cómo podemos ayudarte con el mayor detalle posible</p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                            <div class="form-check">
+                                                                    <p style="display: inline-block;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
+                                                                    <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" checked="">
+                                                                    <label for="newsletter" class="st-checkbox-1-label">Sí</label>
+                                                                    <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
+                                                                    
                                                                     </div>
-                                                                    <div class="col-md-6" style="padding: 0 0 0 15px">
-                                                                            <textarea class="form-control input-style-2" id="pregunta" name="pregunta" placeholder="" required="" rows="3"></textarea>
-                                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                    <div class="g-recaptcha" data-sitekey="6LeR-lsUAAAAAM3QKpUZ8_r-XdNwBjU5MQO8omKJ" data-callback="reCaptchaVerify"></div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                    <div class="form-check">
-                                                                            <p style="display: inline-block;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
-                                                                            <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" checked="">
-							                                                <label for="newsletter" class="st-checkbox-1-label">Sí</label>
-							                                                <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
-                                                                            
-                                                                          </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                            <div class="g-recaptcha" data-sitekey="6LeR-lsUAAAAAM3QKpUZ8_r-XdNwBjU5MQO8omKJ" data-callback="reCaptchaVerify"></div>
-                                                                        </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                        <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Enviar</button>
-                                                                </div>
-                                                            </div>
-                                                    
-                                                        </form>
-                                            </div>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="profile-8">
-                                            <div class="col-md-12">
-                                                <form class="form-problema" id="form" method="post" name="form" action="send-email-mailgun.php">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="name">Nombre</label>
-                                                                <input type="text" class="form-control input-style-2" id="nombre" name="nombre" placeholder="Full Name" required="">
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                                <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Enviar</button>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="apellido">Apellido</label>
-                                                                <input type="text" class="form-control input-style-2" id="apellido" name="apellido" placeholder="Full Name" required="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                        <label for="email">Correo</label>
-                                                                        <input type="email" class="form-control input-style-2" id="email" name="email" placeholder="Email address" required="">
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="telefono">Telefono</label>
-                                                                <input type="number" class="form-control input-style-2" id="telefono" name="telefono" placeholder="Full Name" required="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Estado">Estado</label>
-                                                                <select name="estado" id="estado">
-                                                                    <option  selected="selected" value="Aguascalientes">Aguascalientes</option>
-                                                                    <option value="BajaCalifornia">Baja California</option>
-                                                                    <option value="BajaCaliforniaSur">Baja California Sur</option>
-                                                                    <option value="Campeche">Campeche</option>
-                                                                    <option value="Chiapas">Chiapas</option>
-                                                                    <option value="Chihuahua">Chihuahua</option>
-                                                                    <option value="CiudaddeMexico">Ciudad de México</option>
-                                                                    <option value="Coahuila">Coahuila</option>
-                                                                    <option value="Colima">Colima</option>
-                                                                    <option value="Durango">Durango</option>
-                                                                    <option value="Guanajuato">Guanajuato</option>
-                                                                    <option value="Guerrero">Guerrero</option>
-                                                                    <option value="Hidalgo">Hidalgo</option>
-                                                                    <option value="Jalisco">Jalisco</option>
-                                                                    <option value="EstadodeMexico">Estado de México</option>
-                                                                    <option value="Michoacan">Michoacán</option>
-                                                                    <option value="Morelos">Morelos</option>
-                                                                    <option value="Nayarit">Nayarit</option>
-                                                                    <option value="NuevoLeon">Nuevo León</option>
-                                                                    <option value="Oaxaca">Oaxaca</option>
-                                                                    <option value="Puebla">Puebla</option>
-                                                                    <option value="Queretaro">Querétaro</option>
-                                                                    <option value="QuintanaRoo">Quintana Roo</option>
-                                                                    <option value="SanLuisPotosí">San Luis Potosí</option>
-                                                                    <option value="Sinaloa">Sinaloa</option>
-                                                                    <option value="Sonora">Sonora</option>
-                                                                    <option value="Tabasco">Tabasco</option>
-                                                                    <option value="Tamaulipas">Tamaulipas</option>
-                                                                    <option value="Tlaxcala">Tlaxcala</option>
-                                                                    <option value="Veracruz">Veracruz</option>
-                                                                    <option value="Yucatan">Yucatán</option>
-                                                                    <option value="Zacatecas">Zacatecas</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="codigo">Codigo Postal</label>
-                                                                <input type="number" class="form-control input-style-2" id="codigo" name="codigo" placeholder="Full Name" required="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Estado">Categoria de producto</label>
-                                                                <select name="producto-categoria" id="producto-categoria">
-                                                                    <option  selected="selected" value="Aguascalientes">Categoria1</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Estado">Producto</label>
-                                                                <select name="producto-producto" id="producto-producto">
-                                                                    <option  selected="selected" value="Aguascalientes">Producto1</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="area">Área estimada de uso</label>
-                                                                <input type="text" class="form-control input-style-2" id="area" name="area" placeholder="Full Name" required="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group radial">
-                                                                    <label for="radio-2">Comprobante de compra</label>
-                                                                    <div class="col-md-4 col-sm-4 text-left mb60">
-                                                                        <input id="radio-2" class="st-radio" name="radio-2" type="radio" checked="">
-                                                                        <label for="radio-2" class="st-radio-1-label">Recibo de tienda</label>
-                                                                    </div>
+                                                    </div>
                                             
-                                                                    <div class="col-md-4 col-sm-4 text-left mb60">
-                                                                        <input id="radio-3" class="st-radio" name="radio-2" type="radio">
-                                                                        <label for="radio-3" class="st-radio-1-label">Recibo digital</label>
-                                                                    </div>
-                                            
-                                                                    <div class="col-md-4 col-sm-4 text-left mb60">
-                                                                        <input id="radio-4" class="st-radio" name="radio-2" type="radio">
-                                                                        <label for="radio-4" class="st-radio-1-label">Factura</label>
-                                                                    </div>
-                                                                    <div class="col-md-4 col-sm-4 text-left mb60">
-                                                                        <input id="radio-5" class="st-radio" name="radio-2" type="radio">
-                                                                        <label for="radio-5" class="st-radio-1-label">Contenedor de producto</label>
-                                                                    </div>
-                                                                    <div class="col-md-4 col-sm-4 text-left mb60">
-                                                                        <input id="radio-6" class="st-radio" name="radio-2" type="radio">
-                                                                        <label for="radio-6" class="st-radio-1-label">Ninguno</label>
-                                                                    </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <div class="col-md-6 zero-padding">
-                                                                    <label for="message">Message</label>
-                                                                    <p>Por favor dinos cómo podemos ayudarte con el mayor detalle posible</p>
-                                                                </div>
-                                                                <div class="col-md-6" style="padding: 0 0 0 15px">
-                                                                        <textarea class="form-control input-style-2" id="mensaje" name="mensaje" placeholder="" required="" rows="3"></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                                <div class="form-check">
-                                                                        <label style="display: inline-block;" class="form-check-label" for="defaultCheck1">
-                                                                                ¿Quieres enterar de ofertas especiales y noticias por correo?
-                                                                        </label>
-                                                                        <input id="checkbox-5" class="st-checkbox" name="checkbox-5" type="checkbox" checked="">
-                                                                        <label for="checkbox-5" class="st-checkbox-2-label">Si</label>
-                                                                        
-                                                                        </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                        <div class="g-recaptcha" data-sitekey="6LeR-lsUAAAAAM3QKpUZ8_r-XdNwBjU5MQO8omKJ" data-callback="reCaptchaVerify"></div>
-                                                                    </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                    <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Submit</button>
-                                                            </div>
-                                                        </div>
-                                                
                                                 </form>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end tab-content -->
-                                </div> <!-- end tab-style-8 -->
-                            </div> <!-- end col-md-8 -->
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="profile-8">
+                                    <div class="col-md-12">
+                                        <form class="form-problema" id="form" method="post" name="form" action="send-email-problema.php">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="nombre">Nombre</label>
+                                                        <input type="text" class="form-control input-style-2" id="nombre" name="nombre" placeholder="" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="apellido">Apellido</label>
+                                                        <input type="text" class="form-control input-style-2" id="apellido" name="apellido" placeholder="" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <div class="form-group">
+                                                                <label for="correo">Correo</label>
+                                                                <input type="email" class="form-control input-style-2" id="correo" name="correo" placeholder="" required="">
+                                                            </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="telefono">Telefono</label>
+                                                        <input type="number" class="form-control input-style-2" id="telefono" name="telefono" placeholder="Full Name" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Estado">Estado</label>
+                                                        <select name="estado" id="estado">
+                                                            <option  selected="selected" value="Aguascalientes">Aguascalientes</option>
+                                                            <option value="BajaCalifornia">Baja California</option>
+                                                            <option value="BajaCaliforniaSur">Baja California Sur</option>
+                                                            <option value="Campeche">Campeche</option>
+                                                            <option value="Chiapas">Chiapas</option>
+                                                            <option value="Chihuahua">Chihuahua</option>
+                                                            <option value="CiudaddeMexico">Ciudad de México</option>
+                                                            <option value="Coahuila">Coahuila</option>
+                                                            <option value="Colima">Colima</option>
+                                                            <option value="Durango">Durango</option>
+                                                            <option value="Guanajuato">Guanajuato</option>
+                                                            <option value="Guerrero">Guerrero</option>
+                                                            <option value="Hidalgo">Hidalgo</option>
+                                                            <option value="Jalisco">Jalisco</option>
+                                                            <option value="EstadodeMexico">Estado de México</option>
+                                                            <option value="Michoacan">Michoacán</option>
+                                                            <option value="Morelos">Morelos</option>
+                                                            <option value="Nayarit">Nayarit</option>
+                                                            <option value="NuevoLeon">Nuevo León</option>
+                                                            <option value="Oaxaca">Oaxaca</option>
+                                                            <option value="Puebla">Puebla</option>
+                                                            <option value="Queretaro">Querétaro</option>
+                                                            <option value="QuintanaRoo">Quintana Roo</option>
+                                                            <option value="SanLuisPotosí">San Luis Potosí</option>
+                                                            <option value="Sinaloa">Sinaloa</option>
+                                                            <option value="Sonora">Sonora</option>
+                                                            <option value="Tabasco">Tabasco</option>
+                                                            <option value="Tamaulipas">Tamaulipas</option>
+                                                            <option value="Tlaxcala">Tlaxcala</option>
+                                                            <option value="Veracruz">Veracruz</option>
+                                                            <option value="Yucatan">Yucatán</option>
+                                                            <option value="Zacatecas">Zacatecas</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="codigo">Codigo Postal</label>
+                                                        <input type="number" class="form-control input-style-2" id="codigo" name="codigo" placeholder="Full Name" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Estado">Categoria de producto</label>
+                                                        <select name="producto-categoria" id="producto-categoria-selector">
+                                                            <option value="No Especificado" selected>Seleccione una categoria</option>
+                                                            <option value="Pinturas">Pinturas</option>
+                                                            <option value="Selladores">Selladores y Adhesivos</option>
+                                                            <option value="Pastas">Pastas acrílicas</option>
+                                                            <option value="Impermeabilizantes">Impermeabilizantes</option>
+                                                            <option value="Granitos">Granitos Planchados</option>
+                                                            <option value="Pegazulejos">Pegazulejos</option>
+                                                            <option value="Especiales">Productos Especiales</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="Estado">Producto</label>
+                                                        <select name="producto-producto" id="producto-producto-selector">
+                                                            <option  selected="selected" value="No Especificado">Seleccione un producto</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="area">Área estimada de uso</label>
+                                                        <input type="text" class="form-control input-style-2" id="area" name="area" placeholder="Full Name" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group radial">
+                                                            <label for="radio-2">Comprobante de compra</label>
+                                                            <div class="col-md-4 col-sm-4 text-left mb20">
+                                                                <input id="radio-2" class="st-radio" name="radio-2" type="radio" checked="">
+                                                                <label for="radio-2" class="st-radio-1-label">Recibo de tienda</label>
+                                                            </div>
+                                    
+                                                            <div class="col-md-4 col-sm-4 text-left mb20">
+                                                                <input id="radio-3" class="st-radio" name="radio-2" type="radio">
+                                                                <label for="radio-3" class="st-radio-1-label">Recibo digital</label>
+                                                            </div>
+                                    
+                                                            <div class="col-md-4 col-sm-4 text-left mb20">
+                                                                <input id="radio-4" class="st-radio" name="radio-2" type="radio">
+                                                                <label for="radio-4" class="st-radio-1-label">Factura</label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 text-left mb20">
+                                                                <input id="radio-5" class="st-radio" name="radio-2" type="radio">
+                                                                <label for="radio-5" class="st-radio-1-label">Contenedor de producto</label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 text-left mb20">
+                                                                <input id="radio-6" class="st-radio" name="radio-2" type="radio">
+                                                                <label for="radio-6" class="st-radio-1-label">Ninguno</label>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="col-md-6 zero-padding">
+                                                            <label for="message">Message</label>
+                                                            <p>Por favor dinos cómo podemos ayudarte con el mayor detalle posible</p>
+                                                        </div>
+                                                        <div class="col-md-6" style="padding: 0 0 0 15px">
+                                                                <textarea class="form-control input-style-2" id="mensaje" name="mensaje" placeholder="" required="" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                        <div class="form-check">
+                                                                <label style="display: inline-block;" class="form-check-label" for="defaultCheck1">
+                                                                        ¿Quieres enterar de ofertas especiales y noticias por correo?
+                                                                </label>
+                                                                <input id="checkbox-5" class="st-checkbox" name="checkbox-5" type="checkbox" checked="">
+                                                                <label for="checkbox-5" class="st-checkbox-2-label">Si</label>
+                                                                
+                                                                </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <div class="form-group">
+                                                                <div class="g-recaptcha" data-sitekey="6LeR-lsUAAAAAM3QKpUZ8_r-XdNwBjU5MQO8omKJ" data-callback="reCaptchaVerify"></div>
+                                                            </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                            <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Submit</button>
+                                                    </div>
+                                                </div>
+                                        
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> <!-- end tab-content -->
+                        </div> <!-- end tab-style-8 -->
+                    </div> <!-- end col-md-8 -->
                 </div>
             </div>
         </section>
@@ -532,7 +538,7 @@ nav-hidden - Open nav on icon click
         }
         document.forms['form'].addEventListener('submit',function(e){
             if (doSubmit) {
-
+                swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
             }
             else {
                 e.preventDefault();
@@ -540,11 +546,10 @@ nav-hidden - Open nav on icon click
             }
         });
         $(function($) {
-            // For Contact form
             var options = {
                 success: function() {
                     $("#form").clearForm();
-                    swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
+                    
                 }
             };
             $("#form").ajaxForm(options);

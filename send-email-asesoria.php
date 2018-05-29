@@ -8,7 +8,7 @@
 
 # Include the Autoloader (see "Libraries" for install instructions)
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-require 'dbconnect.php';
+include 'db/connect.php';
 
 
 $mail = new PHPMailer;
@@ -53,15 +53,10 @@ if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Message has been sent';
+    echo $inscrito;
     if ($inscrito == true){
-        $sql = "INSERT INTO usuarios (nombre, apellido, estado, codigo, correo) 
-        VALUES ('$nombre','$apellido','$estado','$codigo','$correo')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-        $conn->close();
+        $db->Consultar("INSERT INTO usuarios (nombre, apellido, estado, codigo, correo) 
+        VALUES ('$nombre','$apellido','$estado','$codigo','$correo')");
+        echo 'inserted';
     }
 }
