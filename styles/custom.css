@@ -77,6 +77,10 @@ a:hover {
   display: inline-block;
 }
 
+#productos .tab-style-3 .tab-content ul li a {
+  color: white;
+}
+
 #productos .tab-style-3 .tab-content ul:nth-child(2) {
   left: 50px;
 }
@@ -195,7 +199,50 @@ a:hover {
   font-size: 24px;
 }
 
-.prueba {
-  background: #2d2d2d;
+#main-descripcion .row.like-table {
+  display: table-row;
+}
+
+#main-descripcion .row.like-table > div {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+#main-descripcion .descripcion-producto {
+  color: black;
+}
+
+#main-descripcion .rendimiento-titulo {
+  text-transform: none;
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#main-descripcion .detalles-producto {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+#main-descripcion .descarga {
+  color: black;
+  margin: 0 10px;
+}
+
+#main-descripcion a {
+  color: black;
+}
+
+#main-descripcion .ficha-descarga {
+  position: relative;
+  top: -5px;
+  font-size: 1.2em;
+}
+
+#main-descripcion .panel-group {
+  border-left: 3px solid black;
 }
 /*# sourceMappingURL=custom.css.map */

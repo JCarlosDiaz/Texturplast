@@ -66,6 +66,9 @@ a:hover{
             ul{
                 position: relative;
                 display: inline-block;
+                li a{
+                    color:white;
+                }
             }
             ul:nth-child(2){
                 left: 50px;
@@ -181,6 +184,43 @@ a:hover{
     }
 }
 
-.prueba{
-    background: #2d2d2d;
+#main-descripcion{
+    .row.like-table{
+        display:table-row
+    }
+    .row.like-table > div {
+        display: table-cell;
+        vertical-align: middle;
+        float:none;
+    }
+    .descripcion-producto{
+        color: black;
+    }
+    .rendimiento-titulo{
+        text-transform: none;
+        color: black;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .detalles-producto{
+        color: black;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    .descarga{
+        color: black;
+        margin: 0 10px;
+    }
+    a{
+        color: black;
+    }
+    .ficha-descarga{
+        position: relative;
+        top: -5px;
+        font-size: 1.2em;
+    }
+    .panel-group{
+        border-left: 3px solid black;
+    }
 }

@@ -5,9 +5,12 @@ class MYSQL
 {
 	const SALT = "";
 	
-	private $servidor = "mysql:host=localhost;dbname=dappcun_texturplast";
-	private $usuario = "dappcun_texturplastadmin";
-	private $password = "textur2018";
+	// private $servidor = "mysql:host=localhost;dbname=dappcun_texturplast";
+	// private $usuario = "dappcun_texturplastadmin";
+	// private $password = "textur2018";
+	private $servidor = "mysql:host=localhost;dbname=texturplast";
+	private $usuario = "root";
+	private $password = "mysql";
 	private $Conexion;
 	private $Consulta;
 	private $tmp;

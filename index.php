@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
+<?php 
+include 'db/connect.php'
+?>
 <head>
 
     <meta charset="utf-8">
@@ -226,19 +228,28 @@ nav-hidden - Open nav on icon click
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane fade in active" id="pinturas">
                                         <ul>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='pinturas'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $id = $row['ID'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href=prodcutos/productos.php?id=$id>$nombre</a></li>";
+                                                }
+                                            ?>
+                                            
                                         </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="selladores">
-                                            <ul>
-                                                    <li>contenido</li>
-                                                    <li>contenido</li>
-                                                    <li>contenido</li>
-                                                    <li>contenido</li>
-                                                </ul>
+                                        <ul>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='selladores'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $id = $row['ID'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href=prodcutos/productos.php?id=$id>$nombre</a></li>";
+                                                }
+                                            ?>
+                                        </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="pastas">
                                             <ul>
