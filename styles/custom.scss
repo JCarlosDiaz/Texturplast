@@ -62,6 +62,7 @@ a:hover{
             margin-top: 20px;
             background: none;
             border: none;
+            min-height: 300px;
             color: white;
             ul{
                 position: relative;
@@ -93,6 +94,9 @@ a:hover{
                 height: 50px;
             }
         }
+        .tab-content>.tab-pane{
+            text-align: center;
+        }
     }
 
 }
@@ -119,6 +123,14 @@ a:hover{
     }
     .images-row{
 
+    }
+}
+@media only screen and (max-width:991px){
+    #nosotros{
+    background-position: right center;    
+        .title-row{
+            padding-bottom: 50px;
+        }
     }
 }
 .custom-cta{
@@ -196,12 +208,20 @@ a:hover{
     .descripcion-producto{
         color: black;
     }
+    .row.like-table > div.descripcion-column-mob{
+        display: none;
+    }
     .rendimiento-titulo{
         text-transform: none;
         color: black;
         font-size: 1.2em;
         margin-bottom: 10px;
         font-weight: 700;
+    }
+    .image-container{
+        img{
+            min-width: 300px;
+        }
     }
     .detalles-producto{
         color: black;
@@ -212,9 +232,11 @@ a:hover{
         color: black;
         margin: 0 10px;
     }
-    a{
+    a.active{
         color: black;
+        font-weight: 700;
     }
+    
     .ficha-descarga{
         position: relative;
         top: -5px;
@@ -222,5 +244,78 @@ a:hover{
     }
     .panel-group{
         border-left: 3px solid black;
+    }
+    .panel-heading{
+        padding: 0 15px;
+    }
+    .panel-body{
+        padding: 8px 5px;
+        ul{
+            margin-bottom: 0px;
+        }
+    }
+    @media only screen and (max-width:991px){
+        .descripcion-column{
+            display: none!important;
+        }
+        .row.like-table > div.descripcion-column-mob{
+            margin-top: 20px;
+            display: block;
+        }
+    }
+    @media only screen and (max-width:690px){
+        .row.like-table{
+            display:block;
+        }
+        .row.like-table > div{
+            display: block;
+            float: left;
+        }
+    }
+}
+#uso-section{
+    background: white!important;
+    .navigation-row{
+        background:#282828;
+        padding: 80px 0px;
+    }
+    .content-row{
+        padding: 45px 0;
+    }
+    .icons-row{
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        border-bottom: 2px solid black;
+    }
+    .feature-title{
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+    .nav-tabs>li>a .icon{
+        font-size: 22px;
+        line-height: 1.5em;
+        position: relative;
+        top: -3px;
+    }
+    .tab-style-5 .nav-tabs>li>a{
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        border: none;
+    }
+    .tab-style-5 .nav-tabs>li.active>a, .tab-style-5 .nav-tabs>li.active>a:focus, .tab-style-5 .nav-tabs>li.active>a:hover{
+        color:$dorado;
+        border: none;
+    }
+}
+#envase-section{
+    background: url(../images/texturplast/envase.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 115px 0;
+    color: white;
+    h3{
+        color: white
     }
 }

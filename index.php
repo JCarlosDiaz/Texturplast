@@ -60,7 +60,7 @@ nav-hidden - Open nav on icon click
         <div class="container-fluid">
             <nav class="menu">
                 <div class="logo">
-                    <a href="index.html"><img src="images/texturplast/logo.png" alt="Texturplast" class="logo-img"></a>
+                    <a href="#"><img src="images/texturplast/logo.png" alt="Texturplast" class="logo-img"></a>
                 </div> <!-- end logo -->
                 <div class="menuham-container">
                     <span class="etiqueta">Menú</span>
@@ -231,9 +231,10 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pinturas'");
                                                 while($row = $db->ObtenerArray()){
-                                                    $id = $row['ID'];
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href=prodcutos/productos.php?id=$id>$nombre</a></li>";
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                             
@@ -242,53 +243,79 @@ nav-hidden - Open nav on icon click
                                     <div role="tabpanel" class="tab-pane fade" id="selladores">
                                         <ul>
                                             <?php
-                                                $db->Consultar("SELECT * FROM productos WHERE categoria='selladores'");
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='selladores-adhesivos'");
                                                 while($row = $db->ObtenerArray()){
-                                                    $id = $row['ID'];
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href=prodcutos/productos.php?id=$id>$nombre</a></li>";
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="pastas">
-                                            <ul>
-                                                    <li>contenido</li>
-                                                    <li>contenido</li>
-                                                    <li>contenido</li>
-                                                    <li>contenido</li>
-                                                </ul>
+                                        <ul>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='pastas-acrilicas'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
+                                        </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="impermeabiizantes">
                                         <ul>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='impermeabilizantes'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
                                         </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="granitos">
                                         <ul>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='granitos-planchados'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
                                         </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="pegazulejos">
                                         <ul>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='pegazulejos'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
                                         </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="especiales">
                                         <ul>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
-                                            <li>contenido</li>
+                                        <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
                                         </ul>
                                     </div>
                                 </div> <!-- end tab-content -->

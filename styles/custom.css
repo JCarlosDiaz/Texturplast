@@ -69,6 +69,7 @@ a:hover {
   margin-top: 20px;
   background: none;
   border: none;
+  min-height: 300px;
   color: white;
 }
 
@@ -104,6 +105,9 @@ a:hover {
   #productos .tab-style-3 .nav-tabs li a {
     height: 50px;
   }
+  #productos .tab-content > .tab-pane {
+    text-align: center;
+  }
 }
 
 #nosotros {
@@ -129,6 +133,15 @@ a:hover {
 #nosotros .description-row .parrafo {
   color: black;
   font-size: 1.4em;
+}
+
+@media only screen and (max-width: 991px) {
+  #nosotros {
+    background-position: right center;
+  }
+  #nosotros .title-row {
+    padding-bottom: 50px;
+  }
 }
 
 .custom-cta {
@@ -213,12 +226,20 @@ a:hover {
   color: black;
 }
 
+#main-descripcion .row.like-table > div.descripcion-column-mob {
+  display: none;
+}
+
 #main-descripcion .rendimiento-titulo {
   text-transform: none;
   color: black;
   font-size: 1.2em;
   margin-bottom: 10px;
   font-weight: 700;
+}
+
+#main-descripcion .image-container img {
+  min-width: 300px;
 }
 
 #main-descripcion .detalles-producto {
@@ -232,8 +253,9 @@ a:hover {
   margin: 0 10px;
 }
 
-#main-descripcion a {
+#main-descripcion a.active {
   color: black;
+  font-weight: 700;
 }
 
 #main-descripcion .ficha-descarga {
@@ -244,5 +266,93 @@ a:hover {
 
 #main-descripcion .panel-group {
   border-left: 3px solid black;
+}
+
+#main-descripcion .panel-heading {
+  padding: 0 15px;
+}
+
+#main-descripcion .panel-body {
+  padding: 8px 5px;
+}
+
+#main-descripcion .panel-body ul {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  #main-descripcion .descripcion-column {
+    display: none !important;
+  }
+  #main-descripcion .row.like-table > div.descripcion-column-mob {
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  #main-descripcion .row.like-table {
+    display: block;
+  }
+  #main-descripcion .row.like-table > div {
+    display: block;
+    float: left;
+  }
+}
+
+#uso-section {
+  background: white !important;
+}
+
+#uso-section .navigation-row {
+  background: #282828;
+  padding: 80px 0px;
+}
+
+#uso-section .content-row {
+  padding: 45px 0;
+}
+
+#uso-section .icons-row {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+
+#uso-section .feature-title {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#uso-section .nav-tabs > li > a .icon {
+  font-size: 22px;
+  line-height: 1.5em;
+  position: relative;
+  top: -3px;
+}
+
+#uso-section .tab-style-5 .nav-tabs > li > a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  border: none;
+}
+
+#uso-section .tab-style-5 .nav-tabs > li.active > a, #uso-section .tab-style-5 .nav-tabs > li.active > a:focus, #uso-section .tab-style-5 .nav-tabs > li.active > a:hover {
+  color: #b8a663;
+  border: none;
+}
+
+#envase-section {
+  background: url(../images/texturplast/envase.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 115px 0;
+  color: white;
+}
+
+#envase-section h3 {
+  color: white;
 }
 /*# sourceMappingURL=custom.css.map */

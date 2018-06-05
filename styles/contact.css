@@ -45,6 +45,7 @@ section.content-section {
 
 #complete-contact .tab-style-8 .nav-tabs > li > a {
   margin: 0 25px;
+  border: 3px solid transparent;
 }
 
 #complete-contact .tab-style-8 .tab-content {
@@ -125,5 +126,17 @@ section.content-section {
 
 #cont .st-btn.primary-btn.hvr-back:active, #cont .st-btn.primary-btn.hvr-back:focus, #cont .st-btn.primary-btn.hvr-back:hover {
   color: black !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .tab-style-8 .nav-tabs > li {
+    width: 50%;
+    float: left;
+    display: block;
+  }
+  #complete-contact .tab-style-8 .nav-tabs > li > a {
+    padding: 10px 5px;
+    margin: 0 10px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
