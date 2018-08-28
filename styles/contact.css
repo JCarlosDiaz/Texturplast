@@ -28,6 +28,7 @@ section.content-section {
 .header .menuham-container {
   float: right;
   padding: 20px 10px;
+  -webkit-transition: all .4s;
   transition: all .4s;
 }
 
@@ -95,7 +96,8 @@ section.content-section {
 
 #cont a.map.underline:after {
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: #b8a663;
   width: 100%;
   height: 2px;

@@ -41,6 +41,10 @@ a:hover{
     
 }
 
+.desc{
+    padding-top: 10px;
+}
+
 #productos{
     background: url(../images/texturplast/productos-bg.jpg);
     background-size: cover;
@@ -134,7 +138,7 @@ a:hover{
     }
 }
 .custom-cta{
-    background: #2d2d2d;
+    background: #fff;
     .text-center .underline::after{
         width: 20%;
         transform: translateX(-40%);
@@ -194,8 +198,15 @@ a:hover{
             font-size: 24px;
         }
     }
+   .lefttxt{
+        float: left!important;
+    }
 }
-
+.footer.dark-footer {
+    background: url(../images/footer_lodyas.png) fixed #000000;
+    background-size: contain;
+    border-top: 1px solid #787878;
+}
 #main-descripcion{
     .row.like-table{
         display:table-row

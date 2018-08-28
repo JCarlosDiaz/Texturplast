@@ -32,6 +32,7 @@ a:hover {
 .header .menuham-container {
   float: right;
   padding: 20px 10px;
+  -webkit-transition: all .4s;
   transition: all .4s;
 }
 
@@ -40,6 +41,10 @@ a:hover {
   top: -6px;
   color: white;
   text-transform: uppercase;
+}
+
+.desc {
+  padding-top: 10px;
 }
 
 #productos {
@@ -145,12 +150,13 @@ a:hover {
 }
 
 .custom-cta {
-  background: #2d2d2d;
+  background: #fff;
 }
 
 .custom-cta .text-center .underline::after {
   width: 20%;
-  transform: translateX(-40%);
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
   background: #b8a663;
 }
 
@@ -175,7 +181,8 @@ a:hover {
 
 #contacto a.map.underline:after {
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: #b8a663;
   width: 100%;
   height: 2px;
@@ -210,6 +217,16 @@ a:hover {
 
 .footer .footer-middle .fa {
   font-size: 24px;
+}
+
+.footer .lefttxt {
+  float: left !important;
+}
+
+.footer.dark-footer {
+  background: url(../images/footer_lodyas.png) fixed #000000;
+  background-size: contain;
+  border-top: 1px solid #787878;
 }
 
 #main-descripcion .row.like-table {

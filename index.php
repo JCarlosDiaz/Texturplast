@@ -194,10 +194,13 @@ nav-hidden - Open nav on icon click
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="images/texturplast/banner.jpg" class="img-responsive" alt="">
+                        <img src="images/texturplast/Lonas sitio-01.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="col-md-6">
-                        <div style="height: 500px;background: black;"></div>
+                        <img src="images/texturplast/Lonas sitio-02.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-md-12 desc">
+                        <img src="images/texturplast/Lonas sitio-03.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
             </div>
@@ -415,6 +418,14 @@ nav-hidden - Open nav on icon click
         <!-- ========== top footer ========== -->
         <div class="container footer-top">
             <div class="row">
+                <!-- ========== right side ========== -->
+                <div class="col-md-6 col-xs-12 lefttxt">
+                    
+                    <img src="images/texturplast/logo.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
+                    <div class=" clearfix">
+                        
+                    </div>
+                </div>
                 <div class="col-md-2 col-sm-3 col-xs-6">
                     <a href="#"><h5 class="footer-title">Inicio</h5></a>
                 </div>
@@ -424,14 +435,7 @@ nav-hidden - Open nav on icon click
                 <div class="col-md-2 col-sm-3 col-xs-6 mb20">
                     <a href="contacto.html"><h5 class="footer-title">Contacto</h5></a>
                 </div>
-                <!-- ========== right side ========== -->
-                <div class="col-md-6 col-xs-12 text-right">
-                    
-                    <img src="images/texturplast/logo.png" alt="Texturplast" class="img-responsive mb20 pull-right">
-                    <div class=" clearfix">
-                        
-                    </div>
-                </div>
+                
 
             </div> <!-- end row -->
         </div> <!-- end footer-top -->
