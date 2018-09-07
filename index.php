@@ -55,6 +55,32 @@ nav-hidden - Open nav on icon click
         <div class="spinner"></div>
     </div>
 
+    <!-- ========== OVERPLAY ========== -->
+    <section>
+        <div class="overplay" id="overplay">
+        <div class="content-section">
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-12 text-center">
+                        <div class="len-esp">
+                            <a href="">PRODUCTOS</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="len-eng">
+                            <a href="">CONTACTO</a>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="overclose">x</div> 
+     </div>
+
+    </section>
+    <!-- ========== END OVERPLAY ========== -->
+
     <!-- ========== HEADER ========== -->
     <div class="header">
         <div class="container-fluid">
@@ -109,7 +135,7 @@ nav-hidden - Open nav on icon click
                                 data-splitout="none"
                                 data-responsive_offset="on"
                                 data-elementdelay="0.05"
-                                style="z-index: 5; white-space: nowrap;color:#fff;">PROTEGE TU HOGAR
+                                style="z-index: 5; white-space: nowrap;color:#fff;">RECUBRIMIENTOS QUE PERDURAN
                             </div>
     
                             <!-- LAYER NR. 2 -->
@@ -379,19 +405,20 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-6">
                         <form class="" id="form" method="post" name="form" action="send-email-mailgun.php">
                             <div class="form-group">
-                                <label for="name">Full Name</label>
+                                <label for="name">Nombre</label>
                                 <input type="text" class="form-control input-style-2" id="name" name="name" placeholder="Full Name" required="">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control input-style-2" id="email" name="email" placeholder="Email address" required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
+                                <label for="subject">Apellido</label>
                                 <input type="text" class="form-control input-style-2" id="subject" name="subject" placeholder="Subject" required="">
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
+                                <label for="email">Correo</label>
+                                <input type="email" class="form-control input-style-2" id="email" name="email" placeholder="Email address" required="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
                                 <textarea class="form-control input-style-2" id="message" name="message" placeholder="Enter your message.." required="" rows="3"></textarea>
                             </div>
                             <div class="form-group">
@@ -419,9 +446,9 @@ nav-hidden - Open nav on icon click
         <div class="container footer-top">
             <div class="row">
                 <!-- ========== right side ========== -->
-                <div class="col-md-6 col-xs-12 lefttxt">
+                <div class="col-md-1 col-xs-12 lefttxt">
                     
-                    <img src="images/texturplast/logo.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
+                    <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
                     <div class=" clearfix">
                         
                     </div>
@@ -441,21 +468,21 @@ nav-hidden - Open nav on icon click
         </div> <!-- end footer-top -->
 
         <!-- ========== footer-middle ========== -->
-        <div class="container footer-middle">
+        <!-- <div class="container footer-middle">
             <div class="row">
                 <div class="col-md-6">
                     <a href="#" class="trans pr10 pl10 "><i class="fa fa-2x fa-facebook"></i></a>
                     <a href="#" class="trans pr10 pl10 "><i class="fa fa-2x fa-instagram"></i></a>
-                </div> <!-- end col-md-6 -->
+                </div> 
                 <div class="col-md-6 text-right">
                     
                     <h6 class="footer-title lowercase"><i class="fa fa-phone"></i> +52 (238) 131 6241 <span class="ml10 mr10">|</span> <i class="fa fa-envelope"></i> mail@example.com</h6>
                 </div>
-            </div> <!-- end row -->
-        </div> <!-- end footer-middle -->
+            </div> 
+        </div>  -->
 
         <!-- ========== Footer - last section ========== -->
-        <div class="footer-last">
+        <!-- <div class="footer-last">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -464,9 +491,9 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-6 text-right">
                         <a href="#" class="mr10">Terms of Use</a> <a href="#">Privacy Policy</a>
                     </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </div> <!-- end footer-last -->
+                </div>
+            </div> 
+        </div>  -->
 
         <!-- ========== Scroll to top button ========== -->
         <div class="scroll-to-top trans"><i class="fa fa-angle-up"></i></div>
@@ -479,6 +506,23 @@ nav-hidden - Open nav on icon click
     <script src="scripts/main.js"></script>
     <script src="scripts/init-slider.js"></script>
     <script src="scripts/custom.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".menu-mobile").removeClass()
+});
+
+var $overplay = $(".overplay");
+var $idioma = $(".hamburger");
+  $idioma.on("click", function(e) {
+    $overplay.addClass('open');
+});
+
+var $overclose = $(".overclose");
+var $overplay = $(".overplay");
+  $overclose.on("click", function(e) {
+    $overplay.removeClass('open');
+}); 
+    </Script>
     
 </body>
 

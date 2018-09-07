@@ -1,5 +1,5 @@
 a:hover {
-  color: #b8a663 !important;
+  color: #6d2520 !important;
 }
 
 .col-center {
@@ -40,8 +40,8 @@ section.content-section {
 }
 
 #complete-contact .tab-style-8 .nav-tabs > li.active > a, #complete-contact .tab-style-8 .nav-tabs > li.active > a:focus, #complete-contact .tab-style-8 .nav-tabs > li.active > a:hover {
-  color: #b8a663;
-  border-bottom: 3px solid #b8a663;
+  color: #6d2520;
+  border-bottom: 3px solid #6d2520;
 }
 
 #complete-contact .tab-style-8 .nav-tabs > li > a {
@@ -60,6 +60,14 @@ section.content-section {
 #complete-contact .st-btn.primary-btn {
   background: black;
   border: 1px solid black;
+  position: relative;
+  height: 35px;
+  width: 150px;
+  line-height: 0;
+}
+
+#complete-contact .st-btn.primary-btn.hvr-back:before {
+  background: #fff;
 }
 
 #complete-contact .st-btn.primary-btn.hvr-back:active, #complete-contact .st-btn.primary-btn.hvr-back:focus, #complete-contact .st-btn.primary-btn.hvr-back:hover {
@@ -72,11 +80,25 @@ section.content-section {
 }
 
 #complete-contact .st-checkbox:checked + .st-checkbox-1-label:before, #complete-contact .st-radio:checked + .st-radio-1-label:before {
-  background: #b8a663;
+  background: #6d2520;
 }
 
 #complete-contact .st-checkbox:checked + .st-checkbox-2-label:before, #complete-contact .st-radio:checked + .st-radio-2-label:before {
-  background: #b8a663;
+  background: #6d2520;
+}
+
+p {
+  color: black;
+}
+
+.input-style-2 {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+select {
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 #cont {
@@ -85,7 +107,7 @@ section.content-section {
 
 #cont h4 a.mail {
   text-transform: lowercase;
-  color: #b8a663;
+  color: #6d2520;
 }
 
 #cont a.map {
@@ -98,13 +120,14 @@ section.content-section {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: #b8a663;
+  background: #6d2520;
   width: 100%;
   height: 2px;
 }
 
 #cont .social-container {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #cont .social-container i.fa {
@@ -130,6 +153,13 @@ section.content-section {
   color: black !important;
 }
 
+#cont .boton-s {
+  position: relative;
+  height: 35px;
+  width: 150px;
+  line-height: 0;
+}
+
 @media only screen and (max-width: 500px) {
   .tab-style-8 .nav-tabs > li {
     width: 50%;
@@ -140,5 +170,10 @@ section.content-section {
     padding: 10px 5px;
     margin: 0 10px;
   }
+}
+
+.form-group label {
+  font-size: 15px;
+  color: #000;
 }
 /*# sourceMappingURL=contact.css.map */

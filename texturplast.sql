@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.15.8
+-- version 4.4.15.9
 -- https://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 05-06-2018 a las 16:39:55
--- Versión del servidor: 5.6.31
--- Versión de PHP: 5.5.38
+-- Tiempo de generación: 06-09-2018 a las 23:12:49
+-- Versión del servidor: 5.6.37
+-- Versión de PHP: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -43,17 +43,19 @@ CREATE TABLE IF NOT EXISTS `productos` (
 --
 
 INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `rendimiento`, `ficha`, `caracteristicas`, `imagen`) VALUES
-(1, 'textur-premium', 'Textur Premium', 'pinturas', 'Para crear un ambiente clásico y con la mejor proteccion, elige Textur Premium', '12 a 14 metros cuadrados por litro. A una mano', 'fichas/ficha1.pdf', '100% acrilica<br>Exteriores/Interiroes<br>', 'productos/pinturas/textur-premium.jpg'),
-(12, 'vinitur', 'Vinitur', 'pinturas', '', '', 'fichas/vinitur.pdf', '', 'productos/placeholder.jpg'),
-(13, 'pintutex-plus', 'Pintutex Plus', 'pinturas', '', '', 'fichas/pintutex-plus.pdf', '', 'productos/placeholder.jpg'),
-(14, 'vivendi', 'Vivendi', 'pinturas', '', '', '', '', ''),
-(15, 'popular', 'Popular', 'pinturas', '', '', '', '', ''),
+(1, 'textur-premium', 'Textur Premium', 'pinturas', 'Para crear un ambiente clásico y con la mejor proteccion, elige Textur Premium', '12 a 14 metros cuadrados por litro. A una mano', 'fichas/pinturas/F-Textur-Premium.pdf', '100% acrilica<br>Exteriores/Interiroes<br>', 'images/pinturas/texturpremium.jpg'),
+(2, 'pintura-deportiva', 'Pintura Deportiva', 'pinturas', '', '', 'fichas/pinturas/.pdf', '', 'images/pinturas/pintura deportiva.jpg'),
+(3, 'pintura-trafico', 'Pintura Tráfico', 'pinturas', '', '', 'ficha/pinturas/F-Pintura-Trafico.pdf', '', 'ficha/pinturas/pintura trafico.jpg'),
+(12, 'vinitur', 'Vinitur', 'pinturas', 'prueba', '', 'fichas/pinturas/F-Vinitur.pdf', 'Hola si funciona', 'images/pinturas/vinitur.jpg'),
+(13, 'pintutex-plus', 'Pintutex Plus', 'pinturas', '', '', 'fichas/pinturas/F-Pintutex-Plus.pdf', '', 'images/pinturas/pintutex plus.jpg'),
+(14, 'vivendi', 'Vivendi', 'pinturas', '', '', 'fichas/pinturas/F-Vivendi.pdf', '', 'images/pinturas/vivendi.jpg'),
+(15, 'popular', 'Popular', 'pinturas', '', '', 'fichas/pintura/F-Popular.pdf', '', 'images/pinturas/popular.jpg'),
 (16, 'vitrificante', 'Vitrificante', 'selladores-adhesivos', '', '', '', '', ''),
-(17, 'sellador-acrilico', 'Sellador Acrílico', 'selladores-adhesivos', '', '', '', '', ''),
+(17, 'sellador-acrilico', 'Sellador Acrílico', 'selladores-adhesivos', '', '', 'fichas/sella/F-Sellador-Acrílico.pdf', '', 'images/sella/sellador acrílico wetlook.jpg'),
 (18, 'vitrificante', 'Vitrificante', 'selladores-adhesivos', '', '', '', '', ''),
 (19, 'vitrificante', 'Vitrificante', 'selladores-adhesivos', '', '', '', '', ''),
-(20, 'sellador-5x1', 'Sellador 5x1', 'selladores-adhesivos', '', '', '', '', ''),
-(21, 'sellador-entintable', 'Sellador Entintable', 'selladores-adhesivos', '', '', '', '', ''),
+(20, 'sellador-5x1', 'Sellador 5x1', 'selladores-adhesivos', '', '', 'fichas/sella/F-Sellador-5x1.pdf', '', 'images/sella/sellador 5x1.jpg'),
+(21, 'sellador-entintable', 'Sellador Entintable', 'selladores-adhesivos', '', '', 'fichas/sella/F-Sellador-Entintable.pdf', '', 'images/sella/sellador entintable.jpg'),
 (22, 'texturbond-plus-concreto', 'Texturbond Plus / para concret', 'selladores-adhesivos', '', '', '', '', ''),
 (23, 'texturbond-eco-concreto', 'Texturbond Eco / para concreto', 'selladores-adhesivos', '', '', '', '', ''),
 (24, 'pegatirol', 'Pegatirol', 'selladores-adhesivos', '', '', '', '', ''),
@@ -65,15 +67,15 @@ INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `
 (30, 'pasta-grano-lanzado', 'Pasta para Grano Lanzado', 'pastas-acrilicas', '', '', '', '', ''),
 (31, 'cascara-naranja', 'Cáscara de Naranja', 'pastas-acrilicas', '', '', '', '', ''),
 (32, 'pasta-tablaroca', 'Pasta para tablaroca', 'pastas-acrilicas', '', '', '', '', ''),
-(33, 'terracota-10a', 'Terracota 10 años', 'impermeabilizantes', '', '', '', '', ''),
-(34, 'terracota-7a', 'Terracota 7 años', 'impermeabilizantes', '', '', '', '', ''),
-(35, 'terracota-5a', 'Terracota 5 años', 'impermeabilizantes', '', '', '', '', ''),
-(36, 'terracota-3a', 'Terracota 3 años', 'impermeabilizantes', '', '', '', '', ''),
-(37, 'blanco-10a', 'Blanco 10 años', 'impermeabilizantes', '', '', '', '', ''),
-(38, 'blanco-7a', 'Blanco 7 años', 'impermeabilizantes', '', '', '', '', ''),
-(39, 'prefabricado-35-app', 'Prefabricado 3.5MM APP', 'impermeabilizantes', '', '', '', '', ''),
-(40, 'prefabricado-35-sbs', 'Prefabricado 3.5MM SBS', 'impermeabilizantes', '', '', '', '', ''),
-(41, 'asilantes-termicos', 'Aislantes térmicos', 'impermeabilizantes', '', '', '', '', ''),
+(33, 'terracota-10a', 'Terracota 10 años', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(34, 'terracota-7a', 'Terracota 7 años', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(35, 'terracota-5a', 'Terracota 5 años', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(36, 'terracota-3a', 'Terracota 3 años', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(37, 'blanco-10a', 'Blanco 10 años', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(38, 'blanco-7a', 'Blanco 7 años', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(39, 'prefabricado-35-app', 'Prefabricado 3.5MM APP', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(40, 'prefabricado-35-sbs', 'Prefabricado 3.5MM SBS', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
+(41, 'asilantes-termicos', 'Aislantes térmicos', 'impermeabilizantes', '', '', 'fichas/imper/F-Impermeabilizantes.pdf', '', ''),
 (42, 'granito-planchado-1-4', 'Granito Planchado 1/4 de cero', 'granitos-planchados', '', '', '', '', ''),
 (43, 'granito-planchado-1-2', 'Granito Planchado 1/2 de cero', 'granitos-planchados', '', '', '', '', ''),
 (44, 'granito-planchado-cero-grueso', 'Granito Planchado cero grueso', 'granitos-planchados', '', '', '', '', ''),

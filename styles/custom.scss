@@ -6,18 +6,37 @@ a:hover{
     margin: 0 auto;
     float: none;
 }
+
+.overplay.open{
+	opacity: 1;
+    visibility: visible;
+    height: 100%;
+    background: #00000082;
+	}
+	.overplay{
+	position: fixed;
+	top: 0;
+    left: 0;
+    z-index: 102;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s linear;
+	}
+
 /**
 =============HAMBURGERS==============
 */ 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
-    background-color: white;
+    background-color: #000;
 }
 /**
 =============HEADER==============
 */
 .secondNav{
     .header{
-        background: #2d2d2d;
+        background: #fff;
         .menuham-container{
             padding: 2px;
         }
@@ -35,12 +54,16 @@ a:hover{
     span.etiqueta{
         position: relative;
         top: -6px;
-        color: white;
+        color: #000;
         text-transform: uppercase;
     }
     
+    
+    
 }
-
+.dark-header .header {
+        background: #ffffff;
+    }
 .desc{
     padding-top: 10px;
 }
@@ -146,9 +169,14 @@ a:hover{
     }
 }
 .custom-cta:hover{
-    background:#494949;
+    background:#e0e0e0;
 }
-
+.cta .cta-title {
+    color: #000;
+    margin-bottom: 12px;
+    font-size: 2.5em;
+    margin: 1px;
+}
 #contacto{
     color: black;
     h4 a.mail{
@@ -190,6 +218,10 @@ a:hover{
     .st-btn.primary-btn.hvr-back:active, .st-btn.primary-btn.hvr-back:focus, .st-btn.primary-btn.hvr-back:hover{
         color: black!important;
     }
+    input, textarea{
+        border: none;
+        border-bottom: 2px solid #000;
+    }
 }
 
 .footer{
@@ -201,6 +233,10 @@ a:hover{
    .lefttxt{
         float: left!important;
     }
+    .footer-top{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+    }
 }
 .footer.dark-footer {
     background: url(../images/footer_lodyas.png) fixed #000000;
@@ -209,7 +245,8 @@ a:hover{
 }
 #main-descripcion{
     .row.like-table{
-        display:table-row
+        max-width: 1200px;
+        margin: 0 auto;
     }
     .row.like-table > div {
         display: table-cell;
@@ -230,6 +267,8 @@ a:hover{
         font-weight: 700;
     }
     .image-container{
+        max-width: 400px;
+        margin: 0 auto;
         img{
             min-width: 300px;
         }
@@ -243,6 +282,10 @@ a:hover{
         color: black;
         margin: 0 10px;
     }
+    .descarga2{
+        max-height: 25px;
+        vertical-align: baseline;
+    }
     a.active{
         color: black;
         font-weight: 700;
@@ -253,8 +296,10 @@ a:hover{
         top: -5px;
         font-size: 1.2em;
     }
+    
     .panel-group{
-        border-left: 3px solid black;
+        border-top: 3px solid #eae9e8;
+        text-align: center;
     }
     .panel-heading{
         padding: 0 15px;
@@ -301,7 +346,13 @@ a:hover{
     .feature-title{
         font-weight: 500;
         margin-bottom: 20px;
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+    .desc-black{
+        color: #000;
+    }
+    .d-pad{
+        padding-left: 0px;
     }
     .nav-tabs>li>a .icon{
         font-size: 22px;
@@ -329,4 +380,45 @@ a:hover{
     h3{
         color: white
     }
+}
+// .lista-produc{
+//     text-align: center;
+// }
+#otros-asesorias{
+    .otros-pad{
+        text-align: left;
+        padding-bottom: 15px;
+        text-transform: none;
+    }
+    .dd{
+        .dd2{
+          padding-left: 0px;  
+        }
+    }
+    .parrafo-otros{
+        text-align: left;
+        color:#700;
+    }
+    .separador2{
+        border-left: 2px solid #000;
+        height: 150px;
+    }
+    p.vino-a{
+        text-align: left;
+        color: #000;
+        font-size: 1.2em;
+        line-height: 2;
+    }
+    a.vino-a{
+        color: #700;
+    }
+}
+.acc-faq-1 .panel{
+    box-shadow: none;
+    border: 0;
+    display: inline-grid;
+    text-align: left;
+}
+section.content-section {
+    padding: 20px 0;
 }

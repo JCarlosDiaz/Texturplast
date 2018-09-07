@@ -7,18 +7,38 @@ a:hover {
   float: none;
 }
 
+.overplay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  background: #00000082;
+}
+
+.overplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 102;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
 /**
 =============HAMBURGERS==============
 */
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  background-color: white;
+  background-color: #000;
 }
 
 /**
 =============HEADER==============
 */
 .secondNav .header {
-  background: #2d2d2d;
+  background: #fff;
 }
 
 .secondNav .header .menuham-container {
@@ -39,8 +59,12 @@ a:hover {
 .header span.etiqueta {
   position: relative;
   top: -6px;
-  color: white;
+  color: #000;
   text-transform: uppercase;
+}
+
+.dark-header .header {
+  background: #ffffff;
 }
 
 .desc {
@@ -161,7 +185,14 @@ a:hover {
 }
 
 .custom-cta:hover {
-  background: #494949;
+  background: #e0e0e0;
+}
+
+.cta .cta-title {
+  color: #000;
+  margin-bottom: 12px;
+  font-size: 2.5em;
+  margin: 1px;
 }
 
 #contacto {
@@ -215,12 +246,22 @@ a:hover {
   color: black !important;
 }
 
+#contacto input, #contacto textarea {
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
 .footer .footer-middle .fa {
   font-size: 24px;
 }
 
 .footer .lefttxt {
   float: left !important;
+}
+
+.footer .footer-top {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
 }
 
 .footer.dark-footer {
@@ -230,7 +271,8 @@ a:hover {
 }
 
 #main-descripcion .row.like-table {
-  display: table-row;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #main-descripcion .row.like-table > div {
@@ -255,6 +297,11 @@ a:hover {
   font-weight: 700;
 }
 
+#main-descripcion .image-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 #main-descripcion .image-container img {
   min-width: 300px;
 }
@@ -270,6 +317,11 @@ a:hover {
   margin: 0 10px;
 }
 
+#main-descripcion .descarga2 {
+  max-height: 25px;
+  vertical-align: baseline;
+}
+
 #main-descripcion a.active {
   color: black;
   font-weight: 700;
@@ -282,7 +334,8 @@ a:hover {
 }
 
 #main-descripcion .panel-group {
-  border-left: 3px solid black;
+  border-top: 3px solid #eae9e8;
+  text-align: center;
 }
 
 #main-descripcion .panel-heading {
@@ -339,7 +392,15 @@ a:hover {
 #uso-section .feature-title {
   font-weight: 500;
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
+}
+
+#uso-section .desc-black {
+  color: #000;
+}
+
+#uso-section .d-pad {
+  padding-left: 0px;
 }
 
 #uso-section .nav-tabs > li > a .icon {
@@ -371,5 +432,49 @@ a:hover {
 
 #envase-section h3 {
   color: white;
+}
+
+#otros-asesorias .otros-pad {
+  text-align: left;
+  padding-bottom: 15px;
+  text-transform: none;
+}
+
+#otros-asesorias .dd .dd2 {
+  padding-left: 0px;
+}
+
+#otros-asesorias .parrafo-otros {
+  text-align: left;
+  color: #700;
+}
+
+#otros-asesorias .separador2 {
+  border-left: 2px solid #000;
+  height: 150px;
+}
+
+#otros-asesorias p.vino-a {
+  text-align: left;
+  color: #000;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+#otros-asesorias a.vino-a {
+  color: #700;
+}
+
+.acc-faq-1 .panel {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  text-align: left;
+}
+
+section.content-section {
+  padding: 20px 0;
 }
 /*# sourceMappingURL=custom.css.map */
