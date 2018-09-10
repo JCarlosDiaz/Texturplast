@@ -59,6 +59,35 @@ nav-hidden - Open nav on icon click
         <div class="spinner"></div>
     </div>
 
+    <!-- ========== OVERPLAY ========== -->
+    <section id="overplay">
+        <div class="overplay" id="overplay">
+            <div class="content-section">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-12 text-center">
+                            <div class="productos">
+                                <a href="productos.php?cat=pinturas&prod=textur-premium">PRODUCTOS</a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="contacto">
+                                <a href="contacto.php">CONTACTO</a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 social-container">
+                            <i class="fa fa-facebook fa-2x"></i>
+                            <i class="fa fa-instagram fa-2x"></i>
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div> 
+        </div>
+    </section>
+    <!-- ========== END OVERPLAY ========== -->
+
     <!-- ========== HEADER ========== -->
     <div class="header">
         <div class="container-fluid">
@@ -370,20 +399,6 @@ nav-hidden - Open nav on icon click
                                                         <label for="Estado">Producto</label>
                                                         <select name="producto-producto" id="producto-producto-selector">
                                                             <option  selected="selected" value="No Especificado">Seleccione un producto</option>
-                                                            <option value="No Especificado">
-                                                            <ul>
-                                                                <?php
-                                                                    $db->Consultar("SELECT * FROM productos");
-                                                                    while($row = $db->ObtenerArray()){
-                                                                        $cat = $row['categoria'];
-                                                                        $cod = $row['codigo'];
-                                                                        $nombre = $row['nombre'];
-                                                                        print "$nombre";
-                                                                    }
-                                                                ?>
-                                                                
-                                                            </ul>
-                                                            </option>
                                                         </select>
                                                     </div>
                                                 </div>

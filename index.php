@@ -56,28 +56,31 @@ nav-hidden - Open nav on icon click
     </div>
 
     <!-- ========== OVERPLAY ========== -->
-    <section>
+    <section id="overplay">
         <div class="overplay" id="overplay">
-        <div class="content-section">
-            <div class="container">
-                <div class="row">
-                   <div class="col-md-12 text-center">
-                        <div class="len-esp">
-                            <a href="">PRODUCTOS</a>
-                        </div> 
-                    </div>
+            <div class="content-section">
+                <div class="container">
+                    <div class="row">
                     <div class="col-md-12 text-center">
-                        <div class="len-eng">
-                            <a href="">CONTACTO</a>
-                        </div> 
+                            <div class="productos">
+                                <a href="productos.php?cat=pinturas&prod=textur-premium">PRODUCTOS</a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="contacto">
+                                <a href="contacto.php">CONTACTO</a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 social-container">
+                            <i class="fa fa-facebook fa-2x"></i>
+                            <i class="fa fa-instagram fa-2x"></i>
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
+            <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div> 
         </div>
-        <div class="overclose">x</div> 
-     </div>
-
     </section>
     <!-- ========== END OVERPLAY ========== -->
 
@@ -506,23 +509,7 @@ nav-hidden - Open nav on icon click
     <script src="scripts/main.js"></script>
     <script src="scripts/init-slider.js"></script>
     <script src="scripts/custom.js"></script>
-    <script>
-    $(document).ready(function(){
-    $(".menu-mobile").removeClass()
-});
 
-var $overplay = $(".overplay");
-var $idioma = $(".hamburger");
-  $idioma.on("click", function(e) {
-    $overplay.addClass('open');
-});
-
-var $overclose = $(".overclose");
-var $overplay = $(".overplay");
-  $overclose.on("click", function(e) {
-    $overplay.removeClass('open');
-}); 
-    </Script>
     
 </body>
 

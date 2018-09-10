@@ -57,6 +57,35 @@ nav-hidden - Open nav on icon click
         <div class="spinner"></div>
     </div>
 
+    <!-- ========== OVERPLAY ========== -->
+    <section id="overplay">
+        <div class="overplay" id="overplay">
+            <div class="content-section">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-12 text-center">
+                            <div class="productos">
+                                <a href="productos.php?cat=pinturas&prod=textur-premium">PRODUCTOS</a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="contacto">
+                                <a href="contacto.php">CONTACTO</a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 social-container">
+                            <i class="fa fa-facebook fa-2x"></i>
+                            <i class="fa fa-instagram fa-2x"></i>
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div> 
+        </div>
+    </section>
+    <!-- ========== END OVERPLAY ========== -->
+
     <!-- ========== HEADER ========== -->
     <div class="header">
         <div class="container-fluid">
@@ -64,7 +93,7 @@ nav-hidden - Open nav on icon click
                 <div class="logo">
                     <a href="index.php"><img src="images/texturplast/logo-black.png" alt="Texturplast" class="logo-img"></a>
                 </div> <!-- end logo -->
-                <div class="menuham-container">
+                <div class="menuham-container hamb-white">
                     <span class="etiqueta">Menú</span>
                     <button class="hamburger hamburger--collapse" type="button">
                         <span class="hamburger-box">
@@ -254,7 +283,7 @@ nav-hidden - Open nav on icon click
                             </div> <!-- end panel -->
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingSix-11">
-                                    <h5 class="panel-title"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseSix-11" aria-expanded="false" aria-controls="collapseSix-11"> Pegazulejos</a></h5>
+                                    <h5 class="panel-title" style="text-align: center;"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseSix-11" aria-expanded="false" aria-controls="collapseSix-11"> Pegazulejos</a></h5>
                                 </div>
                                 <div id="collapseSix-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix-11">
                                     <div class="panel-body">
@@ -483,7 +512,7 @@ nav-hidden - Open nav on icon click
         </div> <!-- end footer-middle -->
 
         <!-- ========== Footer - last section ========== -->
-        <div class="footer-last">
+        <!-- <div class="footer-last">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -492,9 +521,9 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-6 text-right">
                         <a href="#" class="mr10">Terms of Use</a> <a href="#">Privacy Policy</a>
                     </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </div> <!-- end footer-last -->
+                </div> end row
+            </div> end container
+        </div> end footer-last -->
 
         <!-- ========== Scroll to top button ========== -->
         <div class="scroll-to-top trans"><i class="fa fa-angle-up"></i></div>

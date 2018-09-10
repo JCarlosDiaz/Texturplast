@@ -7,7 +7,8 @@ a:hover{
     float: none;
 }
 
-.overplay.open{
+#overplay{
+    .overplay.open{
 	opacity: 1;
     visibility: visible;
     height: 100%;
@@ -22,21 +23,54 @@ a:hover{
     height: 0%;
     opacity: 0;
     visibility: hidden;
-    transition: all .5s linear;
-	}
+    transition: all .4s linear;
+    }
+    a{
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .content-section{
+        padding-top: 20%;
+    }
+    .productos{
+
+    }
+    .contacto{
+        padding-top: 15px;
+    }
+    .social-container{
+        margin-top: 30px;
+        text-align: center;
+        i.fa{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: black;
+            color: white;
+            margin: auto 15px;
+        }
+    }
+    .overclose{
+        text-align: center;
+        padding-top: 8%;
+    }
+}
+    
 
 /**
 =============HAMBURGERS==============
 */ 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
-    background-color: #000;
+    background-color: #fff;
 }
 /**
 =============HEADER==============
 */
 .secondNav{
     .header{
-        background: #fff;
+        background: #000;
         .menuham-container{
             padding: 2px;
         }
@@ -54,12 +88,20 @@ a:hover{
     span.etiqueta{
         position: relative;
         top: -6px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+.hamb-white{
+    span.etiqueta{
+        position: relative;
+        top: -6px;
         color: #000;
         text-transform: uppercase;
     }
-    
-    
-    
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+        background-color: #000;
+    }
 }
 .dark-header .header {
         background: #ffffff;
@@ -418,6 +460,7 @@ a:hover{
     border: 0;
     display: inline-grid;
     text-align: left;
+    width: 14%;
 }
 section.content-section {
     padding: 20px 0;

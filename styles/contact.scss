@@ -9,6 +9,58 @@ a:hover{
 section.content-section{
     background-color: white!important;
 }
+
+#overplay{
+    .overplay.open{
+	opacity: 1;
+    visibility: visible;
+    height: 100%;
+    background: #00000082;
+	}
+	.overplay{
+	position: fixed;
+	top: 0;
+    left: 0;
+    z-index: 102;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear;
+    }
+    a{
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .content-section{
+        padding-top: 20%;
+    }
+    .productos{
+
+    }
+    .contacto{
+        padding-top: 15px;
+    }
+    .social-container{
+        margin-top: 30px;
+        text-align: center;
+        i.fa{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: black;
+            color: white;
+            margin: auto 15px;
+        }
+    }
+    .overclose{
+        text-align: center;
+        padding-top: 8%;
+    }
+}
+
 /**
 =============HAMBURGERS==============
 */ 
@@ -160,4 +212,9 @@ select{
 .form-group label {
     font-size: 15px;
     color: #000;
+}
+.footer.dark-footer {
+    background: url(../images/footer_lodyas.png) fixed #000000;
+    background-size: contain;
+    border-top: 1px solid #000000;
 }
