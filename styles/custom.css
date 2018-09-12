@@ -116,11 +116,15 @@ a:hover {
   padding-top: 10px;
 }
 
+.l2 {
+  padding-bottom: 10px;
+}
+
 #productos {
   background: url(../images/texturplast/productos-bg.jpg);
   background-size: cover;
   background-position: center center;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 #productos h3 {
@@ -444,10 +448,6 @@ a:hover {
   color: #000;
 }
 
-#uso-section .d-pad {
-  padding-left: 0px;
-}
-
 #uso-section .nav-tabs > li > a .icon {
   font-size: 22px;
   line-height: 1.5em;
@@ -467,6 +467,18 @@ a:hover {
   border: none;
 }
 
+@media only screen and (min-width: 991px) {
+  #uso-section .d-pad {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #uso-section .icons-row {
+    padding-bottom: 119px;
+  }
+}
+
 #envase-section {
   background: url(../images/texturplast/envase.jpg);
   background-position: center center;
@@ -477,6 +489,10 @@ a:hover {
 
 #envase-section h3 {
   color: white;
+}
+
+#otros-asesorias {
+  background: #fff;
 }
 
 #otros-asesorias .otros-pad {
@@ -517,7 +533,12 @@ a:hover {
   display: -ms-inline-grid;
   display: inline-grid;
   text-align: left;
-  width: 14%;
+}
+
+@media only screen and (min-width: 991px) {
+  .acc-faq-1 .panel {
+    width: 14%;
+  }
 }
 
 section.content-section {

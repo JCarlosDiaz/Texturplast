@@ -130,7 +130,7 @@ nav-hidden - Open nav on icon click
                             ?>
                         </p>
                         <p class="rendimiento-titulo">Rendimiento</p>
-                        <p class="rendimiento-producto">12 a 14 m2 una sola mano</p>
+                        <p class="rendimiento-producto" style=" color:black;"><?php print "$rendi" ?></p>
                     </div>
                     <div class="col-md-5">
                         <div class="image-container">
@@ -143,7 +143,7 @@ nav-hidden - Open nav on icon click
                                 print "$titulo";
                             ?>
                         </h3>
-                        <p class="detalles-producto">100% acrilica<br>as<br>asad<br>bvas<br></p>
+                        <p class="detalles-producto"><?php print "$carac" ?></p>
                         <img class="descarga2" src="images/texturplast/descarga.png" alt=""> <a class="ficha-descarga" href="<?php print "$ficha" ?>">Descarga la ficha técnica</a>
                     </div>
                     <!-- <div class="col-md-12 col-xs-12 descripcion-column-mob">
@@ -355,16 +355,16 @@ nav-hidden - Open nav on icon click
                         <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade in active" id="home-5">
                                     <div class="col-md-12 icons-row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-3">
                                             <img src="images/texturplast/uso-1.jpg" class="img-responsive col-center" alt="">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-3">
                                             <img src="images/texturplast/uso-2.jpg" class="img-responsive col-center" alt="">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-3">
                                             <img src="images/texturplast/uso-3.jpg" class="img-responsive col-center" alt="">
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 col-sm-3">
                                             <img src="images/texturplast/uso-4.jpg" class="img-responsive col-center" alt="">
                                         </div>
                                     </div>
@@ -436,7 +436,7 @@ nav-hidden - Open nav on icon click
         <section class="content-section" id="otros-asesorias">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-1 col-md-5 text-center dd">
+                    <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 text-center dd">
                         <h3 class="otros-pad">Otros productos</h3>
                         <div class="col-md-6 dd2">
                             <p class="parrafo-otros">Sellador Entintable</p>
@@ -451,10 +451,10 @@ nav-hidden - Open nav on icon click
                             <p class="parrafo-otros">Pintura Vevendi</p>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-sm-1">
                         <div class="separador2"></div>
                     </div>
-                    <div class="col-md-5 text-center">
+                    <div class="col-md-5 col-sm-5 text-center">
                         <h3 class="otros-pad">¿Necesitas asesorías?</h3>
                         <p class="vino-a">Comunícate con nosotros al <a class="vino-a" href="tel:+52 1 (238) 131 6241">(238) 131 6241</a><br> o <a class="vino-a" href="mailto:">escríbenos</a></p>
                     </div>

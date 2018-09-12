@@ -309,7 +309,7 @@ nav-hidden - Open nav on icon click
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="profile-8">
                                     <div class="col-md-12">
-                                        <form class="form-problema" id="form" method="post" name="form" action="send-email-problema.php">
+                                        <form class="form-problema" id="form" method="post" name="form" action="v3.php">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="nombre">Nombre</label>
@@ -482,17 +482,17 @@ nav-hidden - Open nav on icon click
         <section class="content-section" id="cont">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <h4><a class="mail" href="mailto:ventas@texturplast.com">ventas@texturplast.com</a></h4>
                         <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="social-container">
                             <a href="http://"><i class="fa fa-facebook fa-2x"></i></a>
                             <a href="http://"><i class="fa fa-instagram fa-2x"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <p class="direccion">3 sur 513 Colonia Centro,<br>Tehuacán, Puebla C.P.75700</p>
                         <a class="map underline" href="">Mostrar Ubicación</a>
                     </div>

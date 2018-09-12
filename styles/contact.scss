@@ -197,6 +197,11 @@ select{
         width: 150px;
         line-height: 0;
     }
+    @media only screen and (max-width:500px){
+        div{
+            text-align: center;
+        }
+    }
 }
 @media only screen and (max-width:500px){
     .tab-style-8 .nav-tabs>li{
@@ -217,4 +222,7 @@ select{
     background: url(../images/footer_lodyas.png) fixed #000000;
     background-size: contain;
     border-top: 1px solid #000000;
+}
+section.content-section {
+    padding: 35px 0;
 }

@@ -223,7 +223,7 @@ nav-hidden - Open nav on icon click
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="images/texturplast/Lonas sitio-01.jpg" class="img-responsive" alt="">
+                        <img src="images/texturplast/Lonas sitio-01.jpg" class="img-responsive l2" alt="">
                     </div>
                     <div class="col-md-6">
                         <img src="images/texturplast/Lonas sitio-02.jpg" class="img-responsive" alt="">
@@ -406,7 +406,7 @@ nav-hidden - Open nav on icon click
                         <a class="map underline" href="">Mostrar Ubicación</a>
                     </div>
                     <div class="col-md-6">
-                        <form class="" id="form" method="post" name="form" action="send-email-mailgun.php">
+                        <form class="" id="form" method="post" name="form" action="v2.php">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
                                 <input type="text" class="form-control input-style-2" id="name" name="name" placeholder="Full Name" required="">
