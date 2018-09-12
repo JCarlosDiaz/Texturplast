@@ -57,7 +57,7 @@ if (!$res['success']) {
     echo $fechaDefinida;
     
     $mail->setFrom('website@dreamevents.mx', 'Contacto');
-    $mail->addAddress('ventas@dreamevents.mx', 'Administrador');     // Add a recipient
+    $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
     
     
     $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
