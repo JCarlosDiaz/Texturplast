@@ -5,7 +5,7 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 function post_captcha($user_response) {
     $fields_string = '';
     $fields = array(
-        'secret' => '6LeaOmQUAAAAALnNHYcTyyxCH9RMnk7hMvgXExWw',
+        'secret' => '6Lcx_G8UAAAAALAhI4We9TNpiotvHtlo5HuFtCgS',
         'response' => $user_response
     );
     foreach($fields as $key=>$value)
@@ -36,27 +36,26 @@ if (!$res['success']) {
     // send email
     $mail = new PHPMailer;
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
-    $tipoEvento = $_POST['tipoEvento'];
-    $evento = $_POST['detalleEvento'];
-    $fechaEvento = $_POST['fechaDeseada'];
-    $today = isset($_POST['fechaDeseada']) ? $_POST['fechaDeseada'] : (new DateTime)->format('Y-m-d');
-    $date = date('Y-m-d', strtotime($today));
-    
-    $fechaEstablecida = $_POST['noFecha'];
-    echo $fechaEstablecida;
-    
-    if (isset($_POST['noFecha'])) {
-        $fechaDefinida = true;
+    $name = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $email = $_POST['correo'];
+    $phone = $_POST['telefono'];
+    $estado = $_POST['estado'];
+    $codigo = $_POST['codigo'];
+    $productoC = $_POST['producto-categoria'];
+    $productoP = $_POST['producto-producto'];
+    $area = $_POST['area'];
+    $message = $_POST['mensaje'];
+    $radio = $_POST['radio-2'];
+        
+    if (isset($_POST['checkbox-5'])) {
+        $inscrito = true;
     } else {
-        $fechaDefinida = false;
+        $inscrito = false;
     }
-    echo $fechaDefinida;
     
-    $mail->setFrom('website@dreamevents.mx', 'Contacto');
+    
+    $mail->setFrom('website@texturplast.com', 'Contacto');
     $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
     
     
@@ -65,30 +64,21 @@ if (!$res['success']) {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->CharSet = 'UTF-8';
     
-    $mail->Subject = 'Nueva solicitud de contacto dreamevents.mx';
-    if ($fechaDefinida == 1){
-        $mail->Body    = 'Nuevo mensaje de contacto de dreamevents.mx por parte de: <strong>'
+    $mail->Subject = 'Nueva solicitud de contacto texturplast.com';
+    $mail->Body    = 'Nuevo mensaje de contacto de texturplast.com <strong>'
         .$name.'  ('.$email.')</strong><br>El mensaje es el siguiente<br><br><strong>
         Nombre: '.$name.'<br>
+        Apellido: '.$apellido.'<br>
         Correo: '.$email.'<br>
         Teléfono: '.$phone.'<br>
-        Tipo de Evento: '.$tipoEvento.'<br>
-        Evento especifico: '.$evento.'<br>
-        Fecha: NO ESPECIFICA FECHA <br>
-        Comentarios: '.$message.'</strong><br><br> 
+        Estado: '.$estado.'<br>
+        CP: '.$codigo.'<br>
+        Categoria del Producto: '.$productoC.'<br>
+        Producto: '.$productoP.'<br>
+        Área estimada de uso : '.$area.'<br>
+        Comprobante de compra : '.$radio.'<br>
+        Descripción del Problema: '.$message.'</strong><br> 
         Contactar a la brevedad posible';
-    }else{
-        $mail->Body    = 'Nuevo mensaje de contacto de dreamevents.mx <strong>'
-        .$name.'  ('.$email.')</strong><br>El mensaje es el siguiente<br><br><strong>
-        Nombre: '.$name.'<br>
-        Correo: '.$email.'<br>
-        Teléfono: '.$phone.'<br>
-        Tipo de Evento: '.$tipoEvento.'<br>
-        Evento especifico: '.$evento.'<br>
-        Fecha: '.$date.'<br>
-        Comentarios: '.$message.'</strong><br><br> 
-        Contactar a la brevedad posible';
-    }
     $mail->AltBody = $mensaje;
     
     
@@ -97,6 +87,12 @@ if (!$res['success']) {
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
         echo 'Message has been sent';
+        echo $inscrito;
+        if ($inscrito == true){
+        $db->Consultar("INSERT INTO usuarios (nombre, apellido, estado, codigo, correo) 
+        VALUES ('$nombre','$apellido','$estado','$codigo','$correo')");
+        echo 'inserted';
+        }
     }
     echo '<br><p>CAPTCHA was completed successfully!</p><br>';
 }

@@ -1,9 +1,5 @@
-var pinturas = {"Textur Premium": "value1",
-                "Vinitur": "value2",
-                "Pintutex Plus": "value3",
-                "Vivendi": "value4",
-                "Popular": "value5"
-};
+var pinturas = ["Textur Premium", "Vinitur", "Pintutex Plus", "Vivendi","Popular"];
+
 var selladores = {"Vitrificante": "value16",
                 "Sellador Acrílico": "value7",
                 "Sellador 5x1": "value8",

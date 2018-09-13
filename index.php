@@ -26,7 +26,8 @@ include 'db/connect.php'
     <!-- ========== MINIFIED VENDOR CSS ========== -->
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="vendor/hamburgers/hamburgers.min.css">
-
+    <link rel="stylesheet" href="vendor/sweetalert2/dist/sweetalert2.min.css">
+    
     <!-- ========== MAIN CSS ========== -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/custom.css">
@@ -60,7 +61,7 @@ nav-hidden - Open nav on icon click
         <div class="overplay" id="overplay">
             <div class="content-section">
                 <div class="container">
-                    <div class="row">
+                    <div class="row after">
                     <div class="col-md-12 text-center">
                             <div class="productos">
                                 <a href="productos.php?cat=pinturas&prod=textur-premium">PRODUCTOS</a>
@@ -425,7 +426,7 @@ nav-hidden - Open nav on icon click
                                 <textarea class="form-control input-style-2" id="message" name="message" placeholder="Enter your message.." required="" rows="3"></textarea>
                             </div>
                             <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6LdrSCQTAAAAAFvP5P_RHmBQreGEHEiAIR3rc8FW" data-callback="reCaptchaVerify"></div>
+                                <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
                             </div>
 
                             <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Submit</button>
@@ -503,13 +504,41 @@ nav-hidden - Open nav on icon click
     </footer>
 
 
-
+<script>
+        var doSubmit;
+        function reCaptchaVerify(response) {
+            if (response === document.querySelector('.g-recaptcha-response').value) {
+                doSubmit = true;
+            } else {
+                doSubmit = false;
+            }
+        }
+        document.forms['form'].addEventListener('submit', function (e) {
+            if (doSubmit) {
+                // swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
+            }
+            else {
+                e.preventDefault();
+                swal("Error!", "Error, confirma el Captcha", "error");
+            }
+        });
+        $(document).ready(function () {
+            // bind 'myForm' and provide a simple callback function 
+            var options = {
+                success: function () {
+                    $("#form").clearForm();
+                    swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
+                }
+            };
+            $("#form").ajaxForm(options);
+        }); 
+    </script>
 	<script src="scripts/vendor.js"></script>
 	<script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/init-slider.js"></script>
     <script src="scripts/custom.js"></script>
-
+    
     
 </body>
 

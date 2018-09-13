@@ -1,62 +1,81 @@
 <?php
-/*--------------------------------------------------------------
-# send-email-phpmailer.php
-#
-# File for sending emails with PHPMailer
-# We recommend using service like Mailgun for sending transactional emails.
---------------------------------------------------------------*/
-
-# Include the Autoloader (see "Libraries" for install instructions)
+// Checks if form has been submitted
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-include 'db/connect.php';
 
+function post_captcha($user_response) {
+    $fields_string = '';
+    $fields = array(
+        'secret' => '6Lcx_G8UAAAAALAhI4We9TNpiotvHtlo5HuFtCgS',
+        'response' => $user_response
+    );
+    foreach($fields as $key=>$value)
+    $fields_string .= $key . '=' . $value . '&';
+    $fields_string = rtrim($fields_string, '&');
 
-$mail = new PHPMailer;
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($ch, CURLOPT_POST, count($fields));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, True);
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$correo = $_POST['correo'];
-$telefono = $_POST['telefono'];
-$mensaje = $_POST['pregunta'];
-$estado = $_POST['estado'];
-$codigo = $_POST['codigo'];
+    $result = curl_exec($ch);
+    curl_close($ch);
 
-if (isset($_POST['newsletter'])) {
-    $inscrito = true;
-} else {
-    $inscrito = false;
+    return json_decode($result, true);
 }
 
-$mail->setFrom('website@texturplast.com', 'Contacto');
-$mail->addAddress('none@existant.com', 'Administrador');     // Add a recipient
+// Call the function post_captcha
+$res = post_captcha($_POST['g-recaptcha-response']);
 
-
-$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = 'Nueva solicitud de contacto gofishingcancun.com';
-$mail->Body    = 'Nuevo mensaje de contacto de <strong>'
-.$nombre.'  ('.$correo.')</strong><br>El mensaje es el siguiente<br><br><strong>
-Nombre: '.$nombre.'<br>
-Apellido : '.$apellido.'<br>
-Correo: '.$correo.'<br>
-Teléfono: '.$telefono.'<br>
-Estado: '.$estado.'<br>
-CP: '.$codigo.'<br>
-Mensaje: '.$mensaje.'</strong><br><br> 
-Contactar a la brevedad posible';
-$mail->AltBody = $mensaje;
-
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+if (!$res['success']) {
+    // What happens when the CAPTCHA wasn't checked
+    echo '<p>Please go back and make sure you check the security CAPTCHA box.</p><br>';
 } else {
-    echo 'Message has been sent';
-    echo $inscrito;
-    if ($inscrito == true){
-        $db->Consultar("INSERT INTO usuarios (nombre, apellido, estado, codigo, correo) 
-        VALUES ('$nombre','$apellido','$estado','$codigo','$correo')");
-        echo 'inserted';
+    // If CAPTCHA is successfully completed...
+
+    // send email
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $correo = $_POST['correo'];
+    $telefono = $_POST['telefono'];
+    $mensaje = $_POST['pregunta'];
+    $estado = $_POST['estado'];
+    $codigo = $_POST['codigo'];
+    
+    if (isset($_POST['newsletter'])) {
+        $inscrito = true;
+    } else {
+        $inscrito = false;
     }
+    
+    $mail->setFrom('website@texturplast.com', 'Contacto');
+    $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
+    
+    
+    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+    $mail->isHTML(true);                                  // Set email format to HTML
+    
+    $mail->Subject = 'Nueva solicitud de contacto texturplast.com';
+    $mail->Body    = 'Nuevo mensaje de contacto de <strong>'
+    .$nombre.'  ('.$correo.')</strong><br>El mensaje es el siguiente<br><br><strong>
+    Nombre: '.$nombre.'<br>
+    Apellido : '.$apellido.'<br>
+    Correo: '.$correo.'<br>
+    Teléfono: '.$telefono.'<br>
+    Estado: '.$estado.'<br>
+    CP: '.$codigo.'<br>
+    Mensaje: '.$mensaje.'</strong><br><br> 
+    Contactar a la brevedad posible';
+    $mail->AltBody = $mensaje;
+    
+    
+    if(!$mail->send()) {
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        echo 'Message has been sent';
+    }
+    echo '<br><p>CAPTCHA was completed successfully!</p><br>';
 }
+?>

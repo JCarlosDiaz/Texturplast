@@ -301,10 +301,10 @@ nav-hidden - Open nav on icon click
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                                 <div style="transform:scale(0.77);
-                                                                -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6LeR-lsUAAAAAM3QKpUZ8_r-XdNwBjU5MQO8omKJ" data-callback="reCaptchaVerify"></div>
+                                                                -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
                                                         </div>
                                                     </div>
-                                                </form>
+                                            </form>
                                     </div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="profile-8">
@@ -464,7 +464,7 @@ nav-hidden - Open nav on icon click
                                                 <div class="col-md-6">
                                                         <div class="form-group">
                                                                 <div style="transform:scale(0.77);
-                                                                -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6LeR-lsUAAAAAM3QKpUZ8_r-XdNwBjU5MQO8omKJ" data-callback="reCaptchaVerify"></div>
+                                                                -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
                                                             </div>
                                                 </div>
                                                 
@@ -535,21 +535,21 @@ nav-hidden - Open nav on icon click
         </div> <!-- end footer-top -->
 
         <!-- ========== footer-middle ========== -->
-        <div class="container footer-middle">
+        <!-- <div class="container footer-middle">
             <div class="row">
                 <div class="col-md-6">
                     <a href="#" class="trans pr10 pl10 "><i class="fa fa-2x fa-facebook"></i></a>
                     <a href="#" class="trans pr10 pl10 "><i class="fa fa-2x fa-instagram"></i></a>
-                </div> <!-- end col-md-6 -->
+                </div> end col-md-6
                 <div class="col-md-6 text-right">
                     
                     <h6 class="footer-title lowercase"><i class="fa fa-phone"></i> +52 (238) 131 6241 <span class="ml10 mr10">|</span> <i class="fa fa-envelope"></i> mail@example.com</h6>
                 </div>
-            </div> <!-- end row -->
-        </div> <!-- end footer-middle -->
+            </div> end row
+        </div> end footer-middle -->
 
         <!-- ========== Footer - last section ========== -->
-        <div class="footer-last">
+        <!-- <div class="footer-last">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -558,9 +558,9 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-6 text-right">
                         <a href="#" class="mr10">Terms of Use</a> <a href="#">Privacy Policy</a>
                     </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </div> <!-- end footer-last -->
+                </div> end row
+            </div> end container
+        </div> end footer-last -->
 
         <!-- ========== Scroll to top button ========== -->
         <div class="scroll-to-top trans"><i class="fa fa-angle-up"></i></div>
@@ -577,30 +577,33 @@ nav-hidden - Open nav on icon click
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="scripts/custom.js"></script>
     <script>
-        var doSubmit = false;
+        var doSubmit;
         function reCaptchaVerify(response) {
             if (response === document.querySelector('.g-recaptcha-response').value) {
                 doSubmit = true;
+            } else {
+                doSubmit = false;
             }
         }
-        document.forms['form'].addEventListener('submit',function(e){
+        document.forms['form'].addEventListener('submit', function (e) {
             if (doSubmit) {
-                swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
+                // swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
             }
             else {
                 e.preventDefault();
-                swal("Error!", "Plese confirm that you are not a robot", "error");
+                swal("Error!", "Error, confirma el Captcha", "error");
             }
         });
-        $(function($) {
+        $(document).ready(function () {
+            // bind 'myForm' and provide a simple callback function 
             var options = {
-                success: function() {
+                success: function () {
                     $("#form").clearForm();
-                    
+                    swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
                 }
             };
             $("#form").ajaxForm(options);
-        });
+        }); 
     </script>
     
 </body>

@@ -14,6 +14,11 @@ a:hover {
   background: #00000082;
 }
 
+#overplay .overplay.open .after {
+  opacity: 1;
+  visibility: visible;
+}
+
 #overplay .overplay {
   position: fixed;
   top: 0;
@@ -25,6 +30,13 @@ a:hover {
   visibility: hidden;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
+}
+
+#overplay .overplay .after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .6s linear;
+  transition: all .6s linear;
 }
 
 #overplay a {

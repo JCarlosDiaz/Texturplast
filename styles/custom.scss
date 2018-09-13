@@ -13,6 +13,10 @@ a:hover{
     visibility: visible;
     height: 100%;
     background: #00000082;
+        .after{
+            opacity: 1;
+            visibility: visible;
+        }
 	}
 	.overplay{
 	position: fixed;
@@ -24,6 +28,11 @@ a:hover{
     opacity: 0;
     visibility: hidden;
     transition: all .4s linear;
+        .after{
+            opacity: 0;
+            visibility: hidden;
+            transition: all .6s linear; 
+        }
     }
     a{
         color: #fff;
