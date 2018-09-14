@@ -32,7 +32,7 @@ if (!$res['success']) {
     echo '<p>Please go back and make sure you check the security CAPTCHA box.</p><br>';
 } else {
     // If CAPTCHA is successfully completed...
-
+    $mail = new PHPMailer;
     // send email
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
@@ -41,12 +41,12 @@ if (!$res['success']) {
     $mensaje = $_POST['pregunta'];
     $estado = $_POST['estado'];
     $codigo = $_POST['codigo'];
-    
+        
     if (isset($_POST['newsletter'])) {
         $inscrito = true;
     } else {
         $inscrito = false;
-    }
+    } 
     
     $mail->setFrom('website@texturplast.com', 'Contacto');
     $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
@@ -55,9 +55,10 @@ if (!$res['success']) {
     $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
     $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
     $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->CharSet = 'UTF-8';
     
-    $mail->Subject = 'Nueva solicitud de contacto texturplast.com';
-    $mail->Body    = 'Nuevo mensaje de contacto de <strong>'
+    $mail->Subject = 'Nueva solicitud de contacto texturplast.com/';
+    $mail->Body    = 'Nuevo mensaje de contacto de texturplast.com/ <strong>'
     .$nombre.'  ('.$correo.')</strong><br>El mensaje es el siguiente<br><br><strong>
     Nombre: '.$nombre.'<br>
     Apellido : '.$apellido.'<br>

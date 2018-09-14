@@ -1,6 +1,13 @@
-var pinturas = ["Textur Premium", "Vinitur", "Pintutex Plus", "Vivendi","Popular"];
+var pinturas = {
+                "Textur Premium": "Textur Premium",
+                 "Vinitur": "Vinitur", 
+                 "Pintutex Plus": "Pintutex Plus", 
+                 "Vivendi": "Vivendi",
+                 "Popular": "Popular"
+};
 
-var selladores = {"Vitrificante": "value16",
+var selladores = {
+                "Vitrificante": "value16",
                 "Sellador Acrílico": "value7",
                 "Sellador 5x1": "value8",
                 "Sellador Entintable": "value9",
@@ -47,7 +54,7 @@ var especiales = {"Resanador Durock": "value43",
                 "Texturblock Plus Intenso": "value45",
                 "Cemento Autonivelante": "value46",
                 "Sombreador Blind para Invernaderos": "value47",
-                "Solvente para Sombreador Blind": "value48"
+                "Solvente para Sombreador Blind": "Solvente para Sombreador Blind"
 };
 
 $(document).ready(function () {

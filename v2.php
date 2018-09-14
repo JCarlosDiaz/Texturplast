@@ -38,7 +38,7 @@ if (!$res['success']) {
 
     $name = $_POST['name'];
     $apellido = $_POST['subject'];
-    $emai = $_POST['email'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
         
         

@@ -309,7 +309,7 @@ nav-hidden - Open nav on icon click
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="profile-8">
                                     <div class="col-md-12">
-                                        <form class="form-problema" id="form" method="post" name="form" action="v3.php">
+                                        <form class="form-problema" id="form2" method="post" name="form" action="v3.php">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="nombre">Nombre</label>
@@ -360,8 +360,8 @@ nav-hidden - Open nav on icon click
                                                             <option value="Oaxaca">Oaxaca</option>
                                                             <option value="Puebla">Puebla</option>
                                                             <option value="Queretaro">Querétaro</option>
-                                                            <option value="QuintanaRoo">Quintana Roo</option>
-                                                            <option value="SanLuisPotosí">San Luis Potosí</option>
+                                                            <option value="Quintana Roo">Quintana Roo</option>
+                                                            <option value="San Luis Potosí">San Luis Potosí</option>
                                                             <option value="Sinaloa">Sinaloa</option>
                                                             <option value="Sonora">Sonora</option>
                                                             <option value="Tabasco">Tabasco</option>
@@ -412,25 +412,25 @@ nav-hidden - Open nav on icon click
                                                     <div class="form-group radial">
                                                             <label for="radio-2">Comprobante de compra</label>
                                                             <div class="col-md-4 col-sm-4 text-left mb20">
-                                                                <input id="radio-2" class="st-radio" name="radio-2" type="radio" checked="">
+                                                                <input id="radio-2" class="st-radio" name="radio-2" type="radio" value="Recibo de tienda" checked="">
                                                                 <label for="radio-2" class="st-radio-1-label">Recibo de tienda</label>
                                                             </div>
                                     
                                                             <div class="col-md-4 col-sm-4 text-left mb20">
-                                                                <input id="radio-3" class="st-radio" name="radio-2" type="radio">
+                                                                <input id="radio-3" class="st-radio" name="radio-2" type="radio" value="Recibo digital">
                                                                 <label for="radio-3" class="st-radio-1-label">Recibo digital</label>
                                                             </div>
                                     
                                                             <div class="col-md-4 col-sm-4 text-left mb20">
-                                                                <input id="radio-4" class="st-radio" name="radio-2" type="radio">
+                                                                <input id="radio-4" class="st-radio" name="radio-2" type="radio" value="Factura">
                                                                 <label for="radio-4" class="st-radio-1-label">Factura</label>
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 text-left mb20">
-                                                                <input id="radio-5" class="st-radio" name="radio-2" type="radio">
+                                                                <input id="radio-5" class="st-radio" name="radio-2" type="radio" value="Contenedor de producto">
                                                                 <label for="radio-5" class="st-radio-1-label">Contenedor de producto</label>
                                                             </div>
                                                             <div class="col-md-4 col-sm-4 text-left mb20">
-                                                                <input id="radio-6" class="st-radio" name="radio-2" type="radio">
+                                                                <input id="radio-6" class="st-radio" name="radio-2" type="radio" value="Ninguno">
                                                                 <label for="radio-6" class="st-radio-1-label">Ninguno</label>
                                                             </div>
                                                     </div>
@@ -465,7 +465,7 @@ nav-hidden - Open nav on icon click
                                                         <div class="form-group">
                                                                 <div style="transform:scale(0.77);
                                                                 -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
-                                                            </div>
+                                                        </div>
                                                 </div>
                                                 
                                         
@@ -594,6 +594,7 @@ nav-hidden - Open nav on icon click
                 swal("Error!", "Error, confirma el Captcha", "error");
             }
         });
+        
         $(document).ready(function () {
             // bind 'myForm' and provide a simple callback function 
             var options = {
@@ -603,6 +604,7 @@ nav-hidden - Open nav on icon click
                 }
             };
             $("#form").ajaxForm(options);
+            $("#form2").ajaxForm(options);
         }); 
     </script>
     
