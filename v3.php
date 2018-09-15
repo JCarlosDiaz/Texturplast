@@ -56,7 +56,7 @@ if (!$res['success']) {
     
     
     $mail->setFrom('website@texturplast.com', 'Contacto');
-    $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
+    $mail->addAddress('ventas@texturplast.com', 'Administrador');     // Add a recipient
     
     
     $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
