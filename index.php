@@ -410,20 +410,20 @@ nav-hidden - Open nav on icon click
                         <form class="" id="form" method="post" name="form" action="v2.php">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
-                                <input type="text" class="form-control input-style-2" id="name" name="name" placeholder="Full Name" required="">
+                                <input type="text" class="form-control input-style-2" id="name" name="name" placeholder="" required="">
                             </div>
                             <div class="form-group">
                                 <label for="subject">Apellido</label>
-                                <input type="text" class="form-control input-style-2" id="subject" name="subject" placeholder="Subject" required="">
+                                <input type="text" class="form-control input-style-2" id="subject" name="subject" placeholder="" required="">
                             </div>
                             <div class="form-group">
                                 <label for="email">Correo</label>
-                                <input type="email" class="form-control input-style-2" id="email" name="email" placeholder="Email address" required="">
+                                <input type="email" class="form-control input-style-2" id="email" name="email" placeholder="" required="">
                             </div>
                             
                             <div class="form-group">
                                 <label for="message">Mensaje</label>
-                                <textarea class="form-control input-style-2" id="message" name="message" placeholder="Enter your message.." required="" rows="3"></textarea>
+                                <textarea class="form-control input-style-2" id="message" name="message" placeholder="" required="" rows="3"></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
@@ -450,25 +450,25 @@ nav-hidden - Open nav on icon click
         <div class="container footer-top">
             <div class="row">
                 <!-- ========== right side ========== -->
-                <div class="col-md-1 col-xs-12 lefttxt">
-                    
-                    <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
-                    <div class=" clearfix">
-                        
+                <div class="col-md-6">
+                    <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
+                        <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
+                        <div class=" clearfix"></div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <a href="#"><h5 class="footer-title">Inicio</h5></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <a href="http://dappertechnologies.com/texturplast/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20">
+                        <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <a href="#"><h5 class="footer-title">Inicio</h5></a>
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <a href="http://"><h5 class="footer-title">Productos</h5></a>
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6 mb20">
-                    <a href="contacto.html"><h5 class="footer-title">Contacto</h5></a>
-                </div>
-                
-
-            </div> <!-- end row -->
+                <div class="col-md-6">
+                    <p style="float: right; color:white;">&copy; Texturplast | Todos los derechos reservados</p>
+                </div><!-- end row -->
+            </div> <!-- end footer-top -->
         </div> <!-- end footer-top -->
 
         <!-- ========== footer-middle ========== -->
@@ -504,43 +504,43 @@ nav-hidden - Open nav on icon click
     </footer>
 
 
-<script>
-        var doSubmit;
-        function reCaptchaVerify(response) {
-            if (response === document.querySelector('.g-recaptcha-response').value) {
-                doSubmit = true;
-            } else {
-                doSubmit = false;
-            }
-        }
-        document.forms['form'].addEventListener('submit', function (e) {
-            if (doSubmit) {
-                // swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
-            }
-            else {
-                e.preventDefault();
-                swal("Error!", "Error, confirma el Captcha", "error");
-            }
-        });
-        $(document).ready(function () {
-            // bind 'myForm' and provide a simple callback function 
-            var options = {
-                success: function () {
-                    $("#form").clearForm();
-                    swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
-                }
-            };
-            $("#form").ajaxForm(options);
-        }); 
-    </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-	<script src="scripts/vendor.js"></script>
-	<script src="scripts/plugins.js"></script>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/init-slider.js"></script>
+    <script src="vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="vendor/jquery-form/jquery.form.js" ></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="scripts/custom.js"></script>
-    
-    
+    <script>
+            var doSubmit;
+            function reCaptchaVerify(response) {
+                if (response === document.querySelector('.g-recaptcha-response').value) {
+                    doSubmit = true;
+                } else {
+                    doSubmit = false;
+                }
+            }
+            document.forms['form'].addEventListener('submit', function (e) {
+                if (doSubmit) {
+                    // swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
+                }
+                else {
+                    e.preventDefault();
+                    swal("Error!", "Error, confirma el Captcha", "error");
+                }
+            });
+            $(document).ready(function () {
+                // bind 'myForm' and provide a simple callback function 
+                var options = {
+                    success: function () {
+                        $("#form").clearForm();
+                        swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
+                    }
+                };
+                $("#form").ajaxForm(options);
+            }); 
+    </script>
 </body>
 
 </html>

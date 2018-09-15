@@ -7,53 +7,53 @@ var pinturas = {
 };
 
 var selladores = {
-                "Vitrificante": "value16",
-                "Sellador Acrílico": "value7",
-                "Sellador 5x1": "value8",
-                "Sellador Entintable": "value9",
-                "Texturbond Plus / para concreto": "value10",
-                "Texturbond Eco / para concreto": "value11",
-                "Pegatirol": "value12",
-                "Pegayeso": "value13"
+                "Vitrificante": "Vitrificante",
+                "Sellador Acrílico": "Sellador Acrílico",
+                "Sellador 5x1": "Sellador 5x1",
+                "Sellador Entintable": "Sellador Entintable",
+                "Texturbond Plus / para concreto": "Texturbond Plus / para concreto",
+                "Texturbond Eco / para concreto": "Texturbond Eco / para concret",
+                "Pegatirol": "Pegatirol",
+                "Pegayeso": "Pegayeso"
 };
-var pastas = {"Pasta Textur D": "value14",
-                "Pasta Textur F": "value15",
-                "Pasta Textur R": "value16",
-                "Estuvo Veneciano": "value17",
-                "Pasta para Grano Lanzado": "value18",
-                "Cáscara de Naranja": "value19",
-                "Pasta para Tablaroca": "value20"
+var pastas = {"Pasta Textur D": "Pasta Textur D",
+                "Pasta Textur F": "Pasta Textur F",
+                "Pasta Textur R": "Pasta Textur R",
+                "Estuvo Veneciano": "Estuvo Veneciano",
+                "Pasta para Grano Lanzado": "Pasta para Grano Lanzado",
+                "Cáscara de Naranja": "Cáscara de Naranja",
+                "Pasta para Tablaroca": "Pasta para Tablaroca"
 };
-var impermeabilizantes = {"Terracota 10 años": "value21",
-                "Terracota 7 años": "value22",
-                "Terracota 5 años": "value23",
-                "Terracota 3 años": "value24",
-                "Blanco 10 años": "value25",
-                "Blanco 7 años": "value26",
-                "Prefabricado 3.5 MM APP": "value27",
-                "Prefabricado 3.5 MM SBS": "value28",
-                "Aislantes Térmicos": "value29"
+var impermeabilizantes = {"Terracota 10 años": "Terracota 10 años",
+                "Terracota 7 años": "Terracota 7 años",
+                "Terracota 5 años": "Terracota 5 años",
+                "Terracota 3 años": "Terracota 3 años",
+                "Blanco 10 años": "Blanco 10 años",
+                "Blanco 7 años": "Blanco 7 año",
+                "Prefabricado 3.5 MM APP": "Prefabricado 3.5 MM APP",
+                "Prefabricado 3.5 MM SBS": "Prefabricado 3.5 MM SBS",
+                "Aislantes Térmicos": "Aislantes Térmicos"
 };
-var granitos = {"Granito Planchado ¼ de cero": "value30",
-                "Granito Planchado ½ de cero": "value31",
-                "Granito Planchado cero grueso": "value32",
-                "Granito Planchado pigmentado": "value33"
+var granitos = {"Granito Planchado ¼ de cero": "Granito Planchado ¼ de cero",
+                "Granito Planchado ½ de cero": "Granito Planchado ½ de cero",
+                "Granito Planchado cero grueso": "Granito Planchado cero grueso",
+                "Granito Planchado pigmentado": "Granito Planchado pigmentado"
 };
-var pegazulejos = {"Normal Blanco": "value34",
-                "Pegapiso Gris Normal": "value35",
-                "Pegapiso Gris Reforzado": "value36",
-                "Adhesivo Marmol y Cantera Gris": "value37",
-                "Adhesivo Gres Porcelánico Int. Gris": "value38",
-                "Adhesivo Porcelanato Int. Blanco": "value39",
-                "Adhesivo PSP y Fijaveneciano Gris": "value40",
-                "Adhesivo PSP y Fijaveneciano Blanco": "value41",
-                "Adhesivo Porcelanato Exteriores": "value42"
+var pegazulejos = {"Normal Blanco": "Normal Blanco",
+                "Pegapiso Gris Normal": "Pegapiso Gris Normal",
+                "Pegapiso Gris Reforzado": "Pegapiso Gris Reforzad",
+                "Adhesivo Marmol y Cantera Gris": "Adhesivo Marmol y Cantera Gris",
+                "Adhesivo Gres Porcelánico Int. Gris": "dhesivo Gres Porcelánico Int. Gris",
+                "Adhesivo Porcelanato Int. Blanco": "Adhesivo Porcelanato Int. Blanco",
+                "Adhesivo PSP y Fijaveneciano Gris": "Adhesivo PSP y Fijaveneciano Gris0",
+                "Adhesivo PSP y Fijaveneciano Blanco": "Adhesivo PSP y Fijaveneciano Blanco",
+                "Adhesivo Porcelanato Exteriores": "Adhesivo Porcelanato Exteriores"
 };
-var especiales = {"Resanador Durock": "value43",
-                "Texturblock Plus Claro": "value44",
-                "Texturblock Plus Intenso": "value45",
-                "Cemento Autonivelante": "value46",
-                "Sombreador Blind para Invernaderos": "value47",
+var especiales = {"Resanador Durock": "Resanador Durock",
+                "Texturblock Plus Claro": "Texturblock Plus Claro",
+                "Texturblock Plus Intenso": "Texturblock Plus Intenso",
+                "Cemento Autonivelante": "Cemento Autonivelante",
+                "Sombreador Blind para Invernaderos": "Sombreador Blind para Invernaderos",
                 "Solvente para Sombreador Blind": "Solvente para Sombreador Blind"
 };
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
     var $overplay = $(".overplay");
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function(e) {
-        $overplay.addClass('open');
+        $overplay.toggleClass('open');
     });
 
     var $overclose = $(".overclose");

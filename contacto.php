@@ -309,7 +309,7 @@ nav-hidden - Open nav on icon click
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="profile-8">
                                     <div class="col-md-12">
-                                        <form class="form-problema" id="form2" method="post" name="form" action="v3.php">
+                                        <form class="form-problema" id="form2" method="post" name="form2" action="v3.php">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="nombre">Nombre</label>
@@ -331,7 +331,7 @@ nav-hidden - Open nav on icon click
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="telefono">Telefono</label>
-                                                        <input type="number" class="form-control input-style-2" id="telefono" name="telefono" placeholder="Full Name" required="">
+                                                        <input type="number" class="form-control input-style-2" id="telefono" name="telefono" placeholder="" required="">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -339,12 +339,12 @@ nav-hidden - Open nav on icon click
                                                         <label for="Estado">Estado</label>
                                                         <select name="estado" id="estado">
                                                             <option  selected="selected" value="Aguascalientes">Aguascalientes</option>
-                                                            <option value="BajaCalifornia">Baja California</option>
-                                                            <option value="BajaCaliforniaSur">Baja California Sur</option>
+                                                            <option value="Baja California">Baja California</option>
+                                                            <option value="Baja California Sur">Baja California Sur</option>
                                                             <option value="Campeche">Campeche</option>
                                                             <option value="Chiapas">Chiapas</option>
                                                             <option value="Chihuahua">Chihuahua</option>
-                                                            <option value="CiudaddeMexico">Ciudad de México</option>
+                                                            <option value="Ciudad de Mexico">Ciudad de México</option>
                                                             <option value="Coahuila">Coahuila</option>
                                                             <option value="Colima">Colima</option>
                                                             <option value="Durango">Durango</option>
@@ -352,11 +352,11 @@ nav-hidden - Open nav on icon click
                                                             <option value="Guerrero">Guerrero</option>
                                                             <option value="Hidalgo">Hidalgo</option>
                                                             <option value="Jalisco">Jalisco</option>
-                                                            <option value="EstadodeMexico">Estado de México</option>
+                                                            <option value="Estado de Mexico">Estado de México</option>
                                                             <option value="Michoacan">Michoacán</option>
                                                             <option value="Morelos">Morelos</option>
                                                             <option value="Nayarit">Nayarit</option>
-                                                            <option value="NuevoLeon">Nuevo León</option>
+                                                            <option value="Nuevo Leon">Nuevo León</option>
                                                             <option value="Oaxaca">Oaxaca</option>
                                                             <option value="Puebla">Puebla</option>
                                                             <option value="Queretaro">Querétaro</option>
@@ -376,7 +376,7 @@ nav-hidden - Open nav on icon click
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="codigo">Codigo Postal</label>
-                                                        <input type="number" class="form-control input-style-2" id="codigo" name="codigo" placeholder="Full Name" required="">
+                                                        <input type="number" class="form-control input-style-2" id="codigo" name="codigo" placeholder="" required="">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -405,7 +405,7 @@ nav-hidden - Open nav on icon click
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="area">Área estimada de uso</label>
-                                                        <input type="text" class="form-control input-style-2" id="area" name="area" placeholder="Full Name" required="">
+                                                        <input type="text" class="form-control input-style-2" id="area" name="area" placeholder="" required="">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -513,25 +513,26 @@ nav-hidden - Open nav on icon click
         <!-- ========== top footer ========== -->
         <div class="container footer-top">
             <div class="row">
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <a href="index.php"><h5 class="footer-title">Inicio</h5></a>
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <a href="http://"><h5 class="footer-title">Productos</h5></a>
-                </div>
-                <div class="col-md-2 col-sm-3 col-xs-6 mb20">
-                    <a href="#"><h5 class="footer-title">Contacto</h5></a>
-                </div>
                 <!-- ========== right side ========== -->
-                <div class="col-md-6 col-xs-12 text-right">
-                    
-                    <img src="images/texturplast/logo.png" alt="Texturplast" class="img-responsive mb20 pull-right">
-                    <div class=" clearfix">
-                        
+                <div class="col-md-6">
+                    <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
+                        <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
+                        <div class=" clearfix"></div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <a href="#"><h5 class="footer-title">Inicio</h5></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <a href="http://dappertechnologies.com/texturplast/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20">
+                        <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>
-
-            </div> <!-- end row -->
+                <div class="col-md-6">
+                    <p style="float: right; color:white;">&copy; Texturplast | Todos los derechos reservados</p>
+                </div><!-- end row -->
+            </div> <!-- end footer-top -->
         </div> <!-- end footer-top -->
 
         <!-- ========== footer-middle ========== -->
@@ -540,13 +541,13 @@ nav-hidden - Open nav on icon click
                 <div class="col-md-6">
                     <a href="#" class="trans pr10 pl10 "><i class="fa fa-2x fa-facebook"></i></a>
                     <a href="#" class="trans pr10 pl10 "><i class="fa fa-2x fa-instagram"></i></a>
-                </div> end col-md-6
+                </div> 
                 <div class="col-md-6 text-right">
                     
                     <h6 class="footer-title lowercase"><i class="fa fa-phone"></i> +52 (238) 131 6241 <span class="ml10 mr10">|</span> <i class="fa fa-envelope"></i> mail@example.com</h6>
                 </div>
-            </div> end row
-        </div> end footer-middle -->
+            </div> 
+        </div>  -->
 
         <!-- ========== Footer - last section ========== -->
         <!-- <div class="footer-last">
@@ -558,9 +559,9 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-6 text-right">
                         <a href="#" class="mr10">Terms of Use</a> <a href="#">Privacy Policy</a>
                     </div>
-                </div> end row
-            </div> end container
-        </div> end footer-last -->
+                </div>
+            </div> 
+        </div>  -->
 
         <!-- ========== Scroll to top button ========== -->
         <div class="scroll-to-top trans"><i class="fa fa-angle-up"></i></div>
@@ -594,7 +595,6 @@ nav-hidden - Open nav on icon click
                 swal("Error!", "Error, confirma el Captcha", "error");
             }
         });
-        
         $(document).ready(function () {
             // bind 'myForm' and provide a simple callback function 
             var options = {
@@ -603,10 +603,11 @@ nav-hidden - Open nav on icon click
                     swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
                 }
             };
-            $("#form").ajaxForm(options);
-            $("#form2").ajaxForm(options);
+            $("#form").ajaxForm(options);$("#form2").ajaxForm(options);
+            
         }); 
     </script>
+    
     
 </body>
 
