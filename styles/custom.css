@@ -1,9 +1,9 @@
 body {
-  font-family: fire-sans;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
-body h5 {
-  font-family: fire-sans;
+* {
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 a:hover {
@@ -36,22 +36,21 @@ a:hover {
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 #overplay .overplay .after {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .6s linear;
-  transition: all .6s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 #overplay a {
   color: #fff;
   font-weight: bold;
   font-size: 2em;
-  font-family: fire-sans;
 }
 
 #overplay .content-section {
@@ -91,6 +90,10 @@ a:hover {
 */
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   background-color: #fff;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  border-radius: 0;
 }
 
 /**
@@ -157,13 +160,11 @@ a:hover {
   font-size: 3em;
   letter-spacing: 2px;
   margin-bottom: 25px;
-  font-family: fire-sans;
 }
 
 #productos .subtitle {
   color: #aaaaaa;
   margin-bottom: 40px;
-  font-family: fire-sans;
 }
 
 #productos .tab-style-3 {
@@ -215,21 +216,27 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 991px) {
+  ul.last-list {
+    max-width: 200px;
+  }
+}
+
 #nosotros {
   background: url(../images/texturplast/nosotros-bg.jpg);
   background-size: cover;
-  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: 25% top;
   min-height: 800px;
 }
 
 #nosotros .title-row {
-  padding-bottom: 300px;
+  padding-bottom: 260px;
 }
 
 #nosotros .title-row h3 {
   font-size: 3em;
   color: black;
-  font-family: fire-sans;
 }
 
 #nosotros .description-row {
@@ -238,19 +245,25 @@ a:hover {
 
 #nosotros .description-row .parrafo {
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  max-width: 380px;
 }
 
 @media only screen and (max-width: 991px) {
   #nosotros {
-    background-position: right center;
+    background-position: 99% 0%;
+    background-size: auto;
   }
   #nosotros .title-row {
     padding-bottom: 50px;
   }
-  #nosotros .svgimage {
-    height: 100px;
-    width: 346px;
+}
+
+@media only screen and (max-width: 600px) {
+  #nosotros {
+    min-height: unset;
+    background-position: 70% 70%;
+    background-size: auto;
   }
 }
 
@@ -263,6 +276,7 @@ a:hover {
   -webkit-transform: translateX(-40%);
           transform: translateX(-40%);
   background: #b8a663;
+  height: 2px;
 }
 
 .custom-cta:hover {

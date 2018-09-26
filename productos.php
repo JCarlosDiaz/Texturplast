@@ -32,6 +32,7 @@ $producto_actual = $_GET['prod'];
     <!-- ========== MAIN CSS ========== -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="scripts/vendor/modernizr.js"></script>

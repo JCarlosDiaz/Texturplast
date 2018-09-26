@@ -1,0 +1,129 @@
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 20:56:13 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:01:01 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:45 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:02:58 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:07 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:08 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:08 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:08 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:03:08 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:03:08 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:03:08 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fopen(/home/texturplast/public_html/db/log/db.log): failed to open stream: No such file or directory in /home/texturplast/public_html/db/class/MYSQL.php on line 81
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 83
+[14-Sep-2018 21:04:00 America/Merida] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/texturplast/public_html/db/class/MYSQL.php on line 84

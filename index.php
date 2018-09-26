@@ -31,6 +31,7 @@ include 'db/connect.php'
     <!-- ========== MAIN CSS ========== -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="scripts/vendor/modernizr.js"></script>
@@ -73,9 +74,9 @@ nav-hidden - Open nav on icon click
                             </div> 
                         </div>
                         <div class="col-md-12 social-container">
-                            <i class="fa fa-facebook fa-2x"></i>
-                            <i class="fa fa-instagram fa-2x"></i>
-                            <i class="fa fa-linkedin fa-2x"></i>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="50px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="50px" alt=""></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -254,7 +255,8 @@ nav-hidden - Open nav on icon click
                                     <li role="presentation"><a href="#impermeabiizantes" aria-controls="impermeabiizantes" role="tab" data-toggle="tab">Impermeabilizantes</a></li>
                                     <li role="presentation"><a href="#granitos" aria-controls="granitos" role="tab" data-toggle="tab">Granitos planchados</a></li>
                                     <li role="presentation"><a href="#pegazulejos" aria-controls="pegazulejos" role="tab" data-toggle="tab"> Pegazulejos</a></li>
-                                    <li role="presentation"><a href="#especiales" aria-controls="especiales" role="tab" data-toggle="tab">Productos Especiales</a></li>
+                                    <li role="presentation"><a href="#especial" aria-controls="especial" role="tab" data-toggle="tab"> Productos Especiales</a></li>
+                                    <!-- <li role="presentation"><a href="#especiales" aria-controls="especiales" role="tab" data-toggle="tab">Productos Especiales</a></li> -->
                                 </ul> <!-- end nav-tabs -->
     
                                 <!-- Tab panes -->
@@ -338,9 +340,9 @@ nav-hidden - Open nav on icon click
                                             ?>
                                         </ul>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="especiales">
-                                        <ul class="leftul">
-                                        <?php
+                                    <div role="tabpanel" class="tab-pane fade" id="especial">
+                                        <ul class="last-list"> 
+                                            <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
                                                 while($row = $db->ObtenerArray()){
                                                     $cat = $row['categoria'];
@@ -351,6 +353,19 @@ nav-hidden - Open nav on icon click
                                             ?>
                                         </ul>
                                     </div>
+                                    <!-- <div role="tabpanel" class="tab-pane fade" id="especiales">
+                                        <ul>
+                                        <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
+                                        </ul>
+                                    </div> -->
                                 </div> <!-- end tab-content -->
                         </div> <!-- end tab-style-3 -->
                     </div>
@@ -358,7 +373,7 @@ nav-hidden - Open nav on icon click
             </div>
         </section>
 
-        <section class="content-section" id="nosotros">
+        <section style="max-width:1920px; margin: 0 auto" class="content-section" id="nosotros">
             <div class="container-fluid">
                 <div class="row title-row">
                     <div class="col-md-3 col-md-offset-8">
@@ -366,7 +381,7 @@ nav-hidden - Open nav on icon click
                     </div>
                 </div>
                 <div class="row description-row">
-                    <div class="col-md-3 col-sm-8 col-sm-offset-2 col-md-offset-1">
+                    <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-1">
                         <p class="parrafo">
                             TEXTURPLAST es una marca mexicana enfocada en cuidar el patrimonio, ya sea tu hogar o el medio ambiente. Comprometidos con la innovación y el emprendimiento llevamos más de 25 años ofreciendo servicios y productos de la más alta calidad.
                         </p>
@@ -375,7 +390,9 @@ nav-hidden - Open nav on icon click
             </div>
             <div class="container">
                 <div class="row images-row text-center">
-                    <div class="col-md-12 col-xs-6"><img class="svgimage" src="images/texturplast/Vectores Textur Sitio-09.svg" alt="" height="150px" width="1000px"></div>
+                    <div class="col-md-10 col-xs-12 col-center">
+                        <img class="svgimage" src="images/texturplast/Vectores Textur Sitio-09.svg" alt="" width="100%">
+                    </div>
                     <!-- <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-2.png" alt=""></div>
                     <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-3.png" alt=""></div>
                     <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-4.png" alt=""></div> -->
@@ -387,21 +404,21 @@ nav-hidden - Open nav on icon click
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h5 class="cta-title underline">Contactanos</h5>
+                        <h5 class="cta-title underline">Contáctanos</h5>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </div> <!-- end cta -->
 
-        <section class="content-section" id="contacto">
+        <section style="padding-top:30px" class="content-section" id="contacto">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h4><a class="mail" href="mailto:ventas@texturplast.com">ventas@texturplast.com</a></h4>
                         <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
                         <div class="social-container">
-                            <i class="fa fa-facebook fa-2x"></i>
-                            <i class="fa fa-instagram fa-2x"></i>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
+                            <img src="images/texturplast/Linkedin.svg" width="50px" alt="">
                         </div>
                         <p class="direccion">3 sur 513 Colonia Centro,<br>Tehuacán, Puebla C.P.75700</p>
                         <a class="map underline" href="https://goo.gl/maps/B2r98eKtCz82" target="blank">Mostrar Ubicación</a>
@@ -423,7 +440,7 @@ nav-hidden - Open nav on icon click
                             
                             <div class="form-group">
                                 <label for="message">Mensaje</label>
-                                <textarea class="form-control input-style-2" id="message" name="message" placeholder="" required="" rows="3"></textarea>
+                                <input class="form-control input-style-2" id="message" name="message" placeholder="" required="" ></input>
                             </div>
                             <div class="form-group">
                                 <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
@@ -459,7 +476,7 @@ nav-hidden - Open nav on icon click
                         <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4">
-                        <a href="http://dappertechnologies.com/texturplast/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
+                        <a href="/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4 mb20">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
