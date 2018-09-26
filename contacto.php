@@ -83,7 +83,7 @@ nav-hidden - Open nav on icon click
                     </div>
                 </div>
             </div>
-            <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div> 
+            <!-- <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div>  -->
         </div>
     </section>
     <!-- ========== END OVERPLAY ========== -->
@@ -137,11 +137,11 @@ nav-hidden - Open nav on icon click
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
                                 id="slide-148-layer-1"
-                                data-x="['center','center','center','center']" data-hoffset="['-180','-180','-180','-80']"
-                                data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-80','-50']"
+                                data-x="['center','center','center','center']" data-hoffset="['-350','-180','-180','-80']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-25','-50','-80','-50']"
                                 data-fontsize="['32','32','32','20']"
                                 data-lineheight="['42','42','42','34']"
-                                data-width="250"
+                                data-width="375"
                                 data-height="none"
                                 data-whitespace="normal"
                                 data-transform_idle="o:1;"
@@ -154,7 +154,7 @@ nav-hidden - Open nav on icon click
                                 data-splitout="none"
                                 data-responsive_offset="on"
                                 data-elementdelay="0.05"
-                                style="z-index: 5; white-space: normal;color:#fff;letter-spacing: 3px">HABLA CON <br> NUESTROS <br>EXPERTOS
+                                style="z-index: 5; white-space: normal;color:#fff;letter-spacing: 2px; text-aling:center;">HABLA CON<br> NUESTROS EXPERTOS<br>
                             </div>
 
                             <!-- LAYER NR. 4 -->
@@ -285,7 +285,7 @@ nav-hidden - Open nav on icon click
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12 mb20">
-                                                            <div class="form-check col-md-8">
+                                                            <div class="form-check col-md-8" style="padding-left:0;">
                                                                     <p style="display: inline-block;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
                                                                     <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" checked="">
                                                                     <label for="newsletter" class="st-checkbox-1-label">Sí</label>
@@ -300,8 +300,7 @@ nav-hidden - Open nav on icon click
                                                     
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                                <div style="transform:scale(0.77);
-                                                                -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
+                                                                <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
                                                         </div>
                                                     </div>
                                             </form>
@@ -447,7 +446,7 @@ nav-hidden - Open nav on icon click
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 mb20">
-                                                        <div class="form-check col-md-8">
+                                                        <div class="form-check col-md-8" style="padding-left:0;">
                                                             <label style="display: inline-block; color:black;" class="form-check-label" for="defaultCheck1">
                                                                     ¿Quieres enterar de ofertas especiales y noticias por correo?
                                                             </label>
@@ -463,12 +462,9 @@ nav-hidden - Open nav on icon click
                                                 </div>
                                                 <div class="col-md-6">
                                                         <div class="form-group">
-                                                                <div style="transform:scale(0.77);
-                                                                -webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
+                                                                <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
                                                         </div>
                                                 </div>
-                                                
-                                        
                                         </form>
                                     </div>
                                 </div>
@@ -482,7 +478,7 @@ nav-hidden - Open nav on icon click
         <section class="content-section" id="cont">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-offset-1 col-md-3 col-sm-4 col-xs-12 plcont">
                         <h4><a class="mail" href="mailto:ventas@texturplast.com">ventas@texturplast.com</a></h4>
                         <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
                     </div>
@@ -494,7 +490,7 @@ nav-hidden - Open nav on icon click
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <p class="direccion">3 sur 513 Colonia Centro,<br>Tehuacán, Puebla C.P.75700</p>
-                        <a class="map underline" href="">Mostrar Ubicación</a>
+                        <a class="map underline" href="https://goo.gl/maps/B2r98eKtCz82" target="blank">Mostrar Ubicación</a>
                     </div>
                 </div>
             </div>

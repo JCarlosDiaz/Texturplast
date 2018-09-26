@@ -1,3 +1,9 @@
+body{
+    font-family: fire-sans;
+    h5{
+        font-family: fire-sans;
+    }
+}
 $dorado : #b8a663;
 a:hover{
     color: #6d2520!important;
@@ -15,7 +21,7 @@ section.content-section{
 	opacity: 1;
     visibility: visible;
     height: 100%;
-    background: #000000cf;
+    background: #000000e6;
         .after{
             opacity: 1;
             visibility: visible;
@@ -41,7 +47,7 @@ section.content-section{
         color: #fff;
         font-weight: bold;
         font-size: 2em;
-        font-family: monospace;
+        font-family: fire-sans;
     }
     .content-section{
         padding-top: 20%;
@@ -242,4 +248,12 @@ section.content-section {
 .footer .footer-top {
     padding-bottom: 0px;
     border-bottom: 0;
+}
+.lefttxt{
+    top: -16px;
+}
+@media (min-width: 992px){
+    .plcont{
+        padding-left: 60px;
+    }
 }

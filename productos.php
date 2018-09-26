@@ -81,7 +81,7 @@ nav-hidden - Open nav on icon click
                     </div>
                 </div>
             </div>
-            <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div> 
+            <!-- <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div>  -->
         </div>
     </section>
     <!-- ========== END OVERPLAY ========== -->
@@ -144,7 +144,8 @@ nav-hidden - Open nav on icon click
                             ?>
                         </h3>
                         <p class="detalles-producto"><?php print "$carac" ?></p>
-                        <img class="descarga2" src="images/texturplast/descarga.png" alt=""> <a class="ficha-descarga" href="<?php print "$ficha" ?>">Descarga la ficha técnica</a>
+                        <a class="ficha-descarga" target="blank" style="font-size:14px;" href="<?php print "$ficha" ?>">Descarga la ficha técnica</a>
+                        <!-- <img class="descarga2" src="images/texturplast/descarga.png" alt="">  -->
                     </div>
                     <!-- <div class="col-md-12 col-xs-12 descripcion-column-mob">
                         <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dignissimos magni, deleniti molestiae rerum officiis libero labore laudantium, eaque vel reiciendis sapiente architecto optio? Nihil aliquid cumque impedit officia aperiam.</p>
@@ -285,7 +286,7 @@ nav-hidden - Open nav on icon click
                                 <div class="panel-heading" role="tab" id="headingSix-11">
                                     <h5 class="panel-title" style="text-align: center;"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseSix-11" aria-expanded="false" aria-controls="collapseSix-11"> Pegazulejos</a></h5>
                                 </div>
-                                <div id="collapseSix-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix-11">
+                                <div id="collapseSix-11" class="panel-collapse collapse" style="text-align: center;" role="tabpanel" aria-labelledby="headingSix-11">
                                     <div class="panel-body">
                                         <ul>
                                             <?php
@@ -343,8 +344,8 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-12">
                         <div class="tab-style-5">
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#home-5" aria-controls="home-5" role="tab" data-toggle="tab"><span class="icon fa fa-sort-desc"></span> Uso</a></li>
-                                <li role="presentation"><a href="#profile-5" aria-controls="profile-5" role="tab" data-toggle="tab"><span class="icon fa fa-sort-desc"></span> Garantía</a></li>
+                                <li role="presentation" class="active"><a href="#home-5" aria-controls="home-5" role="tab" data-toggle="tab"> Uso</a></li>
+                                <li role="presentation"><a href="#profile-5" aria-controls="profile-5" role="tab" data-toggle="tab"> Garantía</a></li>
                             </ul> <!-- end nav-tabs -->
                         </div> <!-- end tab-style-5 -->
                     </div>
@@ -356,9 +357,18 @@ nav-hidden - Open nav on icon click
                                 <div role="tabpanel" class="tab-pane fade in active" id="home-5">
                                     <div class="col-md-12 icons-row">
                                         <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img src="images/texturplast/uso-1.jpg" class="img-responsive col-center" alt="">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono secado.svg" alt="" height="150px" width="500px">
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono rendimiento.svg" alt="" height="150px" width="500px">
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono taman_os.svg" alt="" height="150px" width="500px">
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-6">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono lavabilidad.svg" alt="" height="150px" width="500px">
+                                        </div>
+                                        <!-- <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img src="images/texturplast/uso-2.jpg" class="img-responsive col-center" alt="">
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
@@ -366,7 +376,7 @@ nav-hidden - Open nav on icon click
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img src="images/texturplast/uso-4.jpg" class="img-responsive col-center" alt="">
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="col-sm-6 col-xs-12">
                                         <h3 class="feature-title">Preparación de la superficie</h3>
@@ -377,7 +387,7 @@ nav-hidden - Open nav on icon click
                                         <p class="desc-black">Limpiar la superficie de polvo o grasa para asegurarnos de tener una buena adherencia. Deberá estar libre completamente de humedad para no tener problemas de desprendimientos.</p>
                                     </div>
                                     <div class="col-sm-6 col-xs-12">
-                                        <h3 class="feature-title">Preparacón del producto</h3>
+                                        <h3 class="feature-title">Preparación del producto</h3>
                                         <p class="desc-black">Mezclar bien la pintura y después diluir con agua limpia en cantidades que pueden ser desde un 10% hasta un 20% dependiendo de la viscocidad que se requiera para aplicarse ya sea con rodillo, brocha o pistola airless.</p>
                                     </div>
                                     <div class="col-sm-6 col-xs-12">
@@ -426,29 +436,87 @@ nav-hidden - Open nav on icon click
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 text-center col-center">
-                        <h3 class="mb30">¿Qué hago con el con el envase?</h3>
-                        <p>Regresa el envmaso de tu producto a cualquiera de nuestras tiendas y recibe un descuento aplicable inmediatamente o en tu siguiente compra.</p>
+                        <h3 class="mb30">¿Qué hago con el envase?</h3>
+                        <p style="font-size:17px;">Regresa el envmaso de tu producto a cualquiera de nuestras tiendas y recibe un descuento aplicable inmediatamente o en tu siguiente compra.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+       
         <section class="content-section" id="otros-asesorias">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 text-center dd">
                         <h3 class="otros-pad">Otros productos</h3>
+                        <!-- <a class="ficha-descarga" target="blank" style="font-size:14px;" href="">Descarga la ficha técnica</a> -->
                         <div class="col-md-6 dd2">
-                            <p class="parrafo-otros">Sellador Entintable</p>
+                            <p class="parrafo-otros">
+                                <?php
+                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                        $row = $db->ObtenerArray();
+                                        $cat = $row['categoria'];
+                                        $cod = $row['codigo'];
+                                        $nombre = $row['nombre'];
+                                        if ($producto_actual == $cod){
+                                            print "<a class='active parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                        else{
+                                            print "<a class='parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                ?>
+                            </p>
                         </div>
                         <div class="col-md-6 dd2">
-                            <p class="parrafo-otros">Sellador 5x1</p>
+                            <p class="parrafo-otros">
+                                <?php
+                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                        $row = $db->ObtenerArray();
+                                        $cat = $row['categoria'];
+                                        $cod = $row['codigo'];
+                                        $nombre = $row['nombre'];
+                                        if ($producto_actual == $cod){
+                                            print "<a class='active parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                        else{
+                                            print "<a class='parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                ?>
+                            </p>
                         </div>
                         <div class="col-md-6 dd2">
-                            <p class="parrafo-otros">Impermeabilizante Blanco</p>
+                            <p class="parrafo-otros">
+                                <?php
+                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                        $row = $db->ObtenerArray();
+                                        $cat = $row['categoria'];
+                                        $cod = $row['codigo'];
+                                        $nombre = $row['nombre'];
+                                        if ($producto_actual == $cod){
+                                            print "<a class='active parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                        else{
+                                            print "<a class='parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                ?>
+                            </p>
                         </div>
                         <div class="col-md-6 dd2">
-                            <p class="parrafo-otros">Pintura Vevendi</p>
+                            <p class="parrafo-otros">
+                                <?php
+                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                        $row = $db->ObtenerArray();
+                                        $cat = $row['categoria'];
+                                        $cod = $row['codigo'];
+                                        $nombre = $row['nombre'];
+                                        if ($producto_actual == $cod){
+                                            print "<a class='active parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                        else{
+                                            print "<a class='parrafo-otros' href='productos.php?cat=$cat&prod=$cod'>$nombre</a>";
+                                        }
+                                ?>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-1 col-sm-1">

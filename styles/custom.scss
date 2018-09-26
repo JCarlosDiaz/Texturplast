@@ -1,3 +1,9 @@
+body{
+    font-family: fire-sans;
+    h5{
+        font-family: fire-sans;
+    }
+}
 $dorado : #b8a663;
 a:hover{
     color: $dorado!important;
@@ -12,7 +18,7 @@ a:hover{
 	opacity: 1;
     visibility: visible;
     height: 100%;
-    background: #000000cf;
+    background: #000000e6;
         .after{
             opacity: 1;
             visibility: visible;
@@ -38,7 +44,7 @@ a:hover{
         color: #fff;
         font-weight: bold;
         font-size: 2em;
-        font-family: monospace;
+        font-family: fire-sans;
     }
     .content-section{
         padding-top: 20%;
@@ -135,10 +141,12 @@ a:hover{
         font-size: 3em;
         letter-spacing: 2px;
         margin-bottom: 25px;
+        font-family: fire-sans;
     }
     .subtitle{
         color: #aaaaaa;
         margin-bottom: 40px;
+        font-family: fire-sans;
     }
     .tab-style-3{
         border-top: 2px solid white;
@@ -195,6 +203,7 @@ a:hover{
         h3{
             font-size: 3em;
             color: black;
+            font-family: fire-sans;
             
         }
     }
@@ -214,6 +223,10 @@ a:hover{
     background-position: right center;    
         .title-row{
             padding-bottom: 50px;
+        }
+        .svgimage{
+            height: 100px;
+            width: 346px;
         }
     }
 }
@@ -289,6 +302,7 @@ a:hover{
     }
    .lefttxt{
         float: left!important;
+        top: -16px;
     }
     .footer-top{
         padding-bottom: 10px;
@@ -438,7 +452,13 @@ a:hover{
             padding-bottom: 131px;
         }
     }
+    
 }
+@media only screen and (min-width: 1024px) {
+        .leftul{
+            left: 1325px!important;
+        }
+    }
 #envase-section{
     background: url(../images/texturplast/envase.jpg);
     background-position: center center;

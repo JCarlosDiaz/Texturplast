@@ -1,3 +1,11 @@
+body {
+  font-family: fire-sans;
+}
+
+body h5 {
+  font-family: fire-sans;
+}
+
 a:hover {
   color: #b8a663 !important;
 }
@@ -11,7 +19,7 @@ a:hover {
   opacity: 1;
   visibility: visible;
   height: 100%;
-  background: #000000cf;
+  background: #000000e6;
 }
 
 #overplay .overplay.open .after {
@@ -43,7 +51,7 @@ a:hover {
   color: #fff;
   font-weight: bold;
   font-size: 2em;
-  font-family: monospace;
+  font-family: fire-sans;
 }
 
 #overplay .content-section {
@@ -149,11 +157,13 @@ a:hover {
   font-size: 3em;
   letter-spacing: 2px;
   margin-bottom: 25px;
+  font-family: fire-sans;
 }
 
 #productos .subtitle {
   color: #aaaaaa;
   margin-bottom: 40px;
+  font-family: fire-sans;
 }
 
 #productos .tab-style-3 {
@@ -219,6 +229,7 @@ a:hover {
 #nosotros .title-row h3 {
   font-size: 3em;
   color: black;
+  font-family: fire-sans;
 }
 
 #nosotros .description-row {
@@ -236,6 +247,10 @@ a:hover {
   }
   #nosotros .title-row {
     padding-bottom: 50px;
+  }
+  #nosotros .svgimage {
+    height: 100px;
+    width: 346px;
   }
 }
 
@@ -323,6 +338,7 @@ a:hover {
 
 .footer .lefttxt {
   float: left !important;
+  top: -16px;
 }
 
 .footer .footer-top {
@@ -493,6 +509,12 @@ a:hover {
 @media only screen and (max-width: 768px) {
   #uso-section .icons-row {
     padding-bottom: 131px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .leftul {
+    left: 1325px !important;
   }
 }
 

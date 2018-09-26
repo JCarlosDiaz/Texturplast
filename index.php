@@ -79,9 +79,9 @@ nav-hidden - Open nav on icon click
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div>
             <div class="overclose"><img src="images/iconocerrarventana.png" alt=""></div> 
-        </div>
+        </div> -->
     </section>
     <!-- ========== END OVERPLAY ========== -->
 
@@ -339,7 +339,7 @@ nav-hidden - Open nav on icon click
                                         </ul>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="especiales">
-                                        <ul>
+                                        <ul class="leftul">
                                         <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
                                                 while($row = $db->ObtenerArray()){
@@ -375,10 +375,10 @@ nav-hidden - Open nav on icon click
             </div>
             <div class="container">
                 <div class="row images-row text-center">
-                    <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-1.png" alt=""></div>
-                    <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-2.png" alt=""></div>
+                    <div class="col-md-12 col-xs-6"><img class="svgimage" src="images/texturplast/Vectores Textur Sitio-09.svg" alt="" height="150px" width="1000px"></div>
+                    <!-- <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-2.png" alt=""></div>
                     <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-3.png" alt=""></div>
-                    <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-4.png" alt=""></div>
+                    <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-4.png" alt=""></div> -->
                 </div>
             </div>
         </section>
@@ -404,7 +404,7 @@ nav-hidden - Open nav on icon click
                             <i class="fa fa-instagram fa-2x"></i>
                         </div>
                         <p class="direccion">3 sur 513 Colonia Centro,<br>Tehuacán, Puebla C.P.75700</p>
-                        <a class="map underline" href="">Mostrar Ubicación</a>
+                        <a class="map underline" href="https://goo.gl/maps/B2r98eKtCz82" target="blank">Mostrar Ubicación</a>
                     </div>
                     <div class="col-md-6">
                         <form class="" id="form" method="post" name="form" action="v2.php">
@@ -453,7 +453,7 @@ nav-hidden - Open nav on icon click
                 <div class="col-md-6">
                     <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
                         <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
-                        <div class=" clearfix"></div>
+                        <div class="clearfix"></div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4">
                         <a href="#"><h5 class="footer-title">Inicio</h5></a>
