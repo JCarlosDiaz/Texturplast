@@ -71,6 +71,12 @@ a:hover{
             color: white;
             margin: auto 15px;
         }
+        
+    }
+    @media only screen and (max-width:600px){
+            .content-section{
+                padding-top: 40%;
+            }
     }
     .overclose{
         text-align: center;
@@ -106,6 +112,9 @@ a:hover{
     }
 }
 .header{
+    .logo{
+        padding: 28px 10px;
+    }
     .menuham-container{
         float: right;
         padding: 20px 10px;
@@ -316,6 +325,12 @@ a:hover{
         border: none;
         border-bottom: 2px solid #000;
     }
+    @media only screen and (max-width:600px){
+        button{
+            float: left!important;
+        }
+    }
+    
 }
 
 .footer{
@@ -331,6 +346,18 @@ a:hover{
     .footer-top{
         padding-bottom: 10px;
         border-bottom: 1px solid #000;
+    }
+    @media only screen and (max-width:600px){
+        .cr{
+            padding-right: 0;
+        }
+        .cl{
+            padding-left: 0;
+        }
+        .lefttxt{
+            padding-left: 16px;
+            margin-bottom: 0px!important;
+        }
     }
 }
 .footer.dark-footer {
@@ -476,7 +503,11 @@ a:hover{
             padding-bottom: 131px;
         }
     }
-    
+    @media only screen and (max-width: 600px) {
+        .cl{
+            padding: 0;
+        }
+    }
 }
 @media only screen and (min-width: 1024px) {
         .leftul{

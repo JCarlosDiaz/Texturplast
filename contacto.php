@@ -292,7 +292,7 @@ nav-hidden - Open nav on icon click
                                                                     <label for="newsletter" class="st-checkbox-1-label">Sí</label>
                                                                     <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
                                                                     
-                                                                    </div><div class="col-md-4">
+                                                                    </div><div class="col-md-4 cl">
                                                         <div class="form-group">
                                                                 <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right boton-s">Enviar</button>
                                                         </div>
@@ -455,7 +455,7 @@ nav-hidden - Open nav on icon click
                                                             <label for="checkbox-5" class="st-checkbox-2-label">Si</label>
                                                             
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-4 cl">
                                                             <div class="form-group">
                                                                     <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Enviar</button>
                                                             </div>
@@ -516,13 +516,13 @@ nav-hidden - Open nav on icon click
                         <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
                         <div class=" clearfix"></div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4">
+                    <div class="col-md-3 col-sm-3 col-xs-4 cr">
                         <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4">
+                    <div class="col-md-3 col-sm-3 col-xs-4 cl">
                         <a href="http://dappertechnologies.com/texturplast/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 mb20">
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>

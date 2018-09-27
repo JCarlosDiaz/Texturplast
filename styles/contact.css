@@ -85,6 +85,12 @@ section.content-section {
   margin: auto 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #overplay .content-section {
+    padding-top: 40%;
+  }
+}
+
 #overplay .overclose {
   text-align: center;
   padding-top: 8%;
@@ -102,6 +108,10 @@ section.content-section {
 */
 .secondNav .header .menuham-container {
   padding: 2px;
+}
+
+.header .logo {
+  padding: 28px 10px;
 }
 
 .header .menuham-container {
@@ -164,6 +174,15 @@ section.content-section {
 
 #complete-contact .st-checkbox:checked + .st-checkbox-2-label:before, #complete-contact .st-radio:checked + .st-radio-2-label:before {
   background: #6d2520;
+}
+
+@media only screen and (max-width: 600px) {
+  #complete-contact .cl {
+    padding-left: 0;
+  }
+  #complete-contact .pull-right {
+    float: left !important;
+  }
 }
 
 p {
@@ -245,6 +264,21 @@ select {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #cont .social-container {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .g-recaptcha {
+    -webkit-transform: scale(0.84);
+            transform: scale(0.84);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .tab-style-8 .nav-tabs > li {
     width: 50%;
@@ -284,6 +318,19 @@ section.content-section {
 @media (min-width: 992px) {
   .plcont {
     padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cr {
+    padding-right: 0;
+  }
+  .cl {
+    padding-left: 0;
+  }
+  .lefttxt {
+    padding-left: 16px;
+    margin-bottom: 0px !important;
   }
 }
 /*# sourceMappingURL=contact.css.map */

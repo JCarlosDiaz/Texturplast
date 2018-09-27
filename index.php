@@ -446,7 +446,7 @@ nav-hidden - Open nav on icon click
                                 <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
                             </div>
 
-                            <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Submit</button>
+                            <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">ENVIAR</button>
                         </form>
                     </div> <!-- end col-md-6 -->
                 </div> <!-- end row -->
@@ -472,13 +472,13 @@ nav-hidden - Open nav on icon click
                         <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
                         <div class="clearfix"></div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4">
+                    <div class="col-md-3 col-sm-3 col-xs-4 cr">
                         <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4">
+                    <div class="col-md-3 col-sm-3 col-xs-4 cl">
                         <a href="/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 mb20">
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>

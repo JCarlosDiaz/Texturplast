@@ -396,11 +396,11 @@ nav-hidden - Open nav on icon click
                                         <p class="desc-black">Aplique Textur Premium&reg; a 2 manos con brocha, rodillo o equipo de aspersión airless, dejando secar 60 minutos entre mano y mano.</p>
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="col-sm-6 d-pad col-xs-12">
+                                        <div class="col-sm-6 d-pad col-xs-12 cl">
                                             <h3 class="feature-title">Sugerencias</h3>
                                             <p class="desc-black">Se recomienda sellar la superficie con sellador 5x1 Texturplast para obtener el mejor rendimiento y anclaje de la pintura.</p>
                                         </div>
-                                        <div class="col-sm-6 col-xs-12">
+                                        <div class="col-sm-6 col-xs-12 cl">
                                             <h3 class="feature-title">Limpieza</h3>
                                             <p class="desc-black">En caso necesario lave sus manos y equipos de aplicación en un recipiente con agua.</p>
                                         </div>
@@ -551,13 +551,13 @@ nav-hidden - Open nav on icon click
                         <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
                         <div class=" clearfix"></div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4">
-                        <a href="#"><h5 class="footer-title">Inicio</h5></a>
+                    <div class="col-md-3 col-sm-3 col-xs-4 cr">
+                        <a href="index.php"><h5 class="footer-title">Inicio</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4">
-                        <a href="http://dappertechnologies.com/texturplast/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
+                    <div class="col-md-3 col-sm-3 col-xs-4 cl">
+                        <a href="/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 mb20">
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>

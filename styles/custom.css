@@ -80,6 +80,12 @@ a:hover {
   margin: auto 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #overplay .content-section {
+    padding-top: 40%;
+  }
+}
+
 #overplay .overclose {
   text-align: center;
   padding-top: 8%;
@@ -109,6 +115,10 @@ a:hover {
 
 .secondNav .header .logo .logo-img {
   max-height: 38px;
+}
+
+.header .logo {
+  padding: 28px 10px;
 }
 
 .header .menuham-container {
@@ -346,6 +356,12 @@ a:hover {
   border-bottom: 2px solid #000;
 }
 
+@media only screen and (max-width: 600px) {
+  #contacto button {
+    float: left !important;
+  }
+}
+
 .footer .footer-middle .fa {
   font-size: 24px;
 }
@@ -358,6 +374,19 @@ a:hover {
 .footer .footer-top {
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer .cr {
+    padding-right: 0;
+  }
+  .footer .cl {
+    padding-left: 0;
+  }
+  .footer .lefttxt {
+    padding-left: 16px;
+    margin-bottom: 0px !important;
+  }
 }
 
 .footer.dark-footer {
@@ -523,6 +552,12 @@ a:hover {
 @media only screen and (max-width: 768px) {
   #uso-section .icons-row {
     padding-bottom: 131px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #uso-section .cl {
+    padding: 0;
   }
 }
 

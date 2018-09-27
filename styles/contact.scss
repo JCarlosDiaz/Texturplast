@@ -71,6 +71,11 @@ section.content-section{
             margin: auto 15px;
         }
     }
+    @media only screen and (max-width:600px){
+            .content-section{
+                padding-top: 40%;
+            }
+    }
     .overclose{
         text-align: center;
         padding-top: 8%;
@@ -97,6 +102,9 @@ section.content-section{
     }
 }
 .header{
+    .logo{
+        padding: 28px 10px;
+    }
     .menuham-container{
         float: right;
         padding: 20px 10px;
@@ -154,6 +162,15 @@ section.content-section{
     }
     .st-checkbox:checked+.st-checkbox-2-label:before, .st-radio:checked+.st-radio-2-label:before{
         background: #6d2520;
+    }
+    @media only screen and (max-width:600px){
+        .cl{
+            padding-left: 0;
+        }
+        .pull-right{
+            float: left!important;
+        }
+        
     }
 }
 p{
@@ -221,6 +238,17 @@ select{
             text-align: center;
         }
     }
+    @media only screen and (max-width:600px){
+        .social-container{
+            padding-left: 10%;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .g-recaptcha{
+        transform: scale(0.84);
+        transform-origin: 0 0;
+    }
 }
 @media only screen and (max-width:500px){
     .tab-style-8 .nav-tabs>li{
@@ -255,5 +283,17 @@ section.content-section {
 @media (min-width: 992px){
     .plcont{
         padding-left: 60px;
+    }
+}
+@media only screen and (max-width:600px){
+    .cr{
+        padding-right: 0;
+    }
+    .cl{
+        padding-left: 0;
+    }
+    .lefttxt{
+        padding-left: 16px;
+        margin-bottom: 0px!important;
     }
 }
