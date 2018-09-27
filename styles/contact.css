@@ -106,6 +106,10 @@ section.content-section {
 /**
 =============HEADER==============
 */
+.secondNav .header .logo {
+  padding: 16px;
+}
+
 .secondNav .header .menuham-container {
   padding: 2px;
 }

@@ -256,7 +256,7 @@ nav-hidden - Open nav on icon click
                                     <li role="presentation"><a href="#granitos" aria-controls="granitos" role="tab" data-toggle="tab">Granitos planchados</a></li>
                                     <li role="presentation"><a href="#pegazulejos" aria-controls="pegazulejos" role="tab" data-toggle="tab"> Pegazulejos</a></li>
                                     <li role="presentation"><a href="#especial" aria-controls="especial" role="tab" data-toggle="tab"> Productos Especiales</a></li>
-                                    <!-- <li role="presentation"><a href="#especiales" aria-controls="especiales" role="tab" data-toggle="tab">Productos Especiales</a></li> -->
+                                    <li role="presentation"><a href="#arquitectonicas" aria-controls="arquitectonicas" role="tab" data-toggle="tab">Productos Arquitectónicas</a></li>
                                 </ul> <!-- end nav-tabs -->
     
                                 <!-- Tab panes -->
