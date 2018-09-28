@@ -155,40 +155,58 @@ nav-hidden - Open nav on icon click
                     </div> -->
                     
                 </div>
+                
+            </div>
+        </section>
+        
+        <section class="content-section" id="productos2">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 col-center">
-                        <div class="panel-group acc-faq-1" id="accordion-11" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne-11">
-                                    <h5 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseOne-11" aria-expanded="true" aria-controls="collapseOne-11" class="trans">Pinturas Vinil Acrílicas</a></h5>
-                                </div>
-                                <div id="collapseOne-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-11">
-                                    <div class="panel-body">
+                    <div class="col-md-10 col-center">
+                        <div class="tab-style-3">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#pinturas" aria-controls="pinturas" role="tab" data-toggle="tab">Pinturas Arquitectónicas</a></li>
+                                    <li role="presentation"><a href="#acrilicas" aria-controls="acrilicas" role="tab" data-toggle="tab">Pinturas Acrílicas</a></li>
+                                    <li role="presentation"><a href="#selladores" aria-controls="selladores" role="tab" data-toggle="tab">Selladores y Adhesivos</a></li>
+                                    <li role="presentation" id="prueba"><a href="#pastas" aria-controls="pastas" role="tab" data-toggle="tab"> Pastas Acrílicas</a></li>
+                                    <li role="presentation"><a href="#impermeabiizantes" aria-controls="impermeabiizantes" role="tab" data-toggle="tab">Impermeabilizantes</a></li>
+                                    <li role="presentation"><a href="#granitos" aria-controls="granitos" role="tab" data-toggle="tab">Granitos planchados</a></li>
+                                    <li role="presentation"><a href="#pegazulejos" aria-controls="pegazulejos" role="tab" data-toggle="tab"> Pegazulejos</a></li>
+                                    <li role="presentation"><a href="#especial" aria-controls="especial" role="tab" data-toggle="tab"> Productos Especiales</a></li>
+                                    <!--  -->
+                                </ul> <!-- end nav-tabs -->
+    
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="pinturas">
                                         <ul>
-                                        <?php
+                                            <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pinturas'");
                                                 while($row = $db->ObtenerArray()){
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
+                                            
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo-11">
-                                    <h5 class="panel-title"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseTwo-11" aria-expanded="false" aria-controls="collapseTwo-11">Selladores y Adhesivos</a></h5>
-                                </div>
-                                <div id="collapseTwo-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo-11">
-                                    <div class="panel-body">
+                                    <div role="tabpanel" class="tab-pane fade" id="acrilicas">
+                                        <ul>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='acrilicas'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="selladores">
                                         <ul>
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='selladores-adhesivos'");
@@ -196,24 +214,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree-11">
-                                    <h5 class="panel-title"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseThree-11" aria-expanded="false" aria-controls="collapseThree-11"> Pastas Acrílicas</a></h5>
-                                </div>
-                                <div id="collapseThree-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree-11">
-                                    <div class="panel-body">
+                                    <div role="tabpanel" class="tab-pane fade" id="pastas">
                                         <ul>
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pastas-acrilicas'");
@@ -221,24 +227,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour-11">
-                                    <h5 class="panel-title"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseFour-11" aria-expanded="false" aria-controls="collapseFour-11"> Impermeabilizantes</a></h5>
-                                </div>
-                                <div id="collapseFour-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour-11">
-                                    <div class="panel-body">
+                                    <div role="tabpanel" class="tab-pane fade" id="impermeabiizantes">
                                         <ul>
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='impermeabilizantes'");
@@ -246,24 +240,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFive-11">
-                                    <h5 class="panel-title"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseFive-11" aria-expanded="false" aria-controls="collapseFive-11"> Granitos Planchados</a></h5>
-                                </div>
-                                <div id="collapseFive-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive-11">
-                                    <div class="panel-body">
+                                    <div role="tabpanel" class="tab-pane fade" id="granitos">
                                         <ul>
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='granitos-planchados'");
@@ -271,24 +253,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingSix-11">
-                                    <h5 class="panel-title" style="text-align: center;"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseSix-11" aria-expanded="false" aria-controls="collapseSix-11"> Pegazulejos</a></h5>
-                                </div>
-                                <div id="collapseSix-11" class="panel-collapse collapse" style="text-align: center;" role="tabpanel" aria-labelledby="headingSix-11">
-                                    <div class="panel-body">
+                                    <div role="tabpanel" class="tab-pane fade" id="pegazulejos">
                                         <ul>
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pegazulejos'");
@@ -296,49 +266,44 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingSeven-11">
-                                    <h5 class="panel-title"><a class="collapsed trans" role="button" data-toggle="collapse" data-parent="#accordion-11" href="#collapseSeven-11" aria-expanded="false" aria-controls="collapseSeven-11"> Productos Especiales</a></h5>
-                                </div>
-                                <div id="collapseSeven-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven-11">
-                                    <div class="panel-body">
-                                        <ul>
+                                    <div role="tabpanel" class="tab-pane fade" id="especial">
+                                        <ul class="last-list"> 
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
                                                 while($row = $db->ObtenerArray()){
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    if ($producto_actual == $cod){
-                                                        print "<li><a class='active' href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
-                                                    else{
-                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
-                                                    }
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                 }
                                             ?>
                                         </ul>
                                     </div>
-                                </div> <!-- end panel-collapse -->
-                            </div> <!-- end panel -->
-                        </div> <!-- end panel-group -->
+                                    <!-- <div role="tabpanel" class="tab-pane fade" id="especiales">
+                                        <ul>
+                                        <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
+                                        </ul>
+                                    </div> -->
+                                </div> <!-- end tab-content -->
+                        </div> <!-- end tab-style-3 -->
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section class="content-section" id="uso-section">
             <div class="container-fluid">
                 <div class="row navigation-row">

@@ -209,6 +209,67 @@ a:hover{
     }
 
 }
+#productos2{
+    background: #fff;
+    padding: 0px 0;
+    
+    h3{
+        color: #000;
+        font-size: 3em;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+        
+    }
+    .subtitle{
+        color: #000;
+        margin-bottom: 40px;
+        
+    }
+    .tab-style-3{
+        border-top: 2px solid #000;
+        .tab-content{
+            box-shadow: none;
+            margin-top: 20px;
+            background: none;
+            border: none;
+            min-height: 300px;
+            color: #000;
+            ul{
+                position: relative;
+                display: inline-block;
+                li a{
+                    color:#000;
+                }
+            }
+            ul:nth-child(2){
+                left: 50px;
+            }
+        }
+    }
+    .tab-style-3 .nav-tabs>li>a{
+        background: none;
+        border: 2px solid transparent;
+        color:#000;
+    }
+    .tab-style-3 .nav-tabs>li.active>a, .tab-style-3 .nav-tabs>li.active>a:focus, .tab-style-3 .nav-tabs>li.active>a:hover{
+        border-bottom: 2px solid $dorado;
+        color: $dorado;
+    }
+
+    @media only screen and (max-width:991px){
+        .tab-style-3 .nav-tabs li{
+            float: left;
+            width: 50%;
+            a{
+                height: 50px;
+            }
+        }
+        .tab-content>.tab-pane{
+            text-align: center;
+        }
+    }
+
+}
 @media only screen and (max-width: 1200px) and (min-width: 991px){
     ul.last-list{
         max-width: 200px;

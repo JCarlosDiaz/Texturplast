@@ -249,14 +249,15 @@ nav-hidden - Open nav on icon click
                     <div class="col-md-10 col-center">
                         <div class="tab-style-3">
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#pinturas" aria-controls="pinturas" role="tab" data-toggle="tab">Pinturas</a></li>
+                                    <li role="presentation" class="active"><a href="#pinturas" aria-controls="pinturas" role="tab" data-toggle="tab">Pinturas Arquitectónicas</a></li>
+                                    <li role="presentation"><a href="#acrilicas" aria-controls="acrilicas" role="tab" data-toggle="tab">Pinturas Acrílicas</a></li>
                                     <li role="presentation"><a href="#selladores" aria-controls="selladores" role="tab" data-toggle="tab">Selladores y Adhesivos</a></li>
                                     <li role="presentation" id="prueba"><a href="#pastas" aria-controls="pastas" role="tab" data-toggle="tab"> Pastas Acrílicas</a></li>
                                     <li role="presentation"><a href="#impermeabiizantes" aria-controls="impermeabiizantes" role="tab" data-toggle="tab">Impermeabilizantes</a></li>
                                     <li role="presentation"><a href="#granitos" aria-controls="granitos" role="tab" data-toggle="tab">Granitos planchados</a></li>
                                     <li role="presentation"><a href="#pegazulejos" aria-controls="pegazulejos" role="tab" data-toggle="tab"> Pegazulejos</a></li>
                                     <li role="presentation"><a href="#especial" aria-controls="especial" role="tab" data-toggle="tab"> Productos Especiales</a></li>
-                                    <li role="presentation"><a href="#arquitectonicas" aria-controls="arquitectonicas" role="tab" data-toggle="tab">Productos Arquitectónicas</a></li>
+                                    <!--  -->
                                 </ul> <!-- end nav-tabs -->
     
                                 <!-- Tab panes -->
@@ -265,6 +266,20 @@ nav-hidden - Open nav on icon click
                                         <ul>
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pinturas'");
+                                                while($row = $db->ObtenerArray()){
+                                                    $cat = $row['categoria'];
+                                                    $cod = $row['codigo'];
+                                                    $nombre = $row['nombre'];
+                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                }
+                                            ?>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="acrilicas">
+                                        <ul>
+                                            <?php
+                                                $db->Consultar("SELECT * FROM productos WHERE categoria='acrilicas'");
                                                 while($row = $db->ObtenerArray()){
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];

@@ -1,9 +1,9 @@
 body {
-  font-family: fire-sans;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
-body h5 {
-  font-family: fire-sans;
+* {
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 a:hover {

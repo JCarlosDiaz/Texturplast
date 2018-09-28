@@ -226,6 +226,74 @@ a:hover {
   }
 }
 
+#productos2 {
+  background: #fff;
+  padding: 0px 0;
+}
+
+#productos2 h3 {
+  color: #000;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+#productos2 .subtitle {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+#productos2 .tab-style-3 {
+  border-top: 2px solid #000;
+}
+
+#productos2 .tab-style-3 .tab-content {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  min-height: 300px;
+  color: #000;
+}
+
+#productos2 .tab-style-3 .tab-content ul {
+  position: relative;
+  display: inline-block;
+}
+
+#productos2 .tab-style-3 .tab-content ul li a {
+  color: #000;
+}
+
+#productos2 .tab-style-3 .tab-content ul:nth-child(2) {
+  left: 50px;
+}
+
+#productos2 .tab-style-3 .nav-tabs > li > a {
+  background: none;
+  border: 2px solid transparent;
+  color: #000;
+}
+
+#productos2 .tab-style-3 .nav-tabs > li.active > a, #productos2 .tab-style-3 .nav-tabs > li.active > a:focus, #productos2 .tab-style-3 .nav-tabs > li.active > a:hover {
+  border-bottom: 2px solid #b8a663;
+  color: #b8a663;
+}
+
+@media only screen and (max-width: 991px) {
+  #productos2 .tab-style-3 .nav-tabs li {
+    float: left;
+    width: 50%;
+  }
+  #productos2 .tab-style-3 .nav-tabs li a {
+    height: 50px;
+  }
+  #productos2 .tab-content > .tab-pane {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 991px) {
   ul.last-list {
     max-width: 200px;
