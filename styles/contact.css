@@ -67,12 +67,16 @@ section.content-section {
 }
 
 #overplay .contacto {
-  padding-top: 15px;
+  padding-top: 35px;
 }
 
 #overplay .social-container {
   margin-top: 40px;
   text-align: center;
+}
+
+#overplay .social-container a {
+  padding: 10px;
 }
 
 #overplay .social-container i.fa {
@@ -180,6 +184,10 @@ section.content-section {
   background: #6d2520;
 }
 
+#complete-contact .cl {
+  padding-right: 0px;
+}
+
 @media only screen and (max-width: 600px) {
   #complete-contact .cl {
     padding-left: 0;
@@ -210,6 +218,7 @@ select {
 #cont h4 a.mail {
   text-transform: lowercase;
   color: #6d2520;
+  font-size: 16px;
 }
 
 #cont a.map {
@@ -325,7 +334,14 @@ section.content-section {
   }
 }
 
+.abc {
+  padding: 0 0 0 15px;
+}
+
 @media only screen and (max-width: 600px) {
+  .abc {
+    padding-left: 0px;
+  }
   .cr {
     padding-right: 0;
   }
@@ -336,5 +352,13 @@ section.content-section {
     padding-left: 16px;
     margin-bottom: 0px !important;
   }
+}
+
+.alinear {
+  font-size: 12px;
+}
+
+label.alinear {
+  padding-top: 45px;
 }
 /*# sourceMappingURL=contact.css.map */

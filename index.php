@@ -74,8 +74,8 @@ nav-hidden - Open nav on icon click
                             </div> 
                         </div>
                         <div class="col-md-12 social-container">
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="50px" alt=""></a>
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="50px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="42.5px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="42.5px" alt=""></a>
                             
                         </div>
                     </div>
@@ -419,7 +419,7 @@ nav-hidden - Open nav on icon click
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h5 class="cta-title underline">Contáctanos</h5>
+                        <h3 class="cta-title underline">Contáctanos</h3>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -482,7 +482,7 @@ nav-hidden - Open nav on icon click
         <div class="container footer-top">
             <div class="row">
                 <!-- ========== right side ========== -->
-                <div class="col-md-6">
+                <div class="col-md-6" style="text-align: center;">
                     <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
                         <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
                         <div class="clearfix"></div>
@@ -491,7 +491,7 @@ nav-hidden - Open nav on icon click
                         <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4 cl">
-                        <a href="/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
+                        <a href="productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>

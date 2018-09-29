@@ -77,9 +77,9 @@ nav-hidden - Open nav on icon click
                             </div> 
                         </div>
                         <div class="col-md-12 social-container">
-                            <i class="fa fa-facebook fa-2x"></i>
-                            <i class="fa fa-instagram fa-2x"></i>
-                            <i class="fa fa-linkedin fa-2x"></i>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="42.5px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="42.5px" alt=""></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -277,17 +277,17 @@ nav-hidden - Open nav on icon click
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <div class="col-md-6 zero-padding">
-                                                                <label for="pregunta">Pregunta</label>
-                                                                <p>Por favor dinos cómo podemos ayudarte con el mayor detalle posible</p>
+                                                                <label class="alinear" for="pregunta">Pregunta</label>
+                                                                <p class="alinear">Por favor dinos cómo podemos ayudarte con el mayor detalle posible</p>
                                                             </div>
-                                                            <div class="col-md-6" style="padding: 0 0 0 15px">
+                                                            <div class="col-md-6 abc">
                                                                     <textarea class="form-control input-style-2" id="pregunta" name="pregunta" placeholder="" required="" rows="3"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12 mb20">
                                                             <div class="form-check col-md-8" style="padding-left:0;">
-                                                                    <p style="display: inline-block;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
+                                                                    <p style="display: inline-block; font-size: 12px;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
                                                                     <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" checked="">
                                                                     <label for="newsletter" class="st-checkbox-1-label">Sí</label>
                                                                     <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
@@ -485,8 +485,8 @@ nav-hidden - Open nav on icon click
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="social-container">
-                            <a href="http://"><i class="fa fa-facebook fa-2x"></i></a>
-                            <a href="http://"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
+                            <img src="images/texturplast/Linkedin.svg" width="50px" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
@@ -511,16 +511,16 @@ nav-hidden - Open nav on icon click
         <div class="container footer-top">
             <div class="row">
                 <!-- ========== right side ========== -->
-                <div class="col-md-6">
+                <div class="col-md-6" style="text-align: center;">
                     <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
                         <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
                         <div class=" clearfix"></div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4 cr">
-                        <a href="#"><h5 class="footer-title">Inicio</h5></a>
+                        <a href="#index.php"><h5 class="footer-title">Inicio</h5></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4 cl">
-                        <a href="http://dappertechnologies.com/texturplast/productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
+                        <a href="productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>

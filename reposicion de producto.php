@@ -1,4 +1,4 @@
-<div class="row">
+                <div class="row">
                     <div class="col-md-12 col-center">
                         <div class="panel-group acc-faq-1" id="accordion-11" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">

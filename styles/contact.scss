@@ -60,11 +60,14 @@ section.content-section{
         padding-top: 20px;
     }
     .contacto{
-        padding-top: 15px;
+        padding-top: 35px;
     }
     .social-container{
         margin-top: 40px;
         text-align: center;
+        a{
+            padding: 10px;
+        }
         i.fa{
             width: 40px;
             height: 40px;
@@ -170,6 +173,9 @@ section.content-section{
     .st-checkbox:checked+.st-checkbox-2-label:before, .st-radio:checked+.st-radio-2-label:before{
         background: #6d2520;
     }
+    .cl{
+        padding-right: 0px;
+    }
     @media only screen and (max-width:600px){
         .cl{
             padding-left: 0;
@@ -197,7 +203,7 @@ select{
     h4 a.mail{
         text-transform: lowercase;
         color: #6d2520;
-
+        font-size: 16px;
     }
     a.map{
         color: black;
@@ -292,7 +298,13 @@ section.content-section {
         padding-left: 60px;
     }
 }
+.abc{
+    padding: 0 0 0 15px;
+}
 @media only screen and (max-width:600px){
+    .abc{
+        padding-left: 0px;
+    }
     .cr{
         padding-right: 0;
     }
@@ -303,4 +315,10 @@ section.content-section {
         padding-left: 16px;
         margin-bottom: 0px!important;
     }
+}
+.alinear{
+   font-size: 12px;
+}
+label.alinear{
+    padding-top: 45px;
 }

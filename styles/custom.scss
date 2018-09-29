@@ -12,6 +12,9 @@ $dorado : #b8a663;
 a:hover{
     color: $dorado!important;
 }
+h3{
+    font-weight: 700;
+}
 .col-center{
     margin: 0 auto;
     float: none;
@@ -57,11 +60,14 @@ a:hover{
         padding-top: 20px;
     }
     .contacto{
-        padding-top: 15px;
+        padding-top: 35px;
     }
     .social-container{
         margin-top: 40px;
         text-align: center;
+        a{
+            padding: 10px;
+        }
         i.fa{
             width: 40px;
             height: 40px;
@@ -508,6 +514,11 @@ a:hover{
         .row.like-table > div{
             display: block;
             float: left;
+        }
+    }
+    @media only screen and (min-width: 991px) {
+        .acc-faq-1 .panel{
+            width: 12.5%;
         }
     }
 }
