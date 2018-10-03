@@ -678,3 +678,7 @@ section.content-section {
     width: 25%;
     display: inline-block;
 }
+.invalid-product{
+    pointer-events: none;
+    opacity: .6;
+}

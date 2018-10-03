@@ -746,4 +746,9 @@ h3 {
   width: 25%;
   display: inline-block;
 }
+
+.invalid-product {
+  pointer-events: none;
+  opacity: .6;
+}
 /*# sourceMappingURL=custom.css.map */
