@@ -331,17 +331,29 @@ h3 {
 
 #nosotros .description-row .parrafo {
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
   max-width: 380px;
+}
+
+#nosotros .icon-container {
+  margin-bottom: 20px;
+}
+
+#nosotros .icon-container img {
+  height: 150px;
 }
 
 @media only screen and (max-width: 991px) {
   #nosotros {
     background-position: 99% 0%;
     background-size: auto;
+    min-height: 0;
   }
   #nosotros .title-row {
     padding-bottom: 50px;
+  }
+  #nosotros .description-row {
+    margin-bottom: 25px;
   }
 }
 
@@ -350,6 +362,12 @@ h3 {
     min-height: unset;
     background-position: 70% 70%;
     background-size: auto;
+  }
+  #nosotros .icon-container {
+    margin-bottom: 20px;
+  }
+  #nosotros .icon-container img {
+    height: 130px;
   }
 }
 
@@ -444,7 +462,7 @@ h3 {
 
 .footer .lefttxt {
   float: left !important;
-  top: -16px;
+  top: -13px;
 }
 
 .footer .footer-top {
@@ -454,14 +472,21 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   .footer .cr {
-    padding-right: 0;
+    padding: 0;
+  }
+  .footer .cr h5 {
+    font-size: 12px;
   }
   .footer .cl {
     padding-left: 0;
   }
   .footer .lefttxt {
-    padding-left: 16px;
+    padding-left: 0;
     margin-bottom: 0px !important;
+    text-align: center;
+  }
+  .footer .lefttxt img {
+    max-width: 40px;
   }
 }
 
@@ -631,12 +656,6 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #uso-section .icons-row {
-    padding-bottom: 131px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   #uso-section .cl {
     padding: 0;
@@ -721,5 +740,10 @@ h3 {
   section.content-section {
     padding: 20px 0;
   }
+}
+
+.tab-style-3.producto .nav-tabs li {
+  width: 25%;
+  display: inline-block;
 }
 /*# sourceMappingURL=custom.css.map */

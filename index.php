@@ -75,6 +75,7 @@ nav-hidden - Open nav on icon click
                         </div>
                         <div class="col-md-12 social-container">
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="42.5px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramwhite.svg" width="42.5px" alt=""></a>
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="42.5px" alt=""></a>
                             
                         </div>
@@ -125,23 +126,25 @@ nav-hidden - Open nav on icon click
                                 id="slide-148-layer-1"
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                                data-fontsize="['60','60','40','25']"
+                                data-fontsize="['60','60','40','28']"
                                 data-lineheight="['90','90','70','50']"
-                                data-width="none"
+                                data-width="['1500', '1500', '768','250']"
+                                data-height="['auto']"
                                 data-height="none"
-                                data-whitespace="nowrap"
+                                data-whitespace="normal"
                                 data-transform_idle="o:1;"
                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
                                 data-start="1000"
-                                data-splitin="words"
+                                data-splitin="none"
                                 data-splitout="none"
                                 data-responsive_offset="on"
                                 data-elementdelay="0.05"
-                                style="z-index: 5; white-space: nowrap;color:#fff;">RECUBRIMIENTOS QUE PERDURAN
+                                style="z-index: 5; text-align:center; white-space: normal;color:#fff;">RECUBRIMIENTOS QUE PERDURAN
                             </div>
+
     
                             <!-- LAYER NR. 2 -->
                             <!-- <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
@@ -228,7 +231,10 @@ nav-hidden - Open nav on icon click
                         <img src="images/texturplast/Lonas sitio-01.jpg" class="img-responsive l2" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="images/texturplast/Lonas sitio-02.jpg" class="img-responsive" alt="">
+                        <img src="images/texturplast/Lonas sitio-02.jpg" class="img-responsive l2" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <img src="images/texturplast/familia.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="col-md-12 desc">
                         <img src="images/texturplast/Lonas sitio-03.jpg" class="img-responsive" alt="">
@@ -404,13 +410,28 @@ nav-hidden - Open nav on icon click
                 </div>
             </div>
             <div class="container">
-                <div class="row images-row text-center">
-                    <div class="col-md-10 col-xs-12 col-center">
-                        <img class="svgimage" src="images/texturplast/Vectores Textur Sitio-09.svg" alt="" width="100%">
+                <div class="row  text-center">
+                    <div class="col-md-3 col-sm-3 col-xs-6 icon-container">
+                        <img src="images/texturplast/empaquereciclable.svg"  alt="">
                     </div>
-                    <!-- <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-2.png" alt=""></div>
-                    <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-3.png" alt=""></div>
-                    <div class="col-md-3 col-xs-6"><img src="images/texturplast/nosotros-4.png" alt=""></div> -->
+                    <div class="col-md-3 col-sm-3 col-xs-6 icon-container">
+                        <img src="images/texturplast/productoecologico.svg"  alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 icon-container">
+                        <img src="images/texturplast/tecnologia.svg"  alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 icon-container">
+                        <img src="images/texturplast/calidad.svg"  alt="">
+                    </div>
+                    <!-- <div class="col-md-3 col-xs-6">
+                        <img src="images/texturplast/productoecologico.svg" alt="">
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <img src="images/texturplast/empaquereciclable.svg" alt="">
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <img src="images/texturplast/productoecologico.svg" alt="">
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -433,6 +454,7 @@ nav-hidden - Open nav on icon click
                         <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
                         <div class="social-container">
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramblack.svg" width="50px" alt=""></a>
                             <img src="images/texturplast/Linkedin.svg" width="50px" alt="">
                         </div>
                         <p class="direccion">3 sur 513 Colonia Centro,<br>Tehuacán, Puebla C.P.75700</p>
@@ -483,17 +505,17 @@ nav-hidden - Open nav on icon click
             <div class="row">
                 <!-- ========== right side ========== -->
                 <div class="col-md-6" style="text-align: center;">
-                    <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
-                        <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
+                    <div class="col-md-3 col-sm-3 col-xs-2 lefttxt">
+                        <img src="images/texturplast/isowhite.svg" width="50px" class="mb20 lefttxt" alt="">
                         <div class="clearfix"></div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 cr">
+                    <div class="col-md-3 col-sm-3 col-xs-3 cr">
                         <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 cl">
+                    <div class="col-md-3 col-sm-3 col-xs-3 cr cl">
                         <a href="productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cr cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>

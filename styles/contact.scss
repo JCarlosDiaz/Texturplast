@@ -253,7 +253,7 @@ select{
     }
     @media only screen and (max-width:600px){
         .social-container{
-            padding-left: 10%;
+            padding-left: 0%;
         }
     }
 }
@@ -315,10 +315,13 @@ section.content-section {
         padding-left: 16px;
         margin-bottom: 0px!important;
     }
+    .tab-style-8 .tab-content{
+        padding: 30px 0 20px 0;
+    }
 }
 .alinear{
    font-size: 12px;
 }
 label.alinear{
-    padding-top: 45px;
+    padding-top: 41px;
 }

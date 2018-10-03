@@ -66,7 +66,7 @@ nav-hidden - Open nav on icon click
                     <div class="row">
                     <div class="col-md-12 text-center">
                             <div class="productos">
-                                <a href="productos.php?cat=pinturas&prod=textur-premium">PRODUCTOS</a>
+                                <a href="index.php">INICIO</a>
                             </div> 
                         </div>
                         <div class="col-md-12 text-center">
@@ -76,6 +76,7 @@ nav-hidden - Open nav on icon click
                         </div>
                         <div class="col-md-12 social-container">
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="42.5px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramwhite.svg" width="42.5px" alt=""></a>
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="42.5px" alt=""></a>
                             
                         </div>
@@ -163,7 +164,7 @@ nav-hidden - Open nav on icon click
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-10 col-center">
-                        <div class="tab-style-3">
+                        <div class="tab-style-3 producto">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active"><a href="#pinturas" aria-controls="pinturas" role="tab" data-toggle="tab">Pinturas Arquitectónicas</a></li>
                                     <li role="presentation"><a href="#acrilicas" aria-controls="acrilicas" role="tab" data-toggle="tab">Pinturas Acrílicas</a></li>
@@ -175,6 +176,7 @@ nav-hidden - Open nav on icon click
                                     <li role="presentation"><a href="#especial" aria-controls="especial" role="tab" data-toggle="tab"> Productos Especiales</a></li>
                                     <!--  -->
                                 </ul> <!-- end nav-tabs -->
+                                
     
                                 <!-- Tab panes -->
                                 <div class="tab-content">
@@ -321,18 +323,18 @@ nav-hidden - Open nav on icon click
                         <!-- Tab panes -->
                         <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade in active" id="home-5">
-                                    <div class="col-md-12 icons-row">
+                                    <div class="col-md-12 icons-row row">
                                         <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono secado.svg" alt="" height="150px" width="500px">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono secado.svg" alt="" >
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono rendimiento.svg" alt="" height="150px" width="500px">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono rendimiento.svg" alt="" >
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono taman_os.svg" alt="" height="150px" width="500px">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono taman_os.svg" alt="" >
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono lavabilidad.svg" alt="" height="150px" width="500px">
+                                            <img class="svgimage img-responsive col-center" src="images/texturplast/icono lavabilidad.svg" alt="">
                                         </div>
                                         <!-- <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img src="images/texturplast/uso-2.jpg" class="img-responsive col-center" alt="">
@@ -403,7 +405,7 @@ nav-hidden - Open nav on icon click
                 <div class="row">
                     <div class="col-md-8 text-center col-center">
                         <h3 class="mb30">¿Qué hago con el envase?</h3>
-                        <p style="font-size:17px;">Regresa el envmaso de tu producto a cualquiera de nuestras tiendas y recibe un descuento aplicable inmediatamente o en tu siguiente compra.</p>
+                        <p style="font-size:17px;">Regresa el envase de tu producto a cualquiera de nuestras tiendas y recibe un descuento aplicable inmediatamente o en tu siguiente compra.</p>
                     </div>
                 </div>
             </div>
@@ -512,17 +514,17 @@ nav-hidden - Open nav on icon click
             <div class="row">
                 <!-- ========== right side ========== -->
                 <div class="col-md-6" style="text-align: center;">
-                    <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
-                        <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
-                        <div class=" clearfix"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-2 lefttxt">
+                        <img src="images/texturplast/isowhite.svg" width="50px" class="mb20 lefttxt" alt="">
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 cr">
-                        <a href="index.php"><h5 class="footer-title">Inicio</h5></a>
+                    <div class="col-md-3 col-sm-3 col-xs-3 cr">
+                        <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 cl">
+                    <div class="col-md-3 col-sm-3 col-xs-3 cr cl">
                         <a href="productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cr cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>

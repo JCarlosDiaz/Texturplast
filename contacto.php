@@ -73,11 +73,12 @@ nav-hidden - Open nav on icon click
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="contacto">
-                                <a href="contacto.php">CONTACTO</a>
+                                <a href="index.php">INICIO</a>
                             </div> 
                         </div>
                         <div class="col-md-12 social-container">
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="42.5px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramwhite.svg" width="42.5px" alt=""></a>
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="42.5px" alt=""></a>
                             
                         </div>
@@ -138,11 +139,11 @@ nav-hidden - Open nav on icon click
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
                                 id="slide-148-layer-1"
-                                data-x="['center','center','center','center']" data-hoffset="['-350','-180','-180','-80']"
+                                data-x="['center','center','center','center']" data-hoffset="['-350','-250','-220','-150']"
                                 data-y="['middle','middle','middle','middle']" data-voffset="['-25','-50','-80','-50']"
-                                data-fontsize="['32','32','32','20']"
+                                data-fontsize="['32','32','32','24']"
                                 data-lineheight="['42','42','42','34']"
-                                data-width="375"
+                                data-width="['350','350','200','200']"
                                 data-height="none"
                                 data-whitespace="normal"
                                 data-transform_idle="o:1;"
@@ -151,11 +152,11 @@ nav-hidden - Open nav on icon click
                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
                                 data-start="1000"
-                                data-splitin="words"
+                                data-splitin="none"
                                 data-splitout="none"
                                 data-responsive_offset="on"
                                 data-elementdelay="0.05"
-                                style="z-index: 5; white-space: normal;color:#fff;letter-spacing: 2px; text-aling:center;">HABLA CON<br> NUESTROS EXPERTOS<br>
+                                style="z-index: 5;text-align:center; white-space: normal;color:#fff;letter-spacing: 2px; text-aling:center;">HABLA CON NUESTROS EXPERTOS<br>
                             </div>
 
                             <!-- LAYER NR. 4 -->
@@ -485,7 +486,8 @@ nav-hidden - Open nav on icon click
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="social-container">
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
+                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramblack.svg" width="50px" alt=""></a>
                             <img src="images/texturplast/Linkedin.svg" width="50px" alt="">
                         </div>
                     </div>
@@ -512,17 +514,17 @@ nav-hidden - Open nav on icon click
             <div class="row">
                 <!-- ========== right side ========== -->
                 <div class="col-md-6" style="text-align: center;">
-                    <div class="col-md-3 col-sm-3 col-xs-12 lefttxt">
-                        <img src="images/texturplast/logo2.png" alt="Texturplast" class="img-responsive mb20 lefttxt">
-                        <div class=" clearfix"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-2 lefttxt">
+                        <img src="images/texturplast/isowhite.svg" width="50px" class="mb20 lefttxt" alt="">
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 cr">
-                        <a href="#index.php"><h5 class="footer-title">Inicio</h5></a>
+                    <div class="col-md-3 col-sm-3 col-xs-3 cr">
+                        <a href="#"><h5 class="footer-title">Inicio</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 cl">
+                    <div class="col-md-3 col-sm-3 col-xs-3 cr cl">
                         <a href="productos.php?cat=pinturas&prod=textur-premium"><h5 class="footer-title">Productos</h5></a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cl">
+                    <div class="col-md-3 col-sm-3 col-xs-4 mb20 cr cl">
                         <a href="contacto.php"><h5 class="footer-title">Contacto</h5></a>
                     </div>
                 </div>
