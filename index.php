@@ -273,10 +273,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pinturas'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                             
@@ -287,10 +292,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='acrilicas'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                             
@@ -301,10 +311,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='selladores-adhesivos'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -314,10 +329,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pastas-acrilicas'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -327,10 +347,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='impermeabilizantes'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -340,10 +365,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='granitos-planchados'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -353,10 +383,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='pegazulejos'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -366,10 +401,15 @@ nav-hidden - Open nav on icon click
                                             <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -379,10 +419,15 @@ nav-hidden - Open nav on icon click
                                         <?php
                                                 $db->Consultar("SELECT * FROM productos WHERE categoria='productos-especiales'");
                                                 while($row = $db->ObtenerArray()){
+                                                    $img = $row['imagen'];
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    if($img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
