@@ -280,7 +280,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -299,7 +299,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -318,7 +318,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -336,7 +336,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -354,7 +354,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -372,7 +372,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -390,7 +390,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -408,7 +408,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -426,7 +426,7 @@ nav-hidden - Open nav on icon click
                                                     if($img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
-                                                        print "<li class'invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }
                                                 }
                                             ?>
