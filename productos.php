@@ -188,7 +188,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                             
@@ -202,7 +207,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                             
@@ -216,7 +226,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -229,7 +244,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -242,7 +262,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -255,7 +280,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -268,7 +298,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -281,7 +316,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
@@ -294,7 +334,12 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    $img = $row['imagen'];
+                                                    if( $img != ''){
+                                                        print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }else{
+                                                        print "<li class='invalid-product'><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
+                                                    }
                                                 }
                                             ?>
                                         </ul>
