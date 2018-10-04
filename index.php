@@ -76,7 +76,7 @@ nav-hidden - Open nav on icon click
                         <div class="col-md-12 social-container">
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/facew.svg" width="35px" alt=""></a>
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramwhite.svg" width="35px" alt=""></a>
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/linkw.svg" width="35px" alt=""></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/33311358/admin/overview/"><img src="images/texturplast/linkw.svg" width="35px" alt=""></a>
                             
                         </div>
                     </div>
