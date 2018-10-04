@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `rendimiento`, `ficha`, `caracteristicas`, `imagen`) VALUES
+INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `rendimiento`, `ficha`, `caracteristicas`, `imagen`, 'preparacion de producto') VALUES
 (1, 'textur-premium', 'Textur Premium', 'pinturas', 'Para crear un ambiente clásico y con la mejor proteccion, elige Textur Premium', '12 a 14 metros cuadrados por litro. A una mano', 'fichas/pinturas/F-Textur-Premium.pdf', '100% acrilica<br>Exteriores/Interiroes<br>', 'images/pinturas/texturpremium.jpg'),
 (2, 'pintura-deportiva', 'Pintura Deportiva', 'pinturas', '', '', 'fichas/pinturas/.pdf', '', 'images/pinturas/pintura deportiva.jpg'),
 (3, 'pintura-trafico', 'Pintura Tráfico', 'pinturas', '', '', 'ficha/pinturas/F-Pintura-Trafico.pdf', '', 'ficha/pinturas/pintura trafico.jpg'),

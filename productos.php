@@ -391,7 +391,7 @@ nav-hidden - Open nav on icon click
                                             <img src="images/texturplast/uso-4.jpg" class="img-responsive col-center" alt="">
                                         </div> -->
                                     </div>
-                                    <div class="col-sm-6 col-xs-12">
+                                    <!-- <div class="col-sm-6 col-xs-12">
                                         <h3 class="feature-title">Preparación de la superficie</h3>
                                         <p class="desc-black">Remover con espátula o cepillo de alambre la pintura que se encuentre en mal estado.</p>
                                     </div>
@@ -416,7 +416,105 @@ nav-hidden - Open nav on icon click
                                             <h3 class="feature-title">Limpieza</h3>
                                             <p class="desc-black">En caso necesario lave sus manos y equipos de aplicación en un recipiente con agua.</p>
                                         </div>
-                                    </div>
+                                    </div> -->
+                                    <?php 
+                                        $db->Consultar("SELECT * FROM productos WHERE codigo='$producto_actual'");
+                                        $row = $db->ObtenerArray();
+                                        $cat = $row['categoria'];
+                                        $a = $row['prepSuperficie'];
+                                        $b = $row['preproducto'];
+                                        $c = $row['sugerencias'];
+                                        $d = $row['limpsuperficie'];
+                                        $e = $row['apli_producto'];
+                                        $f = $row['limpieza'];
+                                        $g = $row['sellado_superficie'];
+                                        $h = $row['reparacion_grietas'];
+                                        $i = $row['pre_apli_producto'];
+                                        $j = $row['apli_producto'];
+                                        switch ($cat) {
+                                            case 'pinturas':
+                                                print '<div class="col-sm-6 col-xs-12">
+                                                <h3 class="feature-title">Preparación de la superficie</h3>
+                                                <p class="desc-black">'.$a.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Limpieza de la superficie</h3>
+                                                    <p class="desc-black">'.$d.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación del producto</h3>
+                                                    <p class="desc-black">'.$b.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Aplicación del producto</h3>
+                                                    <p class="desc-black">'.$e.'</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="col-sm-6 d-pad col-xs-12 cl">
+                                                        <h3 class="feature-title">Sugerencias</h3>
+                                                        <p class="desc-black">'.$c.'</p>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12 cl">
+                                                        <h3 class="feature-title">Limpieza</h3>
+                                                        <p class="desc-black">'.$f.'</p>
+                                                    </div>
+                                                </div>';
+                                            break;
+                                            case 'acrilicas':
+                                                print '<div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación de la superficie</h3>
+                                                    <p class="desc-black">'.$a.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Limpieza de la superficie</h3>
+                                                    <p class="desc-black">'.$d.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Aplicación de la pintura</h3>
+                                                    <p class="desc-black">'.$j.'</p>
+                                                </div>';
+                                            break;
+                                            case 'selladores-adhesivos':
+                                                print '<div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación de la superficie</h3>
+                                                    <p class="desc-black">'.$a.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Limpieza de la superficie</h3>
+                                                    <p class="desc-black">'.$d.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Sellado de la superficie</h3>
+                                                    <p class="desc-black">'.$g.'</p>
+                                                </div>';
+                                            break;
+                                            case 'impermeabiizantes':
+                                                print '<div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación de la superficie</h3>
+                                                    <p class="desc-black">'.$a.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Limpieza de la superficie</h3>
+                                                    <p class="desc-black">'.$d.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Sellado de la superficie</h3>
+                                                    <p class="desc-black">'.$g.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Reparación de grietas</h3>
+                                                    <p class="desc-black">'.$h.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación y aplicación del producto</h3>
+                                                    <p class="desc-black">'.$i.'</p>
+                                                </div>';
+                                            break;
+                                            default:
+                                                # code...
+                                                break;
+                                        }
+                                    ?>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="profile-5">
                                     <div class="col-sm-4 col-xs-12">
