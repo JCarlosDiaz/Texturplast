@@ -227,15 +227,16 @@ nav-hidden - Open nav on icon click
         <section class="content-section first-section">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12">
+                        <img src="images/texturplast/familia.jpg" class="img-responsive l2" alt="">
+                    </div>
                     <div class="col-md-6">
                         <img src="images/texturplast/Lonas sitio-01.jpg" class="img-responsive l2" alt="">
                     </div>
                     <div class="col-md-6">
                         <img src="images/texturplast/Lonas sitio-02.jpg" class="img-responsive l2" alt="">
                     </div>
-                    <div class="col-md-12">
-                        <img src="images/texturplast/familia.jpg" class="img-responsive" alt="">
-                    </div>
+                    
                     <div class="col-md-12 desc">
                         <img src="images/texturplast/Lonas sitio-03.jpg" class="img-responsive" alt="">
                     </div>
@@ -498,9 +499,11 @@ nav-hidden - Open nav on icon click
                         <h4><a class="mail" href="mailto:ventas@texturplast.com">ventas@texturplast.com</a></h4>
                         <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
                         <div class="social-container">
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramblack.svg" width="50px" alt=""></a>
-                            <img src="images/texturplast/Linkedin.svg" width="50px" alt="">
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/">
+                            <img src="images/texturplast/Face.svg" width="35px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/">
+                            <img src="images/texturplast/instagramblack.svg" width="35px" alt=""></a>
+                            <img src="images/texturplast/Linkedin.svg" width="35px" alt="">
                         </div>
                         <p class="direccion">3 sur 513 Colonia Centro,<br>Tehuacán, Puebla C.P.75700</p>
                         <a class="map underline" href="https://goo.gl/maps/B2r98eKtCz82" target="blank">Mostrar Ubicación</a>

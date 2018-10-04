@@ -310,7 +310,7 @@ h3{
     .icon-container{
         margin-bottom: 20px;
         img{
-            height: 150px;
+            height: 105px;
         }
     }
 }
@@ -340,7 +340,7 @@ h3{
         .icon-container{
             margin-bottom: 20px;
             img{
-                height: 130px;
+                height: 78px;
             }
         }
     }
@@ -662,6 +662,10 @@ h3{
 @media only screen and (max-width: 480px) {
     .separador2{
         display: none;
+    }
+    #productos .tab-style-3 .tab-content ul {
+        left: 0;
+    }
     
 }
 @media only screen and (min-width: 991px) {
@@ -672,7 +676,7 @@ h3{
 section.content-section {
     padding: 20px 0;
     }
-}
+
 
 .tab-style-3.producto .nav-tabs li{
     width: 25%;
@@ -681,4 +685,7 @@ section.content-section {
 .invalid-product{
     pointer-events: none;
     opacity: .6;
+}
+.svgimage{
+    width: 150px;
 }

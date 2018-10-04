@@ -10,7 +10,7 @@ class MYSQL
 	// private $password = "textur2018";
 	private $servidor = "mysql:host=localhost;dbname=texturplast";
 	private $usuario = "root";
-	private $password = "mysql";
+	private $password = "";
 	private $Conexion;
 	private $Consulta;
 	private $tmp;

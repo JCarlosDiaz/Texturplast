@@ -340,7 +340,7 @@ h3 {
 }
 
 #nosotros .icon-container img {
-  height: 150px;
+  height: 105px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -367,7 +367,7 @@ h3 {
     margin-bottom: 20px;
   }
   #nosotros .icon-container img {
-    height: 130px;
+    height: 78px;
   }
 }
 
@@ -728,18 +728,19 @@ h3 {
   .separador2 {
     display: none;
   }
+  #productos .tab-style-3 .tab-content ul {
+    left: 0;
+  }
 }
 
-@media only screen and (max-width: 480px) and (min-width: 991px) {
+@media only screen and (min-width: 991px) {
   .acc-faq-1 .panel {
     width: 14%;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  section.content-section {
-    padding: 20px 0;
-  }
+section.content-section {
+  padding: 20px 0;
 }
 
 .tab-style-3.producto .nav-tabs li {
@@ -750,5 +751,9 @@ h3 {
 .invalid-product {
   pointer-events: none;
   opacity: .6;
+}
+
+.svgimage {
+  width: 150px;
 }
 /*# sourceMappingURL=custom.css.map */

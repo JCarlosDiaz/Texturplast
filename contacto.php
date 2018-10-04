@@ -2,8 +2,8 @@
 <html class="no-js" lang="en">
 <?php 
 include 'db/connect.php';
-$categoria_actual = $_GET['cat'];
-$producto_actual = $_GET['prod'];
+//$categoria_actual = $_GET['cat'];
+//$producto_actual = $_GET['prod'];
 ?>
 <head>
 
@@ -486,9 +486,11 @@ nav-hidden - Open nav on icon click
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="social-container">
-                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/Face.svg" width="50px" alt=""></a>
-                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/"><img src="images/texturplast/instagramblack.svg" width="50px" alt=""></a>
-                            <img src="images/texturplast/Linkedin.svg" width="50px" alt="">
+                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/">
+                             <img src="images/texturplast/Face.svg" width="40px" alt=""></a>
+                            <a target="_blank" href="https://www.facebook.com/texturplast.mex/">
+                            <img src="images/texturplast/instagramblack.svg" width="40px" alt=""></a>
+                            <img src="images/texturplast/Linkedin.svg" width="40px" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
