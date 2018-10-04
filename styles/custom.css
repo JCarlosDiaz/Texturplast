@@ -362,6 +362,8 @@ h3 {
     min-height: unset;
     background-position: 70% 70%;
     background-size: auto;
+    background: none;
+    padding: 100px 0;
   }
   #nosotros .icon-container {
     margin-bottom: 20px;
