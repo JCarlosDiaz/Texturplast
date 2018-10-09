@@ -488,7 +488,7 @@ nav-hidden - Open nav on icon click
                                                     <p class="desc-black">'.$g.'</p>
                                                 </div>';
                                             break;
-                                            case 'impermeabiizantes':
+                                            case 'impermeabilizantes':
                                                 print '<div class="col-sm-6 col-xs-12">
                                                     <h3 class="feature-title">Preparación de la superficie</h3>
                                                     <p class="desc-black">'.$a.'</p>
