@@ -207,7 +207,7 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    $img = $row['imagen'];
+                                                    $img = $row['rendimiento'];
                                                     if( $img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{
