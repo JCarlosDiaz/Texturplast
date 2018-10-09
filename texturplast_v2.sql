@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 09-10-2018 a las 22:26:06
+-- Tiempo de generación: 09-10-2018 a las 23:07:43
 -- Versión del servidor: 5.6.37
 -- Versión de PHP: 5.6.31
 
@@ -96,7 +96,7 @@ INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `
 (51, 'adhesivo-gres-procelanico-int-', 'Adhesivo Gres Porcelánico Int.', 'pegazulejos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (52, 'adhesivo-psp-fijaveneciano-gri', 'Adhesivo PSP y Fijaveneciano G', 'pegazulejos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (53, 'adhesivo-psp-fijaveneciano-bla', 'Adhesivo PSP y Fijaveneciano B', 'pegazulejos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(54, 'adhesivo-procelanato-exteriore', 'Adhesivo Porcelanato Exteriore', 'pegazulejos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(54, 'adhesivo-procelanato-exteriore', 'Adhesivo Porcelanato Exteriores', 'pegazulejos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (55, 'resanador-durock', 'Resanador Durock', 'productos-especiales', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (56, 'texturblock-plus-claro', 'Texturblock Plus Claro', 'productos-especiales', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (57, 'texturblock-plus-intenso', 'Texturblock Plus Intenso', 'productos-especiales', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
