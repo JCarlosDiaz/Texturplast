@@ -105,6 +105,26 @@ INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `
 (60, 'solvente-sombreador-blind', 'Solvente para Sombreador Blind', 'productos-especiales', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 --
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `ID` int(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `apellido` varchar(30) NOT NULL,
+  `estado` varchar(30) NOT NULL,
+  `cp` varchar(5) NOT NULL,
+  `correo` varchar(30) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`ID`, `nombre`, `apellido`, `estado`, `cp`, `correo`) VALUES
+(2, 'John', 'Doe', 'QR', '77500', 'john@example.com');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -112,6 +132,12 @@ INSERT INTO `productos` (`ID`, `codigo`, `nombre`, `categoria`, `descripcion`, `
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -123,6 +149,11 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `productos`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=61;
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
