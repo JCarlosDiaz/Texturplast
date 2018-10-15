@@ -11,6 +11,9 @@ class MYSQL
 	private $servidor = "mysql:host=localhost;dbname=texturplast";
 	private $usuario = "root";
 	private $password = "mysql";
+	// private $servidor = "mysql:host=localhost;dbname=dappcun_texturplast";
+	// private $usuario = "dappcun_texturplastadmin";
+	// private $password = "dapper2018";
 	private $Conexion;
 	private $Consulta;
 	private $tmp;

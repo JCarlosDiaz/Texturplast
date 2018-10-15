@@ -350,7 +350,14 @@ nav-hidden - Open nav on icon click
                 </div>
             </div>
         </section>
-
+        <?php 
+            $db->Consultar("SELECT * FROM productos WHERE codigo='$producto_actual'");
+            $row = $db->ObtenerArray();
+            $sec =$row['secado'];
+            $ren =$row['rendimiento'];
+            $tam =$row['tamano'];
+            $lav =$row['lavabilidad'];
+        ?>                                       
         <section class="content-section" id="uso-section">
             <div class="container-fluid">
                 <div class="row navigation-row">
@@ -371,52 +378,21 @@ nav-hidden - Open nav on icon click
                                     <div class="col-md-12 icons-row row">
                                         <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img class="svgimage img-responsive col-center" src="images/texturplast/icono secado.svg" alt="" >
+                                            <p class="uso-part1"><?php print "$sec" ?></p>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img class="svgimage img-responsive col-center" src="images/texturplast/icono rendimiento.svg" alt="" >
+                                            <p class="uso-part1"><?php print "$ren" ?></p>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img class="svgimage img-responsive col-center" src="images/texturplast/icono taman_os.svg" alt="" >
+                                            <p class="uso-part1"><?php print "$tam" ?></p>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-6">
                                             <img class="svgimage img-responsive col-center" src="images/texturplast/icono lavabilidad.svg" alt="">
+                                            <p class="uso-part1"><?php print "$lav" ?></p>
                                         </div>
-                                        <!-- <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img src="images/texturplast/uso-2.jpg" class="img-responsive col-center" alt="">
-                                        </div>
-                                        <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img src="images/texturplast/uso-3.jpg" class="img-responsive col-center" alt="">
-                                        </div>
-                                        <div class="col-md-3 col-sm-3 col-xs-6">
-                                            <img src="images/texturplast/uso-4.jpg" class="img-responsive col-center" alt="">
-                                        </div> -->
                                     </div>
-                                    <!-- <div class="col-sm-6 col-xs-12">
-                                        <h3 class="feature-title">Preparación de la superficie</h3>
-                                        <p class="desc-black">Remover con espátula o cepillo de alambre la pintura que se encuentre en mal estado.</p>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-12">
-                                        <h3 class="feature-title">Limpieza de la superficie</h3>
-                                        <p class="desc-black">Limpiar la superficie de polvo o grasa para asegurarnos de tener una buena adherencia. Deberá estar libre completamente de humedad para no tener problemas de desprendimientos.</p>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-12">
-                                        <h3 class="feature-title">Preparación del producto</h3>
-                                        <p class="desc-black">Mezclar bien la pintura y después diluir con agua limpia en cantidades que pueden ser desde un 10% hasta un 20% dependiendo de la viscocidad que se requiera para aplicarse ya sea con rodillo, brocha o pistola airless.</p>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-12">
-                                        <h3 class="feature-title">Aplicación del producto</h3>
-                                        <p class="desc-black">Aplique Textur Premium&reg; a 2 manos con brocha, rodillo o equipo de aspersión airless, dejando secar 60 minutos entre mano y mano.</p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="col-sm-6 d-pad col-xs-12 cl">
-                                            <h3 class="feature-title">Sugerencias</h3>
-                                            <p class="desc-black">Se recomienda sellar la superficie con sellador 5x1 Texturplast para obtener el mejor rendimiento y anclaje de la pintura.</p>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-12 cl">
-                                            <h3 class="feature-title">Limpieza</h3>
-                                            <p class="desc-black">En caso necesario lave sus manos y equipos de aplicación en un recipiente con agua.</p>
-                                        </div>
-                                    </div> -->
                                     <?php 
                                         $db->Consultar("SELECT * FROM productos WHERE codigo='$producto_actual'");
                                         $row = $db->ObtenerArray();
@@ -564,7 +540,7 @@ nav-hidden - Open nav on icon click
                         <div class="col-md-6 dd2">
                             <p class="parrafo-otros">
                                 <?php
-                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                    $db->Consultar("SELECT * FROM productos WHERE prepSuperficie!='' ORDER BY RAND() LIMIT 5;");
                                         $row = $db->ObtenerArray();
                                         $cat = $row['categoria'];
                                         $cod = $row['codigo'];
@@ -581,7 +557,7 @@ nav-hidden - Open nav on icon click
                         <div class="col-md-6 dd2">
                             <p class="parrafo-otros">
                                 <?php
-                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                    $db->Consultar("SELECT * FROM productos WHERE prepSuperficie!='' ORDER BY RAND() LIMIT 5;");
                                         $row = $db->ObtenerArray();
                                         $cat = $row['categoria'];
                                         $cod = $row['codigo'];
@@ -598,7 +574,7 @@ nav-hidden - Open nav on icon click
                         <div class="col-md-6 dd2">
                             <p class="parrafo-otros">
                                 <?php
-                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                    $db->Consultar("SELECT * FROM productos WHERE prepSuperficie!='' ORDER BY RAND() LIMIT 5;");
                                         $row = $db->ObtenerArray();
                                         $cat = $row['categoria'];
                                         $cod = $row['codigo'];
@@ -615,7 +591,7 @@ nav-hidden - Open nav on icon click
                         <div class="col-md-6 dd2">
                             <p class="parrafo-otros">
                                 <?php
-                                    $db->Consultar("SELECT * FROM productos ORDER BY RAND() LIMIT 5;");
+                                    $db->Consultar("SELECT * FROM productos WHERE prepSuperficie!='' ORDER BY RAND() LIMIT 5;");
                                         $row = $db->ObtenerArray();
                                         $cat = $row['categoria'];
                                         $cod = $row['codigo'];

@@ -1,7 +1,7 @@
 <?php
 // Checks if form has been submitted
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-
+include 'db/connect.php';
 function post_captcha($user_response) {
     $fields_string = '';
     $fields = array(
@@ -44,12 +44,19 @@ if (!$res['success']) {
         
     if (isset($_POST['newsletter'])) {
         $inscrito = true;
+        $db->Consultar("INSERT INTO clientes (`nombre`, `apellido`, `correo`, `telefono`, `estado`, `cp`) 
+        VALUES ('$nombre','$apellido','$correo','$telefono','$estado','$codigo')");
+        // if($inscrito = true){
+            
+        // }
+        echo "entro en activo";
     } else {
         $inscrito = false;
+        echo "no entro";
     } 
     
     $mail->setFrom('website@texturplast.com', 'Contacto');
-    $mail->addAddress('ventas@texturplast.com', 'Administrador');     // Add a recipient
+    $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
     
     
     $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -70,11 +77,15 @@ if (!$res['success']) {
     Contactar a la brevedad posible';
     $mail->AltBody = $mensaje;
     
-    
+    // if($inscrito = true){
+    //         $db->Consultar("INSERT INTO clientes (nombre, apellido, correo, telefono, estado, cp) 
+    //        VALUES ('$nombre','$apellido','$correo','$telefono','$estado','$codigo')");
+    // }
     if(!$mail->send()) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
+        
         echo 'Message has been sent';
     }
     echo '<br><p>CAPTCHA was completed successfully!</p><br>';

@@ -1,7 +1,7 @@
 <?php
 // Checks if form has been submitted
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-
+include 'db/connect.php';
 function post_captcha($user_response) {
     $fields_string = '';
     $fields = array(
@@ -32,10 +32,8 @@ if (!$res['success']) {
     echo '<p>Please go back and make sure you check the security CAPTCHA box.</p><br>';
 } else {
     // If CAPTCHA is successfully completed...
-
-    // send email
     $mail = new PHPMailer;
-
+    // send email
     $name = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $email = $_POST['correo'];
@@ -50,13 +48,19 @@ if (!$res['success']) {
         
     if (isset($_POST['checkbox-5'])) {
         $inscrito = true;
+        $db->Consultar("INSERT INTO clientes (nombre, apellido, correo, telefono, estado, cp) 
+            VALUES ('$name','$apellido','$email','$phone','$estado','$codigo')");
+        // if($inscrito = true){
+            
+        // }
+        echo "entro en activo";
     } else {
         $inscrito = false;
-    }
-    
+        echo "no entro";
+    } 
     
     $mail->setFrom('website@texturplast.com', 'Contacto');
-    $mail->addAddress('ventas@texturplast.com', 'Administrador');     // Add a recipient
+    $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
     
     
     $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -64,9 +68,9 @@ if (!$res['success']) {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->CharSet = 'UTF-8';
     
-    $mail->Subject = 'Nueva solicitud de contacto texturplast.com';
-    $mail->Body    = 'Nuevo mensaje de contacto de texturplast.com <strong>'
-        .$name.'  ('.$email.')</strong><br>El mensaje es el siguiente<br><br><strong>
+    $mail->Subject = 'Nueva solicitud de contacto texturplast.com/';
+    $mail->Body    = 'Nuevo mensaje de contacto de texturplast.com/ <strong>'
+    .$name.'  ('.$email.')</strong><br>El mensaje es el siguiente<br><br><strong>
         Nombre: '.$name.'<br>
         Apellido: '.$apellido.'<br>
         Correo: '.$email.'<br>
@@ -79,20 +83,17 @@ if (!$res['success']) {
         Comprobante de compra : '.$radio.'<br>
         Descripción del Problema: '.$message.'</strong><br> 
         Contactar a la brevedad posible';
-    $mail->AltBody = $mensaje;
     
-    
+    // if($inscrito = true){
+    //         $db->Consultar("INSERT INTO clientes (nombre, apellido, correo, telefono, estado, cp) 
+    //        VALUES ('$nombre','$apellido','$correo','$telefono','$estado','$codigo')");
+    // }
     if(!$mail->send()) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
+        
         echo 'Message has been sent';
-        echo $inscrito;
-        if ($inscrito == true){
-        $db->Consultar("INSERT INTO usuarios (nombre, apellido, estado, codigo, correo) 
-        VALUES ('$nombre','$apellido','$estado','$codigo','$correo')");
-        echo 'inserted';
-        }
     }
     echo '<br><p>CAPTCHA was completed successfully!</p><br>';
 }

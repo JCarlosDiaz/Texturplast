@@ -235,12 +235,12 @@ nav-hidden - Open nav on icon click
                                                         <label for="Estado">Estado</label>
                                                         <select name="estado" id="estado-asesoria">
                                                             <option  selected="selected" value="Aguascalientes">Aguascalientes</option>
-                                                            <option value="BajaCalifornia">Baja California</option>
-                                                            <option value="BajaCaliforniaSur">Baja California Sur</option>
+                                                            <option value="Baja California">Baja California</option>
+                                                            <option value="Baja California Sur">Baja California Sur</option>
                                                             <option value="Campeche">Campeche</option>
                                                             <option value="Chiapas">Chiapas</option>
                                                             <option value="Chihuahua">Chihuahua</option>
-                                                            <option value="CiudaddeMexico">Ciudad de México</option>
+                                                            <option value="Ciudad de Mexico">Ciudad de México</option>
                                                             <option value="Coahuila">Coahuila</option>
                                                             <option value="Colima">Colima</option>
                                                             <option value="Durango">Durango</option>
@@ -248,16 +248,16 @@ nav-hidden - Open nav on icon click
                                                             <option value="Guerrero">Guerrero</option>
                                                             <option value="Hidalgo">Hidalgo</option>
                                                             <option value="Jalisco">Jalisco</option>
-                                                            <option value="EstadodeMexico">Estado de México</option>
+                                                            <option value="Estado de Mexico">Estado de México</option>
                                                             <option value="Michoacan">Michoacán</option>
                                                             <option value="Morelos">Morelos</option>
                                                             <option value="Nayarit">Nayarit</option>
-                                                            <option value="NuevoLeon">Nuevo León</option>
+                                                            <option value="Nuevo Leon">Nuevo León</option>
                                                             <option value="Oaxaca">Oaxaca</option>
                                                             <option value="Puebla">Puebla</option>
                                                             <option value="Queretaro">Querétaro</option>
                                                             <option value="QuintanaRoo">Quintana Roo</option>
-                                                            <option value="SanLuisPotosí">San Luis Potosí</option>
+                                                            <option value="San Luis Potosí">San Luis Potosí</option>
                                                             <option value="Sinaloa">Sinaloa</option>
                                                             <option value="Sonora">Sonora</option>
                                                             <option value="Tabasco">Tabasco</option>
@@ -287,19 +287,18 @@ nav-hidden - Open nav on icon click
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12 mb20">
-                                                            <div class="form-check col-md-8" style="padding-left:0;">
-                                                                    <p style="display: inline-block; font-size: 12px;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
-                                                                    <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" checked="">
-                                                                    <label for="newsletter" class="st-checkbox-1-label">Sí</label>
-                                                                    <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
-                                                                    
-                                                                    </div><div class="col-md-4 cl">
-                                                        <div class="form-group">
-                                                                <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right boton-s">Enviar</button>
+                                                        <div class="form-check col-md-8" style="padding-left:0;">
+                                                            <p style="display: inline-block; font-size: 12px;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
+                                                            <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" >
+                                                            <label for="newsletter" class="st-checkbox-1-label">Sí</label>
+                                                            <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
+                                                        </div>
+                                                        <div class="col-md-4 cl">
+                                                            <div class="form-group">
+                                                                    <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right boton-s">Enviar</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    </div>
-                                                    
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                                 <div class="g-recaptcha" data-sitekey="6Lcx_G8UAAAAACQ5PFJXkEyZxkBeCdzh0oR_IPw-" data-callback="reCaptchaVerify"></div>
@@ -449,12 +448,11 @@ nav-hidden - Open nav on icon click
                                                 </div>
                                                 <div class="col-md-12 mb20">
                                                         <div class="form-check col-md-8" style="padding-left:0;">
-                                                            <label style="display: inline-block; color:black;" class="form-check-label" for="defaultCheck1">
-                                                                    ¿Quieres enterar de ofertas especiales y noticias por correo?
-                                                            </label>
-                                                            <input id="checkbox-5" class="st-checkbox" name="checkbox-5" type="checkbox" checked="">
-                                                            <label for="checkbox-5" class="st-checkbox-2-label">Si</label>
                                                             
+                                                            <p style="display: inline-block; font-size: 12px;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
+                                                            <input id="checkbox-5" class="st-checkbox" name="checkbox-5" type="checkbox" >
+                                                            <label for="checkbox-5" class="st-checkbox-1-label">Sí</label>
+                                                            <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
                                                         </div>
                                                         <div class="col-md-4 cl">
                                                             <div class="form-group">
@@ -583,6 +581,7 @@ nav-hidden - Open nav on icon click
         function reCaptchaVerify(response) {
             if (response === document.querySelector('.g-recaptcha-response').value) {
                 doSubmit = true;
+                console.log(doSubmit);
             } else {
                 doSubmit = false;
             }
@@ -604,7 +603,8 @@ nav-hidden - Open nav on icon click
                     swal("¡Gracias!", "Nos pondremos en contacto contigo a la brevedad posible.", "success");
                 }
             };
-            $("#form").ajaxForm(options);$("#form2").ajaxForm(options);
+            $("#form").ajaxForm(options);
+            $("#form2").ajaxForm(options);
             
         }); 
     </script>
