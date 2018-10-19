@@ -289,7 +289,7 @@ nav-hidden - Open nav on icon click
                                                     <div class="col-md-12 mb20">
                                                         <div class="form-check col-md-8" style="padding-left:0;">
                                                             <p style="display: inline-block; font-size: 12px;">¿Quieres enterarte de ofertas especiales y noticias por correo?   </p>
-                                                            <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" >
+                                                            <input id="newsletter" class="st-checkbox" name="newsletter" type="checkbox" value="1">
                                                             <label for="newsletter" class="st-checkbox-1-label">Sí</label>
                                                             <!-- <label for="texto" class="st-checkbox-2-label">Si</label> -->
                                                         </div>

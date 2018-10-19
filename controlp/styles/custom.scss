@@ -1,0 +1,150 @@
+body.header-shadow{
+    background-color: #000;
+}
+body.header-shadows{
+    background: linear-gradient(to left,#02AAB0,#00CDAC);
+    background: linear-gradient(to left, #ffc1077a, #ffe189);
+    background: linear-gradient(to left, #FFC107, #FF9800);
+    background: grey;
+}
+.boxshadow, .tp-caption.boxshadow {
+    box-shadow: 0 0 0px rgba(0,0,0,.5);
+}
+/**
+=============HEADER==============
+*/
+.secondNav{
+    .header{
+        background: #fff;
+        .menuham-container{
+            padding: 2px;
+        }
+        .logo .logo-img{
+            max-height: 38px;
+        }
+    }
+}
+.header{
+    box-shadow: 0 0 25px rgba(0,0,0,.5);
+    .logo{
+        padding: 28px 10px;
+    }
+    .menuham-container{
+        float: right;
+        padding: 20px 10px;
+        transition: all .4s;
+    }
+    span.etiqueta{
+        position: relative;
+        top: -6px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    background: white;
+}
+.hamb-white{
+    span.etiqueta{
+        position: relative;
+        top: -6px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+        background-color: #000;
+    }
+}
+.dark-header .header {
+        background: #ffffff;
+    }
+.desc{
+    padding-top: 10px;
+}
+.l2{
+    padding-bottom:10px; 
+}
+form.download2{
+    padding-top: 115px;
+}
+.login-box{
+    background-color: #fff;
+    border-radius: 10px;
+    form{
+        .logo{
+            padding: 35px;
+        }
+        input{
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+    }
+    .st-checkbox:checked+.st-checkbox-2-label:before, .st-radio:checked+.st-radio-2-label:before {
+        content: "\f00c";
+        font: normal normal normal 12px/1 FontAwesome;
+        background: #c39300;
+        color: #FFF;
+    }
+    .st-btn.primary-btn {
+        background-color: #c39300;
+        color: #fff;
+        border-color: #c39300;
+    }
+    .st-btn.primary-btn:hover {
+        background: 0 0;
+        color: #000!important;
+    }
+    button{
+        float: none!important;
+        width: 100%;
+    }
+}
+.table{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+th{
+    background-color: #c39300;
+    text-align: center;
+    color: #fff;
+    
+}
+td{
+        background: #fff;
+        color: #000;
+}
+.download{
+    padding: 16px;
+}
+button.down{
+    margin: auto;
+}
+.st-checkbox:checked+.st-checkbox-2-label:before, .st-radio:checked+.st-radio-2-label:before {
+    content: "\f00c";
+    font: normal normal normal 12px/1 FontAwesome;
+    background: #c39300;
+    color: #FFF;
+}
+.st-btn.primary-btn {
+    background-color: #c39300;
+    color: #fff;
+    border-color: #c39300;
+}
+.st-btn.primary-btn.hvr-back:hover {
+    color: #000!important;
+}
+.errorLog{
+    color: rgb(143, 22, 1);
+}
+.salir{
+    color: #000;
+    font-size: 1.5em;
+    position: relative;
+    top: 17px;
+}
+.salir:hover{
+    color: #c39300!important;
+    font-size: 1.5em;
+    position: relative;
+    top: 17px;
+}

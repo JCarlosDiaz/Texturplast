@@ -44,7 +44,7 @@ if (!$res['success']) {
         
     if (isset($_POST['newsletter'])) {
         $inscrito = true;
-        $db->Consultar("INSERT INTO clientes (`nombre`, `apellido`, `correo`, `telefono`, `estado`, `cp`) 
+        $db->Consultar("INSERT INTO clientes (nombre, apellido, correo, telefono, estado, cp) 
         VALUES ('$nombre','$apellido','$correo','$telefono','$estado','$codigo')");
         // if($inscrito = true){
             
@@ -56,7 +56,7 @@ if (!$res['success']) {
     } 
     
     $mail->setFrom('website@texturplast.com', 'Contacto');
-    $mail->addAddress('angelfcancun@gmail.com', 'Administrador');     // Add a recipient
+    $mail->addAddress('ventas@texturplast.com', 'Administrador');     // Add a recipient
     
     
     $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
