@@ -486,6 +486,46 @@ nav-hidden - Open nav on icon click
                                                     <p class="desc-black">'.$i.'</p>
                                                 </div>';
                                             break;
+                                            case 'pegazulejos':
+                                                print '<div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación de la superficie</h3>
+                                                    <p class="desc-black">'.$a.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación del producto</h3>
+                                                    <p class="desc-black">'.$b.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Sugerencias</h3>
+                                                    <p class="desc-black">'.$c.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Limpieza de la superficie</h3>
+                                                    <p class="desc-black">'.$d.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Aplicación del Producto</h3>
+                                                    <p class="desc-black">'.$e.'</p>
+                                                </div>';
+                                            break;
+                                            case 'productos-especiales':
+                                                print '<div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación de la superficie</h3>
+                                                    <p class="desc-black">'.$a.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Preparación del producto</h3>
+                                                    <p class="desc-black">'.$b.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Limpieza de la superficie</h3>
+                                                    <p class="desc-black">'.$d.'</p>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <h3 class="feature-title">Aplicación del Producto</h3>
+                                                    <p class="desc-black">'.$e.'</p>
+                                                </div>';
+                                            break;
                                             default:
                                                 # code...
                                                 break;
