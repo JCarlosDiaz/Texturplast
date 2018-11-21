@@ -1,14 +1,13 @@
-
 <?php
 include '../db/connect.php';
 // include 'valida.php';
 session_start();
-if( isset($_SESSION['autenticacion']) !='SI'){
+if( isset($_SESSION['entra']) != 'SI'){
     echo "<script>window.location='index.php';</script>"; 
     
 }else{
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 
@@ -219,6 +218,7 @@ $(document).ready(function() {
 </body>
 
 </html>
-    <?php }
+<?php }
     ?>
+   
     

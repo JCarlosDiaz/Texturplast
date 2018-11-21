@@ -2,7 +2,7 @@
 include '../db/connect.php';
 // include 'valida.php';
 session_start();
-if( isset($_SESSION['autenticacion']) == 'SI'){
+if( isset($_SESSION['entra']) == 'SI'){
     echo "<script>window.location='usuarios.php';</script>"; 
     
 }else{
