@@ -5,11 +5,10 @@ include 'db/connect.php'
 ?>
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
 
-    <!-- ========== VIEWPORT META ========== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
 
     <!-- ========== PAGE TITLE ========== -->
     <title>Texturplast</title>
@@ -20,8 +19,8 @@ include 'db/connect.php'
     <meta name="author" content="ThemesEase">
 
     <!-- ========== FAVICON & APPLE ICONS ========== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/texturplast/icon-title.png">
+    <link rel="apple-touch-icon" href="images/texturplast/icon-title.png">
 
     <!-- ========== MINIFIED VENDOR CSS ========== -->
     <link rel="stylesheet" href="styles/vendor.css">
@@ -228,7 +227,7 @@ nav-hidden - Open nav on icon click
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="images/texturplast/familia.jpg" class="img-responsive l2" alt="">
+                        <img src="images/texturplast/Lonas sitio familia con bultos.jpg" class="img-responsive l2" alt="">
                     </div>
                     <div class="col-md-6">
                         <img src="images/texturplast/Lonas sitio-01.jpg" class="img-responsive l2" alt="">
@@ -249,7 +248,7 @@ nav-hidden - Open nav on icon click
                 <div class="row">
                     <div class="col-md-4 col-md-offset-1" >
                         <h3>Productos</h3>
-                        <p class="subtitle">Desarrollamos nuestros productos para que tengan la mayor durabilidad, resistencia y rendimiento, así puedes estar seguro de que tu casa aparte de lucir bien está bien protegida. También contamos con productos especiales como sombreadores para invernaderos y cementos autonivelantes.</p>
+                        <p class="subtitle">Desarrollamos nuestros productos para que tengan la mayor durabilidad, resistencia y rendimiento, así puedes estar seguro de que tu obra aparte de lucir bien está bien protegida. También contamos con productos especiales como sombreadores para invernaderos y cementos autonivelantes.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -450,7 +449,7 @@ nav-hidden - Open nav on icon click
                 <div class="row description-row">
                     <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-1">
                         <p class="parrafo">
-                            TEXTURPLAST es una marca mexicana enfocada en cuidar el patrimonio, ya sea tu hogar o el medio ambiente. Comprometidos con la innovación y el emprendimiento llevamos más de 25 años ofreciendo servicios y productos de la más alta calidad.
+                            TEXTURPLAST es una marca mexicana enfocada en cuidar el patrimonio, ya sea tu obra o el medio ambiente. Comprometidos con la innovación y el emprendimiento llevamos más de 25 años ofreciendo servicios y productos de la más alta calidad.
                         </p>
                     </div>
                 </div>
@@ -497,7 +496,7 @@ nav-hidden - Open nav on icon click
                 <div class="row">
                     <div class="col-md-6">
                         <h4><a class="mail" href="mailto:ventas@texturplast.com">ventas@texturplast.com</a></h4>
-                        <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
+                        <a href="tel:+522383830982"><p class="numero">(238) 383 0982</p></a>
                         <div class="social-container">
                             <a target="_blank" href="https://www.facebook.com/texturplast.mex/">
                             <img src="images/texturplast/Face.svg" width="35px" alt=""></a>

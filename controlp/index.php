@@ -27,8 +27,8 @@ if( isset($_SESSION['entra']) == 'SI'){
     <meta name="author" content="ThemesEase">
 
     <!-- ========== FAVICON & APPLE ICONS ========== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../images/texturplast/icon-title.png">
+    <link rel="apple-touch-icon" href="images/texturplast/icon-title.png">
 
     <!-- ========== MINIFIED VENDOR CSS ========== -->
     <link rel="stylesheet" href="styles/vendor.css">

@@ -22,8 +22,8 @@ include 'db/connect.php';
     <meta name="author" content="ThemesEase">
 
     <!-- ========== FAVICON & APPLE ICONS ========== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/texturplast/icon-title.png">
+    <link rel="apple-touch-icon" href="images/texturplast/icon-title.png">
 
     <!-- ========== MINIFIED VENDOR CSS ========== -->
     <link rel="stylesheet" href="styles/vendor.css">
@@ -480,7 +480,7 @@ nav-hidden - Open nav on icon click
                 <div class="row">
                     <div class="col-md-offset-1 col-md-3 col-sm-4 col-xs-12 plcont">
                         <h4><a class="mail" href="mailto:ventas@texturplast.com">ventas@texturplast.com</a></h4>
-                        <a href="tel:+522381316241"><p class="numero">(238) 131 6241</p></a>
+                        <a href="tel:+522383830982"><p class="numero">(238) 383 0982</p></a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="social-container">

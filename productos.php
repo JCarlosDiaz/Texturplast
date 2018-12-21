@@ -22,8 +22,8 @@ $producto_actual = $_GET['prod'];
     <meta name="author" content="ThemesEase">
 
     <!-- ========== FAVICON & APPLE ICONS ========== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/texturplast/icon-title.png">
+    <link rel="apple-touch-icon" href="images/texturplast/icon-title.png">
 
     <!-- ========== MINIFIED VENDOR CSS ========== -->
     <link rel="stylesheet" href="styles/vendor.css">
@@ -533,25 +533,7 @@ nav-hidden - Open nav on icon click
                                     ?>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="profile-5">
-                                    <div class="col-sm-4 col-xs-12">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum eaque ducimus aperiam est maxime perspiciatis, sed voluptatem, quidem quibusdam similique quae voluptatibus impedit accusamus illo distinctio perferendis cupiditate amet?</p>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum eaque ducimus aperiam est maxime perspiciatis, sed voluptatem, quidem quibusdam similique quae voluptatibus impedit accusamus illo distinctio perferendis cupiditate amet?</p>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum eaque ducimus aperiam est maxime perspiciatis, sed voluptatem, quidem quibusdam similique quae voluptatibus impedit accusamus illo distinctio perferendis cupiditate amet?</p>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum eaque ducimus aperiam est maxime perspiciatis, sed voluptatem, quidem quibusdam similique quae voluptatibus impedit accusamus illo distinctio perferendis cupiditate amet?</p>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum eaque ducimus aperiam est maxime perspiciatis, sed voluptatem, quidem quibusdam similique quae voluptatibus impedit accusamus illo distinctio perferendis cupiditate amet?</p>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum eaque ducimus aperiam est maxime perspiciatis, sed voluptatem, quidem quibusdam similique quae voluptatibus impedit accusamus illo distinctio perferendis cupiditate amet?</p>
-                                    </div>
-                                </div>
+                                    
                             </div> <!-- end tab-content -->
                     </div>
                 </div>
@@ -651,7 +633,7 @@ nav-hidden - Open nav on icon click
                     </div>
                     <div class="col-md-5 col-sm-5 text-center">
                         <h3 class="otros-pad">¿Necesitas asesorías?</h3>
-                        <p class="vino-a">Comunícate con nosotros al <a class="vino-a" href="tel:+52 1 (238) 131 6241">(238) 131 6241</a><br> o <a class="vino-a" href="mailto:">escríbenos</a></p>
+                        <p class="vino-a">Comunícate con nosotros al <a class="vino-a" href="tel:+522383830982">(238) 383 0982</a><br> o <a class="vino-a" href="mailto:">escríbenos</a></p>
                     </div>
                 </div>
             </div>
