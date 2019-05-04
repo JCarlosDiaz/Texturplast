@@ -16,11 +16,11 @@ $producto_actual = $_GET['prod'];
     <!-- ========== PAGE TITLE ========== -->
     <title>Texturplast</title>
 
-    <!-- ========== META TAGS ========== -->
-    <meta name="description" content="Salt - Responsive Multipurpose HTML5 Template ">
-    <meta name="keywords" content="business, responsive, multi-purpose">
-    <meta name="author" content="ThemesEase">
-
+<!-- ========== META TAGS ========== -->
+    <meta name="description" content="Texturplast Pinturas, impermeabilizantes, materiales Texturplast mexico">
+    <meta name="keywords" content="texturplast.com, texturplast, textur, plast, puebla, pinturas, impermeabilizantes, mexico, recubrimientos">
+    <meta name="author" content="Dapper Technologies">
+    
     <!-- ========== FAVICON & APPLE ICONS ========== -->
     <link rel="shortcut icon" href="images/texturplast/icon-title.png">
     <link rel="apple-touch-icon" href="images/texturplast/icon-title.png">
@@ -207,7 +207,7 @@ nav-hidden - Open nav on icon click
                                                     $cat = $row['categoria'];
                                                     $cod = $row['codigo'];
                                                     $nombre = $row['nombre'];
-                                                    $img = $row['prepSuperficie'];
+                                                    $img = $row['imagen'];
                                                     if( $img != ''){
                                                         print "<li><a href='productos.php?cat=$cat&prod=$cod'>$nombre</a></li>";
                                                     }else{

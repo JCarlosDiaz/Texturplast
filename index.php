@@ -5,18 +5,20 @@ include 'db/connect.php'
 ?>
 <head>
 
-    
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msvalidate.01" content="1702D23E117BF777CC28C28FABE983F9" />
 
-    
+    <!-- ========== VIEWPORT META ========== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <!-- ========== PAGE TITLE ========== -->
     <title>Texturplast</title>
 
     <!-- ========== META TAGS ========== -->
-    <meta name="description" content="Salt - Responsive Multipurpose HTML5 Template ">
-    <meta name="keywords" content="business, responsive, multi-purpose">
-    <meta name="author" content="ThemesEase">
+    <meta name="description" content="Texturplast Pinturas, impermeabilizantes, materiales Texturplast mexico">
+    <meta name="keywords" content="texturplast.com, texturplast, textur, plast, puebla, pinturas, impermeabilizantes, mexico, recubrimientos">
+    <meta name="author" content="Dapper Technologies">
 
     <!-- ========== FAVICON & APPLE ICONS ========== -->
     <link rel="shortcut icon" href="images/texturplast/icon-title.png">
