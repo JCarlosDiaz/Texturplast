@@ -8,12 +8,12 @@ class MYSQL
 	// private $servidor = "mysql:host=localhost;dbname=texturplast_texturtplastadministrador";
 	// private $usuario = "texturplast_texturplastadmin";
 	// private $password = "textur2018";
-	private $servidor = "mysql:host=localhost;dbname=texturplast";
-	private $usuario = "root";
-	private $password = "mysql";
-	// private $servidor = "mysql:host=localhost;dbname=dappcun_texturplast";
-	// private $usuario = "dappcun_texturplastadmin";
-	// private $password = "dapper2018";
+	// private $servidor = "mysql:host=localhost;dbname=texturplast";
+	// private $usuario = "root";
+	// private $password = "mysql";
+	private $servidor = "mysql:host=localhost;dbname=texturpl_db";
+	private $usuario = "texturpl_saul";
+	private $password = "Textur2020";
 	private $Conexion;
 	private $Consulta;
 	private $tmp;
